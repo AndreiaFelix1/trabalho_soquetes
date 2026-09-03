@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resource Server | Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                R
+            </div>
+
+            <div class="brand-text">
+                <strong>Resource</strong>
+                <span>SERVER</span>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-section-title">
+            SISTEMA
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">▣</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>Recursos</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⇄</span>
+                <span>Replicação</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◌</span>
+                <span>Monitoramento</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-section-title second">
+            CONFIGURAÇÃO
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙</span>
+                <span>Configurações</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="server-card">
+
+                <div class="server-card-top">
+
+                    <span class="online-dot"></span>
+
+                    <span>Servidor online</span>
+
+                </div>
+
+                <small>
+                    127.0.0.1:8080
+                </small>
+
+            </div>
+
+
+            <div class="team">
+
+                <span>PROJECT TEAM</span>
+
+                <strong>Andreia & Paulo</strong>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <div class="breadcrumb">
+                    SYSTEM / DASHBOARD
+                </div>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p>
+                    Visão geral do servidor de recursos distribuído
+                </p>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <div class="system-indicator">
+
+                    <span class="online-dot"></span>
+
+                    <div>
+                        <strong>Sistema operacional</strong>
+                        <small>Todos os serviços ativos</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             METRICS
+        ================================================== -->
+
+        <section class="metrics-grid">
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        CLIENTES CONECTADOS
+                    </span>
+
+                    <div class="metric-icon blue">
+                        ◉
+                    </div>
+
+                </div>
+
+                <div class="metric-value">
+                    2
+                </div>
+
+                <div class="metric-footer">
+                    <span class="trend positive">●</span>
+                    Conexões ativas
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        COMANDOS RECEBIDOS
+                    </span>
+
+                    <div class="metric-icon purple">
+                        ⌘
+                    </div>
+
+                </div>
+
+                <div class="metric-value">
+                    48
+                </div>
+
+                <div class="metric-footer">
+                    <span class="trend positive">↑</span>
+                    Últimas operações
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        TAXA DE SUCESSO
+                    </span>
+
+                    <div class="metric-icon green">
+                        ✓
+                    </div>
+
+                </div>
+
+                <div class="metric-value success-text">
+                    95.8%
+                </div>
+
+                <div class="metric-footer">
+                    <span class="trend positive">↑</span>
+                    Operações concluídas
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+
+                    <span class="metric-label">
+                        COMANDOS COM ERRO
+                    </span>
+
+                    <div class="metric-icon red">
+                        !
+                    </div>
+
+                </div>
+
+                <div class="metric-value error-text">
+                    2
+                </div>
+
+                <div class="metric-footer">
+                    Operações rejeitadas
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             CHARTS
+        ================================================== -->
+
+        <section class="charts-grid">
+
+
+            <!-- ACTIVITY CHART -->
+
+            <div class="panel activity-chart">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            Atividade do servidor
+                        </h2>
+
+                        <p>
+                            Comandos processados nas últimas horas
+                        </p>
+
+                    </div>
+
+
+                    <select class="chart-select">
+
+                        <option>
+                            Últimas 24 horas
+                        </option>
+
+                        <option>
+                            Últimos 7 dias
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="chart-container">
+
+                    <canvas id="activityChart"></canvas>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPERATIONS CHART -->
+
+            <div class="panel operations-chart">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            Operações
+                        </h2>
+
+                        <p>
+                            Distribuição por comando
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="donut-container">
+
+                    <canvas id="operationsChart"></canvas>
+
+                </div>
+
+
+                <div class="legend">
+
+                    <div>
+                        <span class="legend-dot"></span>
+                        GET
+                        <strong>32%</strong>
+                    </div>
+
+                    <div>
+                        <span class="legend-dot"></span>
+                        SET
+                        <strong>24%</strong>
+                    </div>
+
+                    <div>
+                        <span class="legend-dot"></span>
+                        CREATE
+                        <strong>18%</strong>
+                    </div>
+
+                    <div>
+                        <span class="legend-dot"></span>
+                        RESERVE
+                        <strong>14%</strong>
+                    </div>
+
+                    <div>
+                        <span class="legend-dot"></span>
+                        OUTROS
+                        <strong>12%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             RESOURCES + INFRASTRUCTURE
+        ================================================== -->
+
+        <section class="lower-grid">
+
+
+            <!-- RESOURCES -->
+
+            <div class="panel resources-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            Recursos
+                        </h2>
+
+                        <p>
+                            Estado atual dos recursos registrados
+                        </p>
+
+                    </div>
+
+
+                    <button class="primary-button">
+                        + Novo recurso
+                    </button>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    RECURSO
+                                </th>
+
+                                <th>
+                                    VALOR
+                                </th>
+
+                                <th>
+                                    STATUS
+                                </th>
+
+                                <th>
+                                    ÚLTIMA OPERAÇÃO
+                                </th>
+
+                                <th>
+                                    AÇÃO
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>sala1</strong>
+                                </td>
+
+                                <td>
+                                    100
+                                </td>
+
+                                <td>
+                                    <span class="status-badge available">
+                                        ● Livre
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="operation">
+                                        SET
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="more-button">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>sala2</strong>
+                                </td>
+
+                                <td>
+                                    200
+                                </td>
+
+                                <td>
+                                    <span class="status-badge available">
+                                        ● Livre
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="operation">
+                                        GET
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="more-button">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>sala3</strong>
+                                </td>
+
+                                <td>
+                                    300
+                                </td>
+
+                                <td>
+                                    <span class="status-badge reserved">
+                                        ● Reservado
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="operation">
+                                        RESERVE
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="more-button">
+                                        ⋮
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFRASTRUCTURE -->
+
+            <div class="panel infrastructure-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            Infraestrutura
+                        </h2>
+
+                        <p>
+                            Serviços e componentes
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="infrastructure-list">
+
+
+                    <div class="service">
+
+                        <div class="service-left">
+
+                            <div class="service-icon">
+                                C
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Servidor principal
+                                </strong>
+
+                                <small>
+                                    TCP · porta 8080
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="service-status">
+                            Online
+                        </span>
+
+                    </div>
+
+
+                    <div class="service">
+
+                        <div class="service-left">
+
+                            <div class="service-icon">
+                                U
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Servidor UDP
+                                </strong>
+
+                                <small>
+                                    UDP · porta 8081
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="service-status">
+                            Online
+                        </span>
+
+                    </div>
+
+
+                    <div class="service">
+
+                        <div class="service-left">
+
+                            <div class="service-icon">
+                                R
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Servidor réplica
+                                </strong>
+
+                                <small>
+                                    TCP · porta 8082
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="service-status">
+                            Online
+                        </span>
+
+                    </div>
+
+
+                    <div class="replication-status">
+
+                        <div class="replication-header">
+
+                            <span>
+                                REPLICAÇÃO
+                            </span>
+
+                            <span class="connected">
+                                ● Conectado
+                            </span>
+
+                        </div>
+
+
+                        <div class="replication-flow">
+
+                            <div>
+                                <strong>MAIN</strong>
+                                <small>:8080</small>
+                            </div>
+
+                            <div class="arrow">
+                                ───────►
+                            </div>
+
+                            <div>
+                                <strong>REPLICA</strong>
+                                <small>:8082</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             ACTIVITY
+        ================================================== -->
+
+        <section class="panel recent-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Atividade recente
+                    </h2>
+
+                    <p>
+                        Últimas operações processadas pelo servidor
+                    </p>
+
+                </div>
+
+
+                <span class="live-label">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div class="activity-list">
+
+
+                <div class="activity-row">
+
+                    <div class="activity-status success">
+                        ✓
+                    </div>
+
+                    <div class="activity-main">
+
+                        <strong>
+                            CREATE sala3
+                        </strong>
+
+                        <span>
+                            Recurso criado com sucesso
+                        </span>
+
+                    </div>
+
+                    <span class="activity-time">
+                        agora
+                    </span>
+
+                </div>
+
+
+                <div class="activity-row">
+
+                    <div class="activity-status blue">
+                        ↻
+                    </div>
+
+                    <div class="activity-main">
+
+                        <strong>
+                            SET sala1
+                        </strong>
+
+                        <span>
+                            Valor atualizado para 100
+                        </span>
+
+                    </div>
+
+                    <span class="activity-time">
+                        2 min
+                    </span>
+
+                </div>
+
+
+                <div class="activity-row">
+
+                    <div class="activity-status error">
+                        !
+                    </div>
+
+                    <div class="activity-main">
+
+                        <strong>
+                            GET inexistente
+                        </strong>
+
+                        <span>
+                            Recurso não encontrado
+                        </span>
+
+                    </div>
+
+                    <span class="activity-time">
+                        5 min
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <footer class="footer">
+
+            <span>
+                Resource Server · Distributed System
+            </span>
+
+            <span>
+                Andreia & Paulo
+            </span>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>

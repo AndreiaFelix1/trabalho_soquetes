@@ -71,3 +71,67 @@
 [2026-08-25 23:14:31] Cliente ID 1 <- ERROR INVALID_COMMAND
 [2026-08-25 23:16:43] Cliente ID 1 -> GET sala1
 [2026-08-25 23:16:43] Cliente ID 1 <- ERROR INVALID_COMMAND
+[2026-08-27 04:39:12] Cliente ID 1 conectado
+[2026-08-27 04:39:23] Cliente ID 1 -> CREATE sala1 100
+[2026-08-27 04:39:23] Cliente ID 1 <- ERROR AUTH_REQUIRED
+[2026-08-27 04:39:43] Cliente ID 1 -> LOGIN andreia 9999
+[2026-08-27 04:39:43] Cliente ID 1 <- ERROR INVALID_CREDENTIALS
+[2026-08-27 04:39:50] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 04:39:50] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 04:39:59] Cliente ID 1 -> CREATE sala1 100
+[2026-08-27 04:39:59] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-08-27 04:40:06] Cliente ID 1 -> GET sala1
+[2026-08-27 04:40:06] Cliente ID 1 <- OK VALUE 999
+[2026-08-27 04:41:00] Cliente ID 1 -> SET sala1 100
+[2026-08-27 04:41:00] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-27 04:41:05] Cliente ID 1 -> GET sala1
+[2026-08-27 04:41:05] Cliente ID 1 <- OK VALUE 100
+[2026-08-27 04:44:12] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-27 04:44:12] Cliente ID 1 desconectado
+[2026-08-27 18:13:59] Cliente ID 1 conectado
+[2026-08-27 18:14:03] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 18:14:03] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 18:14:13] Cliente ID 1 -> CREATE sala_replica 500
+[2026-08-27 18:14:13] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-27 18:55:18] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-27 18:55:18] Cliente ID 1 desconectado
+[2026-08-27 18:55:20] Cliente ID 2 conectado
+[2026-08-27 18:55:23] Cliente ID 2 -> LOGIN andreia 1234
+[2026-08-27 18:55:23] Cliente ID 2 <- OK AUTHENTICATED
+[2026-08-27 18:55:32] Cliente ID 2 -> CREATE sala_replica 500
+[2026-08-27 18:55:32] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-08-27 18:55:45] Cliente ID 2 -> SET sala_replica 999
+[2026-08-27 18:55:45] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-08-27 19:27:56] Cliente ID 1 conectado
+[2026-08-27 19:27:58] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 19:27:58] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 19:28:10] Cliente ID 1 -> CREATE sala_replica 500
+[2026-08-27 19:28:10] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-08-27 19:28:20] Cliente ID 1 -> SET sala_replica 999
+[2026-08-27 19:28:20] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-27 19:30:06] Cliente ID 1 -> CREATE sala_nova 500
+[2026-08-27 19:30:06] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-27 19:36:30] Cliente ID 1 conectado
+[2026-08-27 19:36:35] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 19:36:35] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 19:36:44] Cliente ID 1 -> RESERVE sala_nova
+[2026-08-27 19:36:44] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-08-27 19:40:04] Cliente ID 1 -> RELEASE sala_nova
+[2026-08-27 19:40:04] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-08-27 19:50:56] Cliente ID 1 conectado
+[2026-08-27 19:51:01] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 19:51:01] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 19:51:04] Cliente ID 1 -> CREATE teste_replica 777
+[2026-08-27 19:51:04] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-27 19:51:17] Cliente ID 1 -> SET teste_replica 888
+[2026-08-27 19:51:17] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-27 19:53:35] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-27 19:53:35] Cliente ID 1 desconectado
+[2026-08-27 19:53:36] Cliente ID 2 conectado
+[2026-08-27 19:53:41] Cliente ID 2 -> LOGIN andreia 1234
+[2026-08-27 19:53:41] Cliente ID 2 <- OK AUTHENTICATED
+[2026-08-27 19:53:52] Cliente ID 2 -> GET teste_replica
+[2026-08-27 19:53:52] Cliente ID 2 <- OK VALUE 888
+[2026-08-27 19:54:56] Cliente ID 2 -> CREATE teste_falha 100
+[2026-08-27 19:54:56] Cliente ID 2 <- OK RESOURCE_CREATED
+[2026-08-27 19:55:07] Cliente ID 2 -> SET teste_falha 200

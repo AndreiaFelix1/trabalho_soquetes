@@ -1,5 +1,13 @@
-sala1 999
+sala1 100
 sala2 200
 sala3 300
 sala4 400
 teste 100
+sala_udp 999
+sala_udp2 700
+sala_udp4 400
+replica_test 999
+sala_replica 999
+sala_nova 500
+teste_replica 888
+teste_falha 200

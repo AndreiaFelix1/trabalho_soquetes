@@ -10,6 +10,7 @@
 #include "persistence.h"
 #include "monitor.h"
 #include "auth.h"
+#include "replication.h"
 
 #define PORT 8080
 #define BUFFER_SIZE 1024
@@ -18,6 +19,8 @@ Resource resources[MAX_RESOURCES];
 int resource_count = 0;
 
 int next_client_id = 1;
+
+int replica_fd = -1;
 
 pthread_mutex_t resources_mutex = PTHREAD_MUTEX_INITIALIZER;
 
@@ -131,13 +134,14 @@ void *handle_client(void *arg) {
                 );
             }
 
-        if (!(items == 1 && strcmp(command, "STATUS") == 0)) {
-            monitor_command_received();
-        }
+        } else if (items == 1 && strcmp(command, "STATUS") == 0) {
 
-        //char response[BUFFER_SIZE];
+            monitor_get_status(
+                response,
+                BUFFER_SIZE
+            );
 
-        if (!authenticated) {
+        } else if (!authenticated) {
 
             snprintf(
                 response,
@@ -170,6 +174,15 @@ void *handle_client(void *arg) {
                     resources,
                     resource_count
                 );
+
+                if (replica_fd != -1) {
+
+                    replicate_create(
+                        replica_fd,
+                        id,
+                        value
+                    );
+                }
 
             } else if (result == -2) {
 
@@ -220,7 +233,6 @@ void *handle_client(void *arg) {
 
         } else if (items == 3 && strcmp(command, CMD_SET) == 0) {
 
-
             pthread_mutex_lock(&resources_mutex);
 
             int result = set_resource(
@@ -229,7 +241,6 @@ void *handle_client(void *arg) {
                 id,
                 value
             );
-
 
             pthread_mutex_unlock(&resources_mutex);
 
@@ -245,6 +256,15 @@ void *handle_client(void *arg) {
                     resources,
                     resource_count
                 );
+
+                if (replica_fd != -1) {
+
+                    replicate_set(
+                        replica_fd,
+                        id,
+                        value
+                    );
+                }
 
             } else {
 
@@ -289,6 +309,15 @@ void *handle_client(void *arg) {
                     "OK RESOURCE_RESERVED"
                 );
 
+                if (replica_fd != -1) {
+
+                    replicate_reserve(
+                        replica_fd,
+                        id,
+                        client_id
+                    );
+                }
+
                 save_resources(
                     resources,
                     resource_count
@@ -332,6 +361,15 @@ void *handle_client(void *arg) {
                     "OK RESOURCE_RELEASED"
                 );
 
+                if (replica_fd != -1) {
+
+                    replicate_release(
+                        replica_fd,
+                        id,
+                        client_id
+                    );
+                }
+
                 save_resources(
                     resources,
                     resource_count
@@ -361,16 +399,6 @@ void *handle_client(void *arg) {
                     "ERROR NOT_OWNER"
                 );
             }
-        
-        }
-
-        } else if (items == 1 && strcmp(command, "STATUS") == 0) {
-
-
-            monitor_get_status(
-                response,
-                BUFFER_SIZE
-            );
 
         } else {
 
@@ -521,6 +549,17 @@ int main() {
     }
 
     printf("Servidor aguardando conexões...\n");
+
+    replica_fd = connect_to_replica();
+
+    if (replica_fd == -1) {
+
+        printf("Aviso: servidor réplica não disponível.\n");
+
+    } else {
+
+        printf("Servidor conectado à réplica.\n");
+    }
 
     // Aceitar um cliente
     while (1) {

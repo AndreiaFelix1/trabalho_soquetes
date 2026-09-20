@@ -1,7 +1,7 @@
-sala1 100
-sala2 200
-sala3 300
-sala4 400
+sala1 150
+sala2 250
+sala3 350
+sala4 450
 teste 100
 sala_udp 999
 sala_udp2 700
@@ -11,3 +11,9 @@ sala_replica 999
 sala_nova 500
 teste_replica 888
 teste_falha 200
+sala9 950
+sala6 650
+sala5 550
+sala7 750
+sala10 1050
+sala8 850

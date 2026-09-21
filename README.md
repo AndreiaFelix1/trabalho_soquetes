@@ -62,11 +62,10 @@ O **Servidor UDP** funciona de forma independente do servidor principal TCP. Cli
           │                         │     │ • Autenticação          │
           │ • Autenticação          │     │ • Processamento         │
           │ • Processamento         │     │ • Estado dos recursos   │
-          │ • Concorrência          │     │ • Persistência           │
-          │ • Estado dos recursos   │     │ • Logging               │
-          │ • Persistência          │     │ • Monitoramento         │
-          │ • Logging               │     └────────────┬────────────┘
-          │ • Monitoramento         │                  │
+          │ • Concorrência          │     │ • Persistência          │
+          │ • Estado dos recursos   │     │ • Monitoramento         │
+          │ • Persistência          │     └────────────┬────────────┘ 
+          │ • Monitoramento         |                  |
           └────────────┬────────────┘                  │
                        │                               │
                   Replicação                           │
@@ -74,7 +73,7 @@ O **Servidor UDP** funciona de forma independente do servidor principal TCP. Cli
                        ▼                               ▼
           ┌─────────────────────────┐     ┌─────────────────────────┐
           │    SERVIDOR RÉPLICA     │     │   RECURSOS / ESTADO     │
-          │                         │     │       PERSISTIDO         │
+          │                         │     │       PERSISTIDO        │
           │ • Estado replicado      │     └─────────────────────────┘
           │ • Persistência          │
           └────────────┬────────────┘

@@ -44,49 +44,45 @@ As operações que modificam o estado dos recursos são encaminhadas também ao 
 O **Servidor UDP** funciona de forma independente do servidor principal TCP. Clientes UDP podem realizar operações sobre os recursos utilizando o protocolo UDP, sem participação do servidor réplica.
 
 ```text
-                         ┌──────────────────────────┐
+                          ┌──────────────────────────┐
                          │         CLIENTES          │
                          │                          │
-                         │  Cliente TCP 1           │
-                         │  Cliente TCP 2           │
-                         │  ...                     │
-                         │  Cliente UDP 1           │
-                         │  Cliente UDP 2           │
-                         │  ...                     │
+                         │  Clientes TCP             │
+                         │  Clientes UDP             │
                          └────────────┬─────────────┘
                                       │
                        ┌──────────────┴──────────────┐
                        │                             │
-                       │ TCP                         │ UDP
+                     TCP                           UDP
+                       │                             │
                        ▼                             ▼
           ┌─────────────────────────┐     ┌─────────────────────────┐
           │    SERVIDOR PRINCIPAL   │     │      SERVIDOR UDP       │
           │          TCP            │     │                         │
           │                         │     │ • Autenticação          │
           │ • Autenticação          │     │ • Processamento         │
-          │ • Processamento         │     │ • Estado compartilhado  │
-          │ • Concorrência          │     │ • Persistência          │
-          │ • Estado compartilhado  │     │ • Logging               │
+          │ • Processamento         │     │ • Estado dos recursos   │
+          │ • Concorrência          │     │ • Persistência           │
+          │ • Estado dos recursos   │     │ • Logging               │
           │ • Persistência          │     │ • Monitoramento         │
-          │ • Logging               │     │                         │
-          │ • Monitoramento         │     └────────────┬────────────┘
+          │ • Logging               │     └────────────┬────────────┘
+          │ • Monitoramento         │                  │
           └────────────┬────────────┘                  │
                        │                               │
-                       │ Replicação                    │
+                  Replicação                           │
                        │                               │
-                       ▼                               │
-          ┌─────────────────────────┐                  │
-          │    SERVIDOR RÉPLICA     │                  │
-          │                         │                  │
-          │ • Cópia dos recursos    │                  │
-          │ • Estado replicado      │                  │
-          └─────────────────────────┘                  │
-                                                       │
-                                                       │
-                       ┌────────────────────────────────┘
+                       ▼                               ▼
+          ┌─────────────────────────┐     ┌─────────────────────────┐
+          │    SERVIDOR RÉPLICA     │     │   RECURSOS / ESTADO     │
+          │                         │     │       PERSISTIDO         │
+          │ • Estado replicado      │     └─────────────────────────┘
+          │ • Persistência          │
+          └────────────┬────────────┘
                        │
                        ▼
-              ┌───────────────────┐
-              │   Recursos /      │
+          ┌─────────────────────────┐
+          │   RECURSOS / ESTADO     │
+          │       PERSISTIDO        │
+          └─────────────────────────┘
               │ Estado persistido │
               └───────────────────┘

@@ -45,10 +45,10 @@ O **Servidor UDP** funciona de forma independente do servidor principal TCP. Cli
 
 ```text
                          ┌──────────────────────────┐
-                         │         CLIENTES          │
+                         │         CLIENTES         │
                          │                          │
-                         │  Clientes TCP             │
-                         │  Clientes UDP             │
+                         │  Clientes TCP            │
+                         │  Clientes UDP            │
                          └────────────┬─────────────┘
                                       │
                        ┌──────────────┴──────────────┐

@@ -84,5 +84,3 @@ O **Servidor UDP** funciona de forma independente do servidor principal TCP. Cli
           │   RECURSOS / ESTADO     │
           │       PERSISTIDO        │
           └─────────────────────────┘
-              │ Estado persistido │
-              └───────────────────┘

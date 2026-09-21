@@ -44,11 +44,11 @@ As operações que modificam o estado dos recursos são encaminhadas também ao 
 O **Servidor UDP** funciona de forma independente do servidor principal TCP. Clientes UDP podem realizar operações sobre os recursos utilizando o protocolo UDP, sem participação do servidor réplica.
 
 ```text
-                          ┌──────────────────────────┐
-                         │         CLIENTES          │
+                         ┌──────────────────────────┐
+                         │         CLIENTES         │
                          │                          │
-                         │  Clientes TCP             │
-                         │  Clientes UDP             │
+                         │  Clientes TCP            │
+                         │  Clientes UDP            │
                          └────────────┬─────────────┘
                                       │
                        ┌──────────────┴──────────────┐

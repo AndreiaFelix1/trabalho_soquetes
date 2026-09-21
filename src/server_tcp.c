@@ -53,7 +53,7 @@ void *handle_client(void *arg) {
 
         // Receber mensagem
         memset(buffer, 0, BUFFER_SIZE);
-
+        // Serialização e desserialização de dados
         int bytes_received = recv(
             client_fd,
             buffer,

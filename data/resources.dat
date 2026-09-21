@@ -10,7 +10,7 @@ replica_test 999
 sala_replica 999
 sala_nova 500
 teste_replica 888
-teste_falha 3000
+teste_falha 200
 sala9 950
 sala6 650
 sala5 550
@@ -19,14 +19,3 @@ sala10 1050
 sala8 850
 sala1010 101010
 sala_andreia 3200
-sala_24 48
-sala_tcp_1 200
-sala_tcp_3 200
-sala_tcp_2 200
-sala_tcp_5 200
-sala_tcp_4 200
-sala_tcp_7 200
-sala_tcp_6 200
-sala_tcp_10 200
-sala_tcp_8 200
-sala_tcp_9 200

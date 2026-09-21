@@ -1,0 +1,26 @@
+[2026-09-20 21:11:46.583] BENCHMARK DE DESEMPENHO - UDP
+[2026-09-20 21:11:46.583] 
+[2026-09-20 21:11:46.583] 
+[2026-09-20 21:11:46.583] ======================================================================
+[2026-09-20 21:11:46.583] INICIO TESTE UDP - 10 CLIENTES
+[2026-09-20 21:11:46.583] ======================================================================
+[2026-09-20 21:11:46.589] Cliente ID 1 conectado
+[2026-09-20 21:11:46.589] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.594] Cliente ID 3 conectado
+[2026-09-20 21:11:46.596] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.599] Cliente ID 2 conectado
+[2026-09-20 21:11:46.603] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.604] Cliente ID 5 conectado
+[2026-09-20 21:11:46.605] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.614] Cliente ID 4 conectado
+[2026-09-20 21:11:46.615] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.615] Cliente ID 7 conectado
+[2026-09-20 21:11:46.616] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.617] Cliente ID 9 conectado
+[2026-09-20 21:11:46.617] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.618] Cliente ID 8 conectado
+[2026-09-20 21:11:46.618] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.619] Cliente ID 6 conectado
+[2026-09-20 21:11:46.619] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 21:11:46.619] Cliente ID 10 conectado
+[2026-09-20 21:11:46.619] Cliente ID 10 -> LOGIN andreia 1234

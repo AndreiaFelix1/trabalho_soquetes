@@ -12,5 +12,17 @@ int authenticate_user(
         return 0;
     }
 
+    if (strcmp(username, "paulo") == 0 &&
+        strcmp(password, "1234") == 0) {
+
+        return 0;
+    }
+
+    if (strcmp(username, "helder") == 0 &&
+        strcmp(password, "1234") == 0) {
+
+        return 0;
+    }
+
     return -1;
 }

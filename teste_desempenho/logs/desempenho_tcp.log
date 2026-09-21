@@ -1,0 +1,156 @@
+[2026-09-20 21:01:59.955] BENCHMARK DE DESEMPENHO - TCP
+[2026-09-20 21:01:59.977] 
+[2026-09-20 21:01:59.983] 
+[2026-09-20 21:01:59.983] ======================================================================
+[2026-09-20 21:01:59.983] INICIO TESTE TCP - 10 CLIENTES
+[2026-09-20 21:01:59.983] ======================================================================
+[2026-09-20 21:01:59.990] Cliente ID 1 conectado
+[2026-09-20 21:01:59.991] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 21:02:00.000] Cliente ID 3 conectado
+[2026-09-20 21:02:00.008] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 21:02:00.053] Cliente ID 4 conectado
+[2026-09-20 21:02:00.066] Cliente ID 2 conectado
+[2026-09-20 21:02:00.199] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 21:02:00.238] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 21:02:00.366] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 21:02:00.394] Cliente ID 1 -> CREATE sala_tcp_1 100
+[2026-09-20 21:02:00.502] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 21:02:00.672] Cliente ID 5 conectado
+[2026-09-20 21:02:00.692] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 21:02:00.730] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 21:02:00.757] Cliente ID 3 -> CREATE sala_tcp_3 100
+[2026-09-20 21:02:00.803] Cliente ID 7 conectado
+[2026-09-20 21:02:00.995] Cliente ID 8 conectado
+[2026-09-20 21:02:01.005] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 21:02:01.005] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 21:02:01.005] Cliente ID 2 -> CREATE sala_tcp_2 100
+[2026-09-20 21:02:01.013] Cliente ID 10 conectado
+[2026-09-20 21:02:01.036] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:01.049] Cliente ID 1 -> GET sala_tcp_1
+[2026-09-20 21:02:01.063] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 21:02:01.076] Cliente ID 5 -> CREATE sala_tcp_5 100
+[2026-09-20 21:02:01.076] Cliente ID 3 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:01.076] Cliente ID 3 -> GET sala_tcp_3
+[2026-09-20 21:02:01.083] Cliente ID 6 conectado
+[2026-09-20 21:02:01.083] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 21:02:01.233] Cliente ID 9 conectado
+[2026-09-20 21:02:01.255] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 21:02:01.290] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 21:02:01.307] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 21:02:01.383] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 21:02:01.397] Cliente ID 3 <- OK VALUE 100
+[2026-09-20 21:02:01.409] Cliente ID 3 -> SET sala_tcp_3 200
+[2026-09-20 21:02:01.413] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 21:02:01.447] Cliente ID 4 -> CREATE sala_tcp_4 100
+[2026-09-20 21:02:01.492] Cliente ID 5 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:01.505] Cliente ID 1 <- OK VALUE 100
+[2026-09-20 21:02:01.546] Cliente ID 1 -> SET sala_tcp_1 200
+[2026-09-20 21:02:01.587] Cliente ID 5 -> GET sala_tcp_5
+[2026-09-20 21:02:01.593] Cliente ID 3 <- OK VALUE_UPDATED
+[2026-09-20 21:02:01.593] Cliente ID 3 -> LIST
+[2026-09-20 21:02:01.593] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 21:02:01.593] Cliente ID 7 -> CREATE sala_tcp_7 100
+[2026-09-20 21:02:01.601] Cliente ID 2 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:01.604] Cliente ID 2 -> GET sala_tcp_2
+[2026-09-20 21:02:01.633] Cliente ID 6 -> CREATE sala_tcp_6 100
+[2026-09-20 21:02:01.644] Cliente ID 5 <- OK VALUE 100
+[2026-09-20 21:02:01.644] Cliente ID 5 -> SET sala_tcp_5 200
+[2026-09-20 21:02:01.647] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 21:02:01.647] Cliente ID 10 -> CREATE sala_tcp_10 100
+[2026-09-20 21:02:01.737] Cliente ID 8 -> CREATE sala_tcp_8 100
+[2026-09-20 21:02:01.882] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 21:02:01.987] Cliente ID 9 -> CREATE sala_tcp_9 100
+[2026-09-20 21:02:02.039] Cliente ID 3 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=100 sala_tcp_3=200 sala_tcp_2=100 sala_tcp_5=100 sala_tcp_4=100 sala_tcp_7=100
+[2026-09-20 21:02:02.110] Cliente ID 2 <- OK VALUE 100
+[2026-09-20 21:02:02.115] Cliente ID 2 -> SET sala_tcp_2 200
+[2026-09-20 21:02:02.117] Cliente ID 7 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:02.118] Cliente ID 7 -> GET sala_tcp_7
+[2026-09-20 21:02:02.126] Cliente ID 4 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:02.169] Cliente ID 6 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:02.189] Cliente ID 6 -> GET sala_tcp_6
+[2026-09-20 21:02:02.197] Cliente ID 10 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:02.357] Cliente ID 3 -> RESERVE sala_tcp_3
+[2026-09-20 21:02:02.360] Cliente ID 9 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:02.423] Cliente ID 9 -> GET sala_tcp_9
+[2026-09-20 21:02:02.467] Cliente ID 7 <- OK VALUE 100
+[2026-09-20 21:02:02.481] Cliente ID 7 -> SET sala_tcp_7 200
+[2026-09-20 21:02:02.496] Cliente ID 4 -> GET sala_tcp_4
+[2026-09-20 21:02:02.505] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-09-20 21:02:02.506] Cliente ID 2 -> LIST
+[2026-09-20 21:02:02.629] Cliente ID 10 -> GET sala_tcp_10
+[2026-09-20 21:02:02.635] Cliente ID 4 <- OK VALUE 100
+[2026-09-20 21:02:02.640] Cliente ID 4 -> SET sala_tcp_4 200
+[2026-09-20 21:02:02.699] Cliente ID 6 <- OK VALUE 100
+[2026-09-20 21:02:02.739] Cliente ID 6 -> SET sala_tcp_6 200
+[2026-09-20 21:02:02.739] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 21:02:02.776] Cliente ID 8 <- OK RESOURCE_CREATED
+[2026-09-20 21:02:02.799] Cliente ID 7 <- OK VALUE_UPDATED
+[2026-09-20 21:02:02.855] Cliente ID 3 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:02.884] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 21:02:02.885] Cliente ID 5 -> LIST
+[2026-09-20 21:02:03.000] Cliente ID 3 -> RELEASE sala_tcp_3
+[2026-09-20 21:02:03.023] Cliente ID 9 <- OK VALUE 100
+[2026-09-20 21:02:03.024] Cliente ID 9 -> SET sala_tcp_9 200
+[2026-09-20 21:02:03.094] Cliente ID 1 -> LIST
+[2026-09-20 21:02:03.108] Cliente ID 7 -> LIST
+[2026-09-20 21:02:03.196] Cliente ID 2 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=100 sala_tcp_7=200 sala_tcp_6=100 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=100
+[2026-09-20 21:02:03.240] Cliente ID 10 <- OK VALUE 100
+[2026-09-20 21:02:03.319] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 21:02:03.360] Cliente ID 4 -> LIST
+[2026-09-20 21:02:03.367] Cliente ID 8 -> GET sala_tcp_8
+[2026-09-20 21:02:03.378] Cliente ID 1 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
+[2026-09-20 21:02:03.378] Cliente ID 1 -> RESERVE sala_tcp_1
+[2026-09-20 21:02:03.466] Cliente ID 3 <- OK RESOURCE_RELEASED
+[2026-09-20 21:02:03.472] Cliente ID 3 desconectado
+[2026-09-20 21:02:03.533] Cliente ID 7 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
+[2026-09-20 21:02:03.558] Cliente ID 6 <- OK VALUE_UPDATED
+[2026-09-20 21:02:03.558] Cliente ID 6 -> LIST
+[2026-09-20 21:02:03.626] Cliente ID 2 -> RESERVE sala_tcp_2
+[2026-09-20 21:02:03.633] Cliente ID 4 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
+[2026-09-20 21:02:03.633] Cliente ID 4 -> RESERVE sala_tcp_4
+[2026-09-20 21:02:03.634] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:03.634] Cliente ID 1 -> RELEASE sala_tcp_1
+[2026-09-20 21:02:03.639] Cliente ID 9 <- OK VALUE_UPDATED
+[2026-09-20 21:02:03.645] Cliente ID 9 -> LIST
+[2026-09-20 21:02:03.652] Cliente ID 10 -> SET sala_tcp_10 200
+[2026-09-20 21:02:03.850] Cliente ID 7 -> RESERVE sala_tcp_7
+[2026-09-20 21:02:03.905] Cliente ID 8 <- OK VALUE 100
+[2026-09-20 21:02:03.905] Cliente ID 8 -> SET sala_tcp_8 200
+[2026-09-20 21:02:03.958] Cliente ID 5 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=100
+[2026-09-20 21:02:03.963] Cliente ID 5 -> RESERVE sala_tcp_5
+[2026-09-20 21:02:04.016] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-09-20 21:02:04.030] Cliente ID 1 desconectado
+[2026-09-20 21:02:04.088] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:04.088] Cliente ID 2 -> RELEASE sala_tcp_2
+[2026-09-20 21:02:04.090] Cliente ID 6 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
+[2026-09-20 21:02:04.115] Cliente ID 6 -> RESERVE sala_tcp_6
+[2026-09-20 21:02:04.135] Cliente ID 8 <- OK VALUE_UPDATED
+[2026-09-20 21:02:04.135] Cliente ID 8 -> LIST
+[2026-09-20 21:02:04.138] Cliente ID 7 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:04.138] Cliente ID 7 -> RELEASE sala_tcp_7
+[2026-09-20 21:02:04.141] Cliente ID 10 <- OK VALUE_UPDATED
+[2026-09-20 21:02:04.142] Cliente ID 10 -> LIST
+[2026-09-20 21:02:04.145] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:04.145] Cliente ID 5 -> RELEASE sala_tcp_5
+[2026-09-20 21:02:04.146] Cliente ID 7 <- OK RESOURCE_RELEASED
+[2026-09-20 21:02:04.155] Cliente ID 9 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=200 sala_tcp_8=100 sala_tcp_9=200
+[2026-09-20 21:02:04.198] Cliente ID 9 -> RESERVE sala_tcp_9
+[2026-09-20 21:02:04.228] Cliente ID 2 <- OK RESOURCE_RELEASED
+[2026-09-20 21:02:04.268] Cliente ID 7 desconectado
+[2026-09-20 21:02:04.316] Cliente ID 2 desconectado
+[2026-09-20 21:02:04.317] Cliente ID 5 <- OK RESOURCE_RELEASED
+[2026-09-20 21:02:04.358] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:04.376] Cliente ID 4 -> RELEASE sala_tcp_4
+[2026-09-20 21:02:04.385] Cliente ID 6 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:04.393] Cliente ID 6 -> RELEASE sala_tcp_6
+[2026-09-20 21:02:04.398] Cliente ID 5 desconectado
+[2026-09-20 21:02:04.426] Cliente ID 10 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=200 sala_tcp_8=200 sala_tcp_9=200
+[2026-09-20 21:02:04.439] Cliente ID 10 -> RESERVE sala_tcp_10
+[2026-09-20 21:02:04.444] Cliente ID 8 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=200 sala_tcp_8=200 sala_tcp_9=200
+[2026-09-20 21:02:04.445] Cliente ID 8 -> RESERVE sala_tcp_8
+[2026-09-20 21:02:04.586] Cliente ID 10 <- OK RESOURCE_RESERVED
+[2026-09-20 21:02:04.586] Cliente ID 10 -> RELEASE sala_tcp_10
+[2026-09-20 21:02:04.717] Cliente ID 6 <- OK RESOURCE_RELEASED
+[2026-09-20 21:02:04.723] Cliente ID 6 desconectado
+[2026-09-20 21:02:04.777] Cliente ID 10 <- OK RESOURCE_RELEASED
+[2026-09-20 21:02:04.782] Cliente ID 10 desconectado

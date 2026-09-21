@@ -9,7 +9,7 @@
 #include "auth.h"
 #include "persistence.h"
 #include "monitor.h"
-#include "replication.h"
+
 #define UDP_PORT 8081
 #define BUFFER_SIZE 1024
 
@@ -314,15 +314,6 @@ int main() {
                     resources,
                     resource_count
                 );
-
-                if (replica_fd != -1) {
-
-                    replicate_set(
-        replica_fd,
-        id,
-        value
-    );
-}
 
             } else {
 

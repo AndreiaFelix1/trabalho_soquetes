@@ -1,0 +1,811 @@
+[2026-08-25 19:48:55] Cliente ID 1 conectado
+[2026-08-25 19:49:18] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-25 19:49:18] Cliente ID 1 desconectado
+[2026-08-25 19:57:22] Cliente ID 1 conectado
+[2026-08-25 19:57:32] Cliente ID 1 -> CREATE sala1 100
+[2026-08-25 19:57:32] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-25 19:57:36] Cliente ID 1 -> GET sala11
+[2026-08-25 19:57:36] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-08-25 19:57:41] Cliente ID 1 -> GET sala1
+[2026-08-25 19:57:41] Cliente ID 1 <- OK VALUE 100
+[2026-08-25 19:57:52] Cliente ID 1 -> SET sala1 200
+[2026-08-25 19:57:52] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-25 19:57:57] Cliente ID 1 -> GET sala1
+[2026-08-25 19:57:57] Cliente ID 1 <- OK VALUE 200
+[2026-08-25 19:58:07] Cliente ID 1 -> LIST
+[2026-08-25 19:58:07] Cliente ID 1 <- OK RESOURCES sala1=200
+[2026-08-25 19:58:09] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-25 19:58:09] Cliente ID 1 desconectado
+[2026-08-25 20:25:22] Cliente ID 1 conectado
+[2026-08-25 20:25:27] Cliente ID 1 -> LIST
+[2026-08-25 20:25:27] Cliente ID 1 <- OK RESOURCES sala1=100 sala2=200
+[2026-08-25 20:25:41] Cliente ID 1 -> GET sala1
+[2026-08-25 20:25:41] Cliente ID 1 <- OK VALUE 100
+[2026-08-25 20:25:56] Cliente ID 1 -> SET sala1 999
+[2026-08-25 20:25:56] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-25 20:26:04] Cliente ID 1 -> GET sala1
+[2026-08-25 20:26:04] Cliente ID 1 <- OK VALUE 999
+[2026-08-25 20:26:06] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-25 20:26:06] Cliente ID 1 desconectado
+[2026-08-25 20:27:06] Cliente ID 1 conectado
+[2026-08-25 20:27:09] Cliente ID 1 -> GET sala1
+[2026-08-25 20:27:09] Cliente ID 1 <- OK VALUE 999
+[2026-08-25 20:36:09] Cliente ID 1 conectado
+[2026-08-25 20:36:13] Cliente ID 1 -> CREATE sala3 300
+[2026-08-25 20:36:13] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-25 20:36:22] Cliente ID 1 -> GET sala3
+[2026-08-25 20:36:22] Cliente ID 1 <- OK VALUE 300
+[2026-08-25 20:36:34] Cliente ID 1 -> GET sala999
+[2026-08-25 20:36:34] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-08-25 20:36:46] Cliente ID 1 -> LIST
+[2026-08-25 20:36:46] Cliente ID 1 <- OK RESOURCES sala1=999 sala2=200 sala3=300
+[2026-08-25 20:37:38] Cliente ID 1 -> STATUS
+[2026-08-25 20:37:38] Cliente ID 1 <- ERROR INVALID_COMMAND
+[2026-08-25 20:42:58] Cliente ID 1 conectado
+[2026-08-25 20:43:02] Cliente ID 1 -> STATUS
+[2026-08-25 20:43:02] Cliente ID 1 <- OK STATUS CLIENTS_CONNECTED 1 TOTAL_CLIENTS 1 COMMANDS_RECEIVED 1 COMMANDS_SUCCESS 0 COMMANDS_ERROR 0 UPTIME 22
+[2026-08-25 20:53:44] Cliente ID 1 -> CREATE sala4 400
+[2026-08-25 20:53:44] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-25 20:53:55] Cliente ID 1 -> GET sala4
+[2026-08-25 20:53:55] Cliente ID 1 <- OK VALUE 400
+[2026-08-25 20:54:04] Cliente ID 1 -> GET sala999
+[2026-08-25 20:54:04] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-08-25 20:54:06] Cliente ID 1 -> STATUS
+[2026-08-25 20:54:06] Cliente ID 1 <- OK STATUS CLIENTS_CONNECTED 1 TOTAL_CLIENTS 1 COMMANDS_RECEIVED 5 COMMANDS_SUCCESS 3 COMMANDS_ERROR 1 UPTIME 686
+[2026-08-25 20:54:40] Cliente ID 2 conectado
+[2026-08-25 20:54:43] Cliente ID 2 -> STATUS
+[2026-08-25 20:54:43] Cliente ID 2 <- OK STATUS CLIENTS_CONNECTED 2 TOTAL_CLIENTS 2 COMMANDS_RECEIVED 6 COMMANDS_SUCCESS 4 COMMANDS_ERROR 1 UPTIME 723
+[2026-08-25 21:17:31] Cliente ID 1 conectado
+[2026-08-25 21:17:35] Cliente ID 1 -> CREATE teste 100
+[2026-08-25 21:17:35] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-25 21:17:46] Cliente ID 1 -> GET teste
+[2026-08-25 21:17:46] Cliente ID 1 <- OK VALUE 100
+[2026-08-25 21:17:49] Cliente ID 1 -> GET inexistente
+[2026-08-25 21:17:49] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-08-25 21:18:00] Cliente ID 1 -> STATUS
+[2026-08-25 21:18:00] Cliente ID 1 <- OK STATUS CLIENTS_CONNECTED 1 TOTAL_CLIENTS 1 COMMANDS_RECEIVED 3 COMMANDS_SUCCESS 2 COMMANDS_ERROR 1 UPTIME 48
+[2026-08-25 23:14:01] Cliente ID 1 conectado
+[2026-08-25 23:14:17] Cliente ID 1 -> STATUS
+[2026-08-25 23:14:17] Cliente ID 1 <- OK STATUS CLIENTS_CONNECTED 1 TOTAL_CLIENTS 1 COMMANDS_RECEIVED 0 COMMANDS_SUCCESS 0 COMMANDS_ERROR 0 UPTIME 73
+[2026-08-25 23:14:31] Cliente ID 1 -> CREATE sala1 100
+[2026-08-25 23:14:31] Cliente ID 1 <- ERROR INVALID_COMMAND
+[2026-08-25 23:16:43] Cliente ID 1 -> GET sala1
+[2026-08-25 23:16:43] Cliente ID 1 <- ERROR INVALID_COMMAND
+[2026-08-27 04:39:12] Cliente ID 1 conectado
+[2026-08-27 04:39:23] Cliente ID 1 -> CREATE sala1 100
+[2026-08-27 04:39:23] Cliente ID 1 <- ERROR AUTH_REQUIRED
+[2026-08-27 04:39:43] Cliente ID 1 -> LOGIN andreia 9999
+[2026-08-27 04:39:43] Cliente ID 1 <- ERROR INVALID_CREDENTIALS
+[2026-08-27 04:39:50] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 04:39:50] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 04:39:59] Cliente ID 1 -> CREATE sala1 100
+[2026-08-27 04:39:59] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-08-27 04:40:06] Cliente ID 1 -> GET sala1
+[2026-08-27 04:40:06] Cliente ID 1 <- OK VALUE 999
+[2026-08-27 04:41:00] Cliente ID 1 -> SET sala1 100
+[2026-08-27 04:41:00] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-27 04:41:05] Cliente ID 1 -> GET sala1
+[2026-08-27 04:41:05] Cliente ID 1 <- OK VALUE 100
+[2026-08-27 04:44:12] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-27 04:44:12] Cliente ID 1 desconectado
+[2026-08-27 18:13:59] Cliente ID 1 conectado
+[2026-08-27 18:14:03] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 18:14:03] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 18:14:13] Cliente ID 1 -> CREATE sala_replica 500
+[2026-08-27 18:14:13] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-27 18:55:18] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-27 18:55:18] Cliente ID 1 desconectado
+[2026-08-27 18:55:20] Cliente ID 2 conectado
+[2026-08-27 18:55:23] Cliente ID 2 -> LOGIN andreia 1234
+[2026-08-27 18:55:23] Cliente ID 2 <- OK AUTHENTICATED
+[2026-08-27 18:55:32] Cliente ID 2 -> CREATE sala_replica 500
+[2026-08-27 18:55:32] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-08-27 18:55:45] Cliente ID 2 -> SET sala_replica 999
+[2026-08-27 18:55:45] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-08-27 19:27:56] Cliente ID 1 conectado
+[2026-08-27 19:27:58] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 19:27:58] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 19:28:10] Cliente ID 1 -> CREATE sala_replica 500
+[2026-08-27 19:28:10] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-08-27 19:28:20] Cliente ID 1 -> SET sala_replica 999
+[2026-08-27 19:28:20] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-27 19:30:06] Cliente ID 1 -> CREATE sala_nova 500
+[2026-08-27 19:30:06] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-27 19:36:30] Cliente ID 1 conectado
+[2026-08-27 19:36:35] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 19:36:35] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 19:36:44] Cliente ID 1 -> RESERVE sala_nova
+[2026-08-27 19:36:44] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-08-27 19:40:04] Cliente ID 1 -> RELEASE sala_nova
+[2026-08-27 19:40:04] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-08-27 19:50:56] Cliente ID 1 conectado
+[2026-08-27 19:51:01] Cliente ID 1 -> LOGIN andreia 1234
+[2026-08-27 19:51:01] Cliente ID 1 <- OK AUTHENTICATED
+[2026-08-27 19:51:04] Cliente ID 1 -> CREATE teste_replica 777
+[2026-08-27 19:51:04] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-08-27 19:51:17] Cliente ID 1 -> SET teste_replica 888
+[2026-08-27 19:51:17] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-08-27 19:53:35] Recursos do cliente ID 1 liberados automaticamente
+[2026-08-27 19:53:35] Cliente ID 1 desconectado
+[2026-08-27 19:53:36] Cliente ID 2 conectado
+[2026-08-27 19:53:41] Cliente ID 2 -> LOGIN andreia 1234
+[2026-08-27 19:53:41] Cliente ID 2 <- OK AUTHENTICATED
+[2026-08-27 19:53:52] Cliente ID 2 -> GET teste_replica
+[2026-08-27 19:53:52] Cliente ID 2 <- OK VALUE 888
+[2026-08-27 19:54:56] Cliente ID 2 -> CREATE teste_falha 100
+[2026-08-27 19:54:56] Cliente ID 2 <- OK RESOURCE_CREATED
+[2026-08-27 19:55:07] Cliente ID 2 -> SET teste_falha 200
+[2026-09-20 02:09:19] Cliente ID 1 conectado
+[2026-09-20 02:09:19] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 02:09:19] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 02:09:20] Cliente ID 2 conectado
+[2026-09-20 02:09:20] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 02:09:20] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 3 conectado
+[2026-09-20 02:09:21] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 4 conectado
+[2026-09-20 02:09:21] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 5 conectado
+[2026-09-20 02:09:21] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 6 conectado
+[2026-09-20 02:09:21] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 7 conectado
+[2026-09-20 02:09:21] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 8 conectado
+[2026-09-20 02:09:21] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 1 -> CREATE sala9 900
+[2026-09-20 02:09:21] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-09-20 02:09:21] Cliente ID 9 conectado
+[2026-09-20 02:09:21] Recursos do cliente ID 1 liberados automaticamente
+[2026-09-20 02:09:21] Cliente ID 1 desconectado
+[2026-09-20 02:09:21] Cliente ID 10 conectado
+[2026-09-20 02:09:21] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 02:09:21] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 02:09:21] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 02:09:22] Cliente ID 2 -> CREATE sala3 300
+[2026-09-20 02:09:22] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:09:22] Recursos do cliente ID 2 liberados automaticamente
+[2026-09-20 02:09:22] Cliente ID 2 desconectado
+[2026-09-20 02:09:23] Cliente ID 3 -> CREATE sala6 600
+[2026-09-20 02:09:23] Cliente ID 3 <- OK RESOURCE_CREATED
+[2026-09-20 02:09:23] Recursos do cliente ID 3 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 3 desconectado
+[2026-09-20 02:09:23] Cliente ID 4 -> CREATE sala5 500
+[2026-09-20 02:09:23] Cliente ID 4 <- OK RESOURCE_CREATED
+[2026-09-20 02:09:23] Recursos do cliente ID 4 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 4 desconectado
+[2026-09-20 02:09:23] Cliente ID 5 -> CREATE sala1 100
+[2026-09-20 02:09:23] Cliente ID 5 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:09:23] Recursos do cliente ID 5 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 5 desconectado
+[2026-09-20 02:09:23] Cliente ID 6 -> CREATE sala4 400
+[2026-09-20 02:09:23] Cliente ID 6 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:09:23] Recursos do cliente ID 6 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 6 desconectado
+[2026-09-20 02:09:23] Cliente ID 7 -> CREATE sala7 700
+[2026-09-20 02:09:23] Cliente ID 7 <- OK RESOURCE_CREATED
+[2026-09-20 02:09:23] Recursos do cliente ID 7 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 7 desconectado
+[2026-09-20 02:09:23] Cliente ID 8 -> CREATE sala10 1000
+[2026-09-20 02:09:23] Cliente ID 8 <- OK RESOURCE_CREATED
+[2026-09-20 02:09:23] Recursos do cliente ID 8 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 8 desconectado
+[2026-09-20 02:09:23] Cliente ID 9 -> CREATE sala8 800
+[2026-09-20 02:09:23] Cliente ID 9 <- OK RESOURCE_CREATED
+[2026-09-20 02:09:23] Recursos do cliente ID 9 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 9 desconectado
+[2026-09-20 02:09:23] Cliente ID 10 -> CREATE sala2 200
+[2026-09-20 02:09:23] Cliente ID 10 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:09:23] Recursos do cliente ID 10 liberados automaticamente
+[2026-09-20 02:09:23] Cliente ID 10 desconectado
+[2026-09-20 02:20:50] Cliente ID 11 conectado
+[2026-09-20 02:20:50] Cliente ID 11 -> LOGIN andreia 1234
+[2026-09-20 02:20:50] Cliente ID 11 <- OK AUTHENTICATED
+[2026-09-20 02:20:50] Cliente ID 12 conectado
+[2026-09-20 02:20:50] Cliente ID 12 -> LOGIN andreia 1234
+[2026-09-20 02:20:50] Cliente ID 12 <- OK AUTHENTICATED
+[2026-09-20 02:20:51] Cliente ID 13 conectado
+[2026-09-20 02:20:51] Cliente ID 13 -> LOGIN andreia 1234
+[2026-09-20 02:20:51] Cliente ID 13 <- OK AUTHENTICATED
+[2026-09-20 02:20:51] Cliente ID 14 conectado
+[2026-09-20 02:20:51] Cliente ID 14 -> LOGIN andreia 1234
+[2026-09-20 02:20:51] Cliente ID 14 <- OK AUTHENTICATED
+[2026-09-20 02:20:51] Cliente ID 15 conectado
+[2026-09-20 02:20:51] Cliente ID 15 -> LOGIN andreia 1234
+[2026-09-20 02:20:51] Cliente ID 15 <- OK AUTHENTICATED
+[2026-09-20 02:20:51] Cliente ID 16 conectado
+[2026-09-20 02:20:51] Cliente ID 16 -> LOGIN andreia 1234
+[2026-09-20 02:20:51] Cliente ID 16 <- OK AUTHENTICATED
+[2026-09-20 02:20:51] Cliente ID 17 conectado
+[2026-09-20 02:20:51] Cliente ID 17 -> LOGIN andreia 1234
+[2026-09-20 02:20:51] Cliente ID 17 <- OK AUTHENTICATED
+[2026-09-20 02:20:51] Cliente ID 18 conectado
+[2026-09-20 02:20:51] Cliente ID 18 -> LOGIN andreia 1234
+[2026-09-20 02:20:51] Cliente ID 18 <- OK AUTHENTICATED
+[2026-09-20 02:20:51] Cliente ID 19 conectado
+[2026-09-20 02:20:51] Cliente ID 19 -> LOGIN andreia 1234
+[2026-09-20 02:20:51] Cliente ID 19 <- OK AUTHENTICATED
+[2026-09-20 02:20:52] Cliente ID 20 conectado
+[2026-09-20 02:20:52] Cliente ID 20 -> LOGIN andreia 1234
+[2026-09-20 02:20:52] Cliente ID 20 <- OK AUTHENTICATED
+[2026-09-20 02:20:52] Cliente ID 11 -> CREATE sala8 800
+[2026-09-20 02:20:52] Cliente ID 11 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:52] Cliente ID 12 -> CREATE sala1 100
+[2026-09-20 02:20:52] Cliente ID 12 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:53] Cliente ID 13 -> CREATE sala10 1000
+[2026-09-20 02:20:53] Cliente ID 13 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:53] Cliente ID 14 -> CREATE sala4 400
+[2026-09-20 02:20:53] Cliente ID 14 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:53] Cliente ID 15 -> CREATE sala5 500
+[2026-09-20 02:20:53] Cliente ID 15 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:53] Cliente ID 16 -> CREATE sala7 700
+[2026-09-20 02:20:53] Cliente ID 16 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:53] Cliente ID 17 -> CREATE sala9 900
+[2026-09-20 02:20:53] Cliente ID 17 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:53] Cliente ID 18 -> CREATE sala3 300
+[2026-09-20 02:20:53] Cliente ID 18 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:53] Cliente ID 19 -> CREATE sala6 600
+[2026-09-20 02:20:54] Cliente ID 19 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:54] Cliente ID 20 -> CREATE sala2 200
+[2026-09-20 02:20:54] Cliente ID 20 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 02:20:55] Cliente ID 12 -> GET sala1
+[2026-09-20 02:20:55] Cliente ID 12 <- OK VALUE 100
+[2026-09-20 02:20:55] Cliente ID 11 -> GET sala8
+[2026-09-20 02:20:55] Cliente ID 11 <- OK VALUE 800
+[2026-09-20 02:20:55] Cliente ID 13 -> GET sala10
+[2026-09-20 02:20:55] Cliente ID 13 <- OK VALUE 1000
+[2026-09-20 02:20:55] Cliente ID 14 -> GET sala4
+[2026-09-20 02:20:55] Cliente ID 14 <- OK VALUE 400
+[2026-09-20 02:20:55] Cliente ID 15 -> GET sala5
+[2026-09-20 02:20:55] Cliente ID 15 <- OK VALUE 500
+[2026-09-20 02:20:55] Cliente ID 16 -> GET sala7
+[2026-09-20 02:20:55] Cliente ID 16 <- OK VALUE 700
+[2026-09-20 02:20:55] Cliente ID 17 -> GET sala9
+[2026-09-20 02:20:55] Cliente ID 17 <- OK VALUE 900
+[2026-09-20 02:20:56] Cliente ID 19 -> GET sala6
+[2026-09-20 02:20:56] Cliente ID 19 <- OK VALUE 600
+[2026-09-20 02:20:56] Cliente ID 18 -> GET sala3
+[2026-09-20 02:20:56] Cliente ID 18 <- OK VALUE 300
+[2026-09-20 02:20:56] Cliente ID 20 -> GET sala2
+[2026-09-20 02:20:56] Cliente ID 20 <- OK VALUE 200
+[2026-09-20 02:20:57] Cliente ID 12 -> LIST
+[2026-09-20 02:20:57] Cliente ID 12 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:57] Cliente ID 11 -> LIST
+[2026-09-20 02:20:57] Cliente ID 11 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:57] Cliente ID 13 -> LIST
+[2026-09-20 02:20:57] Cliente ID 13 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:57] Cliente ID 14 -> LIST
+[2026-09-20 02:20:57] Cliente ID 14 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:57] Cliente ID 15 -> LIST
+[2026-09-20 02:20:57] Cliente ID 15 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:57] Cliente ID 16 -> LIST
+[2026-09-20 02:20:57] Cliente ID 16 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:57] Cliente ID 17 -> LIST
+[2026-09-20 02:20:57] Cliente ID 17 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:58] Cliente ID 19 -> LIST
+[2026-09-20 02:20:58] Cliente ID 19 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:58] Cliente ID 18 -> LIST
+[2026-09-20 02:20:58] Cliente ID 18 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:58] Cliente ID 20 -> LIST
+[2026-09-20 02:20:58] Cliente ID 20 <- OK RESOURCES sala1=100 sala2=200 sala3=300 sala4=400 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=900 sala6=600 sala5=500 sala7=700 sala10=1000 sala8=800
+[2026-09-20 02:20:59] Cliente ID 12 -> SET sala1 150
+[2026-09-20 02:20:59] Cliente ID 12 <- OK VALUE_UPDATED
+[2026-09-20 02:20:59] Cliente ID 13 -> SET sala10 1050
+[2026-09-20 02:20:59] Cliente ID 13 <- OK VALUE_UPDATED
+[2026-09-20 02:20:59] Cliente ID 14 -> SET sala4 450
+[2026-09-20 02:20:59] Cliente ID 14 <- OK VALUE_UPDATED
+[2026-09-20 02:20:59] Cliente ID 11 -> SET sala8 850
+[2026-09-20 02:20:59] Cliente ID 11 <- OK VALUE_UPDATED
+[2026-09-20 02:20:59] Cliente ID 16 -> SET sala7 750
+[2026-09-20 02:20:59] Cliente ID 16 <- OK VALUE_UPDATED
+[2026-09-20 02:20:59] Cliente ID 15 -> SET sala5 550
+[2026-09-20 02:20:59] Cliente ID 15 <- OK VALUE_UPDATED
+[2026-09-20 02:20:59] Cliente ID 17 -> SET sala9 950
+[2026-09-20 02:20:59] Cliente ID 17 <- OK VALUE_UPDATED
+[2026-09-20 02:21:00] Cliente ID 19 -> SET sala6 650
+[2026-09-20 02:21:00] Cliente ID 19 <- OK VALUE_UPDATED
+[2026-09-20 02:21:00] Cliente ID 18 -> SET sala3 350
+[2026-09-20 02:21:00] Cliente ID 18 <- OK VALUE_UPDATED
+[2026-09-20 02:21:00] Cliente ID 20 -> SET sala2 250
+[2026-09-20 02:21:00] Cliente ID 20 <- OK VALUE_UPDATED
+[2026-09-20 02:21:01] Cliente ID 12 -> GET sala1
+[2026-09-20 02:21:01] Cliente ID 12 <- OK VALUE 150
+[2026-09-20 02:21:01] Cliente ID 13 -> GET sala10
+[2026-09-20 02:21:01] Cliente ID 13 <- OK VALUE 1050
+[2026-09-20 02:21:01] Cliente ID 14 -> GET sala4
+[2026-09-20 02:21:01] Cliente ID 14 <- OK VALUE 450
+[2026-09-20 02:21:01] Cliente ID 11 -> GET sala8
+[2026-09-20 02:21:01] Cliente ID 11 <- OK VALUE 850
+[2026-09-20 02:21:01] Cliente ID 15 -> GET sala5
+[2026-09-20 02:21:01] Cliente ID 15 <- OK VALUE 550
+[2026-09-20 02:21:01] Cliente ID 16 -> GET sala7
+[2026-09-20 02:21:01] Cliente ID 16 <- OK VALUE 750
+[2026-09-20 02:21:01] Cliente ID 17 -> GET sala9
+[2026-09-20 02:21:01] Cliente ID 17 <- OK VALUE 950
+[2026-09-20 02:21:02] Cliente ID 19 -> GET sala6
+[2026-09-20 02:21:02] Cliente ID 19 <- OK VALUE 650
+[2026-09-20 02:21:02] Cliente ID 18 -> GET sala3
+[2026-09-20 02:21:02] Cliente ID 18 <- OK VALUE 350
+[2026-09-20 02:21:02] Cliente ID 20 -> GET sala2
+[2026-09-20 02:21:02] Cliente ID 20 <- OK VALUE 250
+[2026-09-20 02:21:03] Cliente ID 12 -> RESERVE sala1
+[2026-09-20 02:21:03] Cliente ID 12 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:03] Cliente ID 13 -> RESERVE sala10
+[2026-09-20 02:21:03] Cliente ID 13 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:03] Cliente ID 14 -> RESERVE sala4
+[2026-09-20 02:21:03] Cliente ID 14 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:03] Cliente ID 11 -> RESERVE sala8
+[2026-09-20 02:21:03] Cliente ID 11 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:03] Cliente ID 16 -> RESERVE sala7
+[2026-09-20 02:21:03] Cliente ID 16 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:03] Cliente ID 17 -> RESERVE sala9
+[2026-09-20 02:21:03] Cliente ID 17 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:03] Cliente ID 15 -> RESERVE sala5
+[2026-09-20 02:21:03] Cliente ID 15 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:04] Cliente ID 18 -> RESERVE sala3
+[2026-09-20 02:21:04] Cliente ID 18 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:04] Cliente ID 19 -> RESERVE sala6
+[2026-09-20 02:21:04] Cliente ID 20 -> RESERVE sala2
+[2026-09-20 02:21:04] Cliente ID 19 <- OK RESOURCE_RESERVED
+[2026-09-20 02:21:04] Cliente ID 20 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:39] Cliente ID 1 conectado
+[2026-09-20 16:24:39] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 16:24:39] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 16:24:40] Cliente ID 2 conectado
+[2026-09-20 16:24:40] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 16:24:40] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 16:24:40] Cliente ID 3 conectado
+[2026-09-20 16:24:40] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 16:24:40] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 16:24:41] Cliente ID 1 -> CREATE sala10 1000
+[2026-09-20 16:24:41] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:41] Cliente ID 4 conectado
+[2026-09-20 16:24:41] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 16:24:41] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 16:24:41] Cliente ID 5 conectado
+[2026-09-20 16:24:41] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 16:24:41] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 16:24:41] Cliente ID 6 conectado
+[2026-09-20 16:24:41] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 16:24:41] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 16:24:41] Cliente ID 7 conectado
+[2026-09-20 16:24:42] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 16:24:42] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 16:24:42] Cliente ID 8 conectado
+[2026-09-20 16:24:42] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 16:24:42] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 16:24:42] Cliente ID 9 conectado
+[2026-09-20 16:24:42] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 16:24:42] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 16:24:42] Cliente ID 2 -> CREATE sala3 300
+[2026-09-20 16:24:42] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:42] Cliente ID 3 -> CREATE sala8 800
+[2026-09-20 16:24:42] Cliente ID 3 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:42] Cliente ID 10 conectado
+[2026-09-20 16:24:42] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 16:24:42] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 16:24:43] Cliente ID 1 -> GET sala10
+[2026-09-20 16:24:43] Cliente ID 1 <- OK VALUE 1050
+[2026-09-20 16:24:43] Cliente ID 4 -> CREATE sala5 500
+[2026-09-20 16:24:43] Cliente ID 4 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:43] Cliente ID 5 -> CREATE sala9 900
+[2026-09-20 16:24:43] Cliente ID 5 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:43] Cliente ID 6 -> CREATE sala2 200
+[2026-09-20 16:24:43] Cliente ID 6 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:44] Cliente ID 7 -> CREATE sala6 600
+[2026-09-20 16:24:44] Cliente ID 7 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:44] Cliente ID 8 -> CREATE sala7 700
+[2026-09-20 16:24:44] Cliente ID 8 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:44] Cliente ID 9 -> CREATE sala1 100
+[2026-09-20 16:24:44] Cliente ID 9 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:44] Cliente ID 2 -> GET sala3
+[2026-09-20 16:24:44] Cliente ID 2 <- OK VALUE 350
+[2026-09-20 16:24:44] Cliente ID 3 -> GET sala8
+[2026-09-20 16:24:44] Cliente ID 3 <- OK VALUE 850
+[2026-09-20 16:24:44] Cliente ID 10 -> CREATE sala4 400
+[2026-09-20 16:24:44] Cliente ID 10 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 16:24:45] Cliente ID 1 -> LIST
+[2026-09-20 16:24:45] Cliente ID 1 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:45] Cliente ID 5 -> GET sala9
+[2026-09-20 16:24:45] Cliente ID 5 <- OK VALUE 950
+[2026-09-20 16:24:45] Cliente ID 4 -> GET sala5
+[2026-09-20 16:24:45] Cliente ID 4 <- OK VALUE 550
+[2026-09-20 16:24:46] Cliente ID 6 -> GET sala2
+[2026-09-20 16:24:46] Cliente ID 6 <- OK VALUE 250
+[2026-09-20 16:24:46] Cliente ID 7 -> GET sala6
+[2026-09-20 16:24:46] Cliente ID 7 <- OK VALUE 650
+[2026-09-20 16:24:46] Cliente ID 8 -> GET sala7
+[2026-09-20 16:24:46] Cliente ID 8 <- OK VALUE 750
+[2026-09-20 16:24:46] Cliente ID 9 -> GET sala1
+[2026-09-20 16:24:46] Cliente ID 9 <- OK VALUE 150
+[2026-09-20 16:24:46] Cliente ID 2 -> LIST
+[2026-09-20 16:24:46] Cliente ID 2 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:46] Cliente ID 3 -> LIST
+[2026-09-20 16:24:46] Cliente ID 3 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:47] Cliente ID 10 -> GET sala4
+[2026-09-20 16:24:47] Cliente ID 10 <- OK VALUE 450
+[2026-09-20 16:24:47] Cliente ID 1 -> SET sala10 1050
+[2026-09-20 16:24:47] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 16:24:47] Cliente ID 5 -> LIST
+[2026-09-20 16:24:47] Cliente ID 5 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:47] Cliente ID 4 -> LIST
+[2026-09-20 16:24:47] Cliente ID 4 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:48] Cliente ID 6 -> LIST
+[2026-09-20 16:24:48] Cliente ID 6 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:48] Cliente ID 7 -> LIST
+[2026-09-20 16:24:48] Cliente ID 7 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:48] Cliente ID 8 -> LIST
+[2026-09-20 16:24:48] Cliente ID 8 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:48] Cliente ID 9 -> LIST
+[2026-09-20 16:24:48] Cliente ID 9 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:48] Cliente ID 2 -> SET sala3 350
+[2026-09-20 16:24:48] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-09-20 16:24:48] Cliente ID 3 -> SET sala8 850
+[2026-09-20 16:24:48] Cliente ID 3 <- OK VALUE_UPDATED
+[2026-09-20 16:24:49] Cliente ID 10 -> LIST
+[2026-09-20 16:24:49] Cliente ID 10 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850
+[2026-09-20 16:24:49] Cliente ID 1 -> GET sala10
+[2026-09-20 16:24:49] Cliente ID 1 <- OK VALUE 1050
+[2026-09-20 16:24:49] Cliente ID 4 -> SET sala5 550
+[2026-09-20 16:24:49] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 16:24:49] Cliente ID 5 -> SET sala9 950
+[2026-09-20 16:24:49] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 16:24:50] Cliente ID 6 -> SET sala2 250
+[2026-09-20 16:24:50] Cliente ID 6 <- OK VALUE_UPDATED
+[2026-09-20 16:24:50] Cliente ID 7 -> SET sala6 650
+[2026-09-20 16:24:50] Cliente ID 7 <- OK VALUE_UPDATED
+[2026-09-20 16:24:50] Cliente ID 8 -> SET sala7 750
+[2026-09-20 16:24:50] Cliente ID 8 <- OK VALUE_UPDATED
+[2026-09-20 16:24:50] Cliente ID 9 -> SET sala1 150
+[2026-09-20 16:24:50] Cliente ID 9 <- OK VALUE_UPDATED
+[2026-09-20 16:24:50] Cliente ID 2 -> GET sala3
+[2026-09-20 16:24:50] Cliente ID 2 <- OK VALUE 350
+[2026-09-20 16:24:50] Cliente ID 3 -> GET sala8
+[2026-09-20 16:24:50] Cliente ID 3 <- OK VALUE 850
+[2026-09-20 16:24:51] Cliente ID 10 -> SET sala4 450
+[2026-09-20 16:24:51] Cliente ID 10 <- OK VALUE_UPDATED
+[2026-09-20 16:24:51] Cliente ID 1 -> RESERVE sala10
+[2026-09-20 16:24:51] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:51] Cliente ID 5 -> GET sala9
+[2026-09-20 16:24:51] Cliente ID 5 <- OK VALUE 950
+[2026-09-20 16:24:51] Cliente ID 4 -> GET sala5
+[2026-09-20 16:24:51] Cliente ID 4 <- OK VALUE 550
+[2026-09-20 16:24:52] Cliente ID 6 -> GET sala2
+[2026-09-20 16:24:52] Cliente ID 6 <- OK VALUE 250
+[2026-09-20 16:24:52] Cliente ID 7 -> GET sala6
+[2026-09-20 16:24:52] Cliente ID 7 <- OK VALUE 650
+[2026-09-20 16:24:52] Cliente ID 8 -> GET sala7
+[2026-09-20 16:24:52] Cliente ID 8 <- OK VALUE 750
+[2026-09-20 16:24:52] Cliente ID 9 -> GET sala1
+[2026-09-20 16:24:52] Cliente ID 9 <- OK VALUE 150
+[2026-09-20 16:24:52] Cliente ID 2 -> RESERVE sala3
+[2026-09-20 16:24:52] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:53] Cliente ID 3 -> RESERVE sala8
+[2026-09-20 16:24:53] Cliente ID 3 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:53] Cliente ID 10 -> GET sala4
+[2026-09-20 16:24:53] Cliente ID 10 <- OK VALUE 450
+[2026-09-20 16:24:54] Cliente ID 5 -> RESERVE sala9
+[2026-09-20 16:24:54] Cliente ID 4 -> RESERVE sala5
+[2026-09-20 16:24:54] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:54] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:54] Cliente ID 7 -> RESERVE sala6
+[2026-09-20 16:24:54] Cliente ID 7 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:54] Cliente ID 6 -> RESERVE sala2
+[2026-09-20 16:24:54] Cliente ID 6 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:54] Cliente ID 8 -> RESERVE sala7
+[2026-09-20 16:24:54] Cliente ID 8 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:54] Cliente ID 9 -> RESERVE sala1
+[2026-09-20 16:24:54] Cliente ID 9 <- OK RESOURCE_RESERVED
+[2026-09-20 16:24:55] Cliente ID 10 -> RESERVE sala4
+[2026-09-20 16:24:55] Cliente ID 10 <- OK RESOURCE_RESERVED
+[2026-09-20 16:26:28] Recursos do cliente ID 1 liberados automaticamente
+[2026-09-20 16:26:28] Cliente ID 1 desconectado
+[2026-09-20 16:26:29] Recursos do cliente ID 2 liberados automaticamente
+[2026-09-20 16:26:29] Cliente ID 2 desconectado
+[2026-09-20 16:26:31] Recursos do cliente ID 3 liberados automaticamente
+[2026-09-20 16:26:31] Cliente ID 3 desconectado
+[2026-09-20 16:26:32] Recursos do cliente ID 4 liberados automaticamente
+[2026-09-20 16:26:32] Cliente ID 4 desconectado
+[2026-09-20 16:26:33] Recursos do cliente ID 5 liberados automaticamente
+[2026-09-20 16:26:33] Cliente ID 5 desconectado
+[2026-09-20 16:26:34] Recursos do cliente ID 6 liberados automaticamente
+[2026-09-20 16:26:34] Cliente ID 6 desconectado
+[2026-09-20 16:26:35] Recursos do cliente ID 7 liberados automaticamente
+[2026-09-20 16:26:35] Cliente ID 7 desconectado
+[2026-09-20 16:26:36] Recursos do cliente ID 8 liberados automaticamente
+[2026-09-20 16:26:36] Cliente ID 8 desconectado
+[2026-09-20 16:26:37] Recursos do cliente ID 9 liberados automaticamente
+[2026-09-20 16:26:37] Cliente ID 9 desconectado
+[2026-09-20 16:26:38] Recursos do cliente ID 10 liberados automaticamente
+[2026-09-20 16:26:38] Cliente ID 10 desconectado
+[2026-09-20 17:13:26] Cliente ID 1 conectado
+[2026-09-20 17:13:44] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 17:13:44] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 17:13:48] Recursos do cliente ID 1 liberados automaticamente
+[2026-09-20 17:13:48] Cliente ID 1 desconectado
+[2026-09-20 17:13:50] Cliente ID 2 conectado
+[2026-09-20 17:13:58] Cliente ID 2 -> LOGIN paulo 1234
+[2026-09-20 17:13:58] Cliente ID 2 <- ERROR INVALID_CREDENTIALS
+[2026-09-20 17:14:19] Recursos do cliente ID 2 liberados automaticamente
+[2026-09-20 17:14:19] Cliente ID 2 desconectado
+[2026-09-20 17:16:56] Cliente ID 1 conectado
+[2026-09-20 17:17:01] Cliente ID 1 -> LOGIN paulo 1234
+[2026-09-20 17:17:01] Cliente ID 1 <- ERROR INVALID_CREDENTIALS
+[2026-09-20 17:17:06] Recursos do cliente ID 1 liberados automaticamente
+[2026-09-20 17:17:06] Cliente ID 1 desconectado
+[2026-09-20 17:17:39] Cliente ID 1 conectado
+[2026-09-20 17:17:43] Cliente ID 1 -> LOGIN paulo 1234
+[2026-09-20 17:17:43] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 17:17:49] Recursos do cliente ID 1 liberados automaticamente
+[2026-09-20 17:17:49] Cliente ID 1 desconectado
+[2026-09-20 17:17:51] Cliente ID 2 conectado
+[2026-09-20 17:18:32] Cliente ID 2 -> LOGIN helder 1234
+[2026-09-20 17:18:32] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 17:35:40] Cliente ID 1 conectado
+[2026-09-20 17:38:46] Cliente ID 1 -> CREATE sala1010 101010
+[2026-09-20 17:38:46] Cliente ID 1 <- ERROR AUTH_REQUIRED
+[2026-09-20 17:38:55] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 17:38:55] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 17:39:01] Cliente ID 1 -> CREATE sala1010 101010
+[2026-09-20 17:39:01] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-09-20 17:39:51] Cliente ID 1 -> GET sala1010
+[2026-09-20 17:39:51] Cliente ID 1 <- OK VALUE 101010
+[2026-09-20 17:40:11] Cliente ID 1 -> CREATE sala_andreia 1600
+[2026-09-20 17:40:11] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-09-20 17:40:19] Cliente ID 1 -> GET sala_andreia
+[2026-09-20 17:40:19] Cliente ID 1 <- OK VALUE 1600
+[2026-09-20 17:41:14] Cliente ID 1 -> SET sala_andreia 3200
+[2026-09-20 17:41:14] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 17:41:21] Cliente ID 1 -> GET sala_andreia
+[2026-09-20 17:41:21] Cliente ID 1 <- OK VALUE 3200
+[2026-09-20 17:41:42] Cliente ID 2 conectado
+[2026-09-20 17:41:48] Cliente ID 2 -> LOGIN paulo 1234
+[2026-09-20 17:41:48] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 17:42:01] Cliente ID 1 -> RESERVE sala_andreia
+[2026-09-20 17:42:01] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 17:42:17] Cliente ID 2 -> RESERVE sala_andreia
+[2026-09-20 17:42:17] Cliente ID 2 <- ERROR RESOURCE_ALREADY_RESERVED
+[2026-09-20 17:42:37] Cliente ID 2 -> LIST
+[2026-09-20 17:42:37] Cliente ID 2 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 17:43:05] Cliente ID 2 -> RESERVE sala_andreia
+[2026-09-20 17:43:05] Cliente ID 2 <- ERROR RESOURCE_ALREADY_RESERVED
+[2026-09-20 17:43:11] Cliente ID 2 -> RESERVE sala1
+[2026-09-20 17:43:11] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 17:44:23] Cliente ID 1 -> RELEASE sala_andreia
+[2026-09-20 17:44:23] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-09-20 17:44:38] Cliente ID 2 -> RESERVE sala_andreia
+[2026-09-20 17:44:38] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 17:50:47] Cliente ID 1 -> RESERVE sala_andreia
+[2026-09-20 17:50:47] Cliente ID 1 <- ERROR RESOURCE_ALREADY_RESERVED
+[2026-09-20 17:50:56] Recursos do cliente ID 2 liberados automaticamente
+[2026-09-20 17:50:56] Cliente ID 2 desconectado
+[2026-09-20 17:51:11] Cliente ID 1 -> RESERVE sala_andreia
+[2026-09-20 17:51:11] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 17:51:55] Cliente ID 3 conectado
+[2026-09-20 17:52:52] Cliente ID 1 -> LIST
+[2026-09-20 17:52:52] Cliente ID 1 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 17:53:06] Cliente ID 1 -> GET sala_paulo
+[2026-09-20 17:53:06] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-09-20 17:54:03] Cliente ID 1 -> SET sala_paulo 100
+[2026-09-20 17:54:03] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-09-20 17:54:13] Cliente ID 1 -> RESERVE sala_paulo
+[2026-09-20 17:54:13] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-09-20 17:54:35] Cliente ID 1 -> RELEASE sala_paulo
+[2026-09-20 17:54:35] Cliente ID 1 <- ERROR RESOURCE_NOT_FOUND
+[2026-09-20 18:05:03] Recursos do cliente ID 1 liberados automaticamente
+[2026-09-20 18:05:03] Cliente ID 1 desconectado
+[2026-09-20 18:05:08] Recursos do cliente ID 3 liberados automaticamente
+[2026-09-20 18:05:08] Cliente ID 3 desconectado
+[2026-09-20 18:05:34] Cliente ID 4 conectado
+[2026-09-20 18:05:34] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 18:05:34] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 18:05:35] Cliente ID 5 conectado
+[2026-09-20 18:05:35] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 18:05:35] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 18:05:35] Cliente ID 6 conectado
+[2026-09-20 18:05:35] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 18:05:35] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 18:05:35] Cliente ID 7 conectado
+[2026-09-20 18:05:35] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 18:05:35] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 18:05:35] Cliente ID 8 conectado
+[2026-09-20 18:05:35] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 18:05:35] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 18:05:35] Cliente ID 9 conectado
+[2026-09-20 18:05:36] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 18:05:36] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 18:05:36] Cliente ID 4 -> CREATE sala1 100
+[2026-09-20 18:05:36] Cliente ID 4 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:36] Cliente ID 10 conectado
+[2026-09-20 18:05:36] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 18:05:36] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 18:05:36] Cliente ID 11 conectado
+[2026-09-20 18:05:36] Cliente ID 11 -> LOGIN andreia 1234
+[2026-09-20 18:05:36] Cliente ID 11 <- OK AUTHENTICATED
+[2026-09-20 18:05:37] Cliente ID 5 -> CREATE sala9 900
+[2026-09-20 18:05:37] Cliente ID 5 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:37] Cliente ID 6 -> CREATE sala6 600
+[2026-09-20 18:05:37] Cliente ID 7 -> CREATE sala7 700
+[2026-09-20 18:05:37] Cliente ID 7 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:37] Cliente ID 6 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:37] Cliente ID 12 conectado
+[2026-09-20 18:05:37] Cliente ID 12 -> LOGIN andreia 1234
+[2026-09-20 18:05:37] Cliente ID 12 <- OK AUTHENTICATED
+[2026-09-20 18:05:38] Cliente ID 9 -> CREATE sala5 500
+[2026-09-20 18:05:38] Cliente ID 9 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:38] Cliente ID 8 -> CREATE sala3 300
+[2026-09-20 18:05:38] Cliente ID 8 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:38] Cliente ID 13 conectado
+[2026-09-20 18:05:38] Cliente ID 13 -> LOGIN andreia 1234
+[2026-09-20 18:05:38] Cliente ID 13 <- OK AUTHENTICATED
+[2026-09-20 18:05:38] Cliente ID 4 -> GET sala1
+[2026-09-20 18:05:38] Cliente ID 4 <- OK VALUE 150
+[2026-09-20 18:05:38] Cliente ID 10 -> CREATE sala2 200
+[2026-09-20 18:05:38] Cliente ID 10 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:38] Cliente ID 11 -> CREATE sala8 800
+[2026-09-20 18:05:38] Cliente ID 11 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:39] Cliente ID 5 -> GET sala9
+[2026-09-20 18:05:39] Cliente ID 5 <- OK VALUE 950
+[2026-09-20 18:05:39] Cliente ID 6 -> GET sala6
+[2026-09-20 18:05:39] Cliente ID 6 <- OK VALUE 650
+[2026-09-20 18:05:39] Cliente ID 12 -> CREATE sala4 400
+[2026-09-20 18:05:39] Cliente ID 12 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:39] Cliente ID 7 -> GET sala7
+[2026-09-20 18:05:39] Cliente ID 7 <- OK VALUE 750
+[2026-09-20 18:05:40] Cliente ID 9 -> GET sala5
+[2026-09-20 18:05:40] Cliente ID 9 <- OK VALUE 550
+[2026-09-20 18:05:40] Cliente ID 8 -> GET sala3
+[2026-09-20 18:05:40] Cliente ID 8 <- OK VALUE 350
+[2026-09-20 18:05:40] Cliente ID 13 -> CREATE sala10 1000
+[2026-09-20 18:05:40] Cliente ID 13 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 18:05:40] Cliente ID 4 -> LIST
+[2026-09-20 18:05:40] Cliente ID 4 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:40] Cliente ID 10 -> GET sala2
+[2026-09-20 18:05:40] Cliente ID 10 <- OK VALUE 250
+[2026-09-20 18:05:40] Cliente ID 11 -> GET sala8
+[2026-09-20 18:05:40] Cliente ID 11 <- OK VALUE 850
+[2026-09-20 18:05:41] Cliente ID 5 -> LIST
+[2026-09-20 18:05:41] Cliente ID 5 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:41] Cliente ID 12 -> GET sala4
+[2026-09-20 18:05:41] Cliente ID 12 <- OK VALUE 450
+[2026-09-20 18:05:41] Cliente ID 6 -> LIST
+[2026-09-20 18:05:41] Cliente ID 6 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:41] Cliente ID 7 -> LIST
+[2026-09-20 18:05:41] Cliente ID 7 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:42] Cliente ID 9 -> LIST
+[2026-09-20 18:05:42] Cliente ID 9 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:42] Cliente ID 8 -> LIST
+[2026-09-20 18:05:42] Cliente ID 8 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:42] Cliente ID 13 -> GET sala10
+[2026-09-20 18:05:42] Cliente ID 13 <- OK VALUE 1050
+[2026-09-20 18:05:42] Cliente ID 4 -> SET sala1 150
+[2026-09-20 18:05:42] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 18:05:42] Cliente ID 10 -> LIST
+[2026-09-20 18:05:42] Cliente ID 10 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:42] Cliente ID 11 -> LIST
+[2026-09-20 18:05:43] Cliente ID 11 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:43] Cliente ID 5 -> SET sala9 950
+[2026-09-20 18:05:43] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 18:05:43] Cliente ID 12 -> LIST
+[2026-09-20 18:05:43] Cliente ID 12 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:43] Cliente ID 6 -> SET sala6 650
+[2026-09-20 18:05:43] Cliente ID 6 <- OK VALUE_UPDATED
+[2026-09-20 18:05:43] Cliente ID 7 -> SET sala7 750
+[2026-09-20 18:05:43] Cliente ID 7 <- OK VALUE_UPDATED
+[2026-09-20 18:05:44] Cliente ID 9 -> SET sala5 550
+[2026-09-20 18:05:44] Cliente ID 9 <- OK VALUE_UPDATED
+[2026-09-20 18:05:44] Cliente ID 8 -> SET sala3 350
+[2026-09-20 18:05:44] Cliente ID 8 <- OK VALUE_UPDATED
+[2026-09-20 18:05:44] Cliente ID 13 -> LIST
+[2026-09-20 18:05:44] Cliente ID 13 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:05:44] Cliente ID 4 -> GET sala1
+[2026-09-20 18:05:44] Cliente ID 4 <- OK VALUE 150
+[2026-09-20 18:05:45] Cliente ID 11 -> SET sala8 850
+[2026-09-20 18:05:45] Cliente ID 10 -> SET sala2 250
+[2026-09-20 18:05:45] Cliente ID 11 <- OK VALUE_UPDATED
+[2026-09-20 18:05:45] Cliente ID 10 <- OK VALUE_UPDATED
+[2026-09-20 18:05:45] Cliente ID 5 -> GET sala9
+[2026-09-20 18:05:45] Cliente ID 5 <- OK VALUE 950
+[2026-09-20 18:05:45] Cliente ID 12 -> SET sala4 450
+[2026-09-20 18:05:45] Cliente ID 12 <- OK VALUE_UPDATED
+[2026-09-20 18:05:45] Cliente ID 6 -> GET sala6
+[2026-09-20 18:05:45] Cliente ID 6 <- OK VALUE 650
+[2026-09-20 18:05:45] Cliente ID 7 -> GET sala7
+[2026-09-20 18:05:45] Cliente ID 7 <- OK VALUE 750
+[2026-09-20 18:05:46] Cliente ID 9 -> GET sala5
+[2026-09-20 18:05:46] Cliente ID 9 <- OK VALUE 550
+[2026-09-20 18:05:46] Cliente ID 8 -> GET sala3
+[2026-09-20 18:05:46] Cliente ID 8 <- OK VALUE 350
+[2026-09-20 18:05:46] Cliente ID 13 -> SET sala10 1050
+[2026-09-20 18:05:46] Cliente ID 13 <- OK VALUE_UPDATED
+[2026-09-20 18:05:46] Cliente ID 4 -> RESERVE sala1
+[2026-09-20 18:05:47] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:47] Cliente ID 10 -> GET sala2
+[2026-09-20 18:05:47] Cliente ID 10 <- OK VALUE 250
+[2026-09-20 18:05:47] Cliente ID 11 -> GET sala8
+[2026-09-20 18:05:47] Cliente ID 11 <- OK VALUE 850
+[2026-09-20 18:05:47] Cliente ID 5 -> RESERVE sala9
+[2026-09-20 18:05:47] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:47] Cliente ID 12 -> GET sala4
+[2026-09-20 18:05:47] Cliente ID 12 <- OK VALUE 450
+[2026-09-20 18:05:47] Cliente ID 6 -> RESERVE sala6
+[2026-09-20 18:05:47] Cliente ID 6 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:48] Cliente ID 7 -> RESERVE sala7
+[2026-09-20 18:05:48] Cliente ID 7 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:48] Cliente ID 9 -> RESERVE sala5
+[2026-09-20 18:05:48] Cliente ID 9 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:48] Cliente ID 8 -> RESERVE sala3
+[2026-09-20 18:05:48] Cliente ID 8 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:48] Cliente ID 13 -> GET sala10
+[2026-09-20 18:05:48] Cliente ID 13 <- OK VALUE 1050
+[2026-09-20 18:05:49] Cliente ID 10 -> RESERVE sala2
+[2026-09-20 18:05:49] Cliente ID 10 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:49] Cliente ID 11 -> RESERVE sala8
+[2026-09-20 18:05:49] Cliente ID 11 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:49] Cliente ID 12 -> RESERVE sala4
+[2026-09-20 18:05:49] Cliente ID 12 <- OK RESOURCE_RESERVED
+[2026-09-20 18:05:50] Cliente ID 13 -> RESERVE sala10
+[2026-09-20 18:05:50] Cliente ID 13 <- OK RESOURCE_RESERVED
+[2026-09-20 18:22:57] Cliente ID 14 conectado
+[2026-09-20 18:23:03] Cliente ID 14 -> LOGIN andreia 1234
+[2026-09-20 18:23:03] Cliente ID 14 <- OK AUTHENTICATED
+[2026-09-20 18:23:12] Cliente ID 14 -> LIST
+[2026-09-20 18:23:12] Cliente ID 14 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:23:17] Cliente ID 14 -> RESERVE sala_andreia
+[2026-09-20 18:23:17] Cliente ID 14 <- OK RESOURCE_RESERVED
+[2026-09-20 18:23:30] Recursos do cliente ID 13 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 13 desconectado
+[2026-09-20 18:23:30] Recursos do cliente ID 7 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 7 desconectado
+[2026-09-20 18:23:30] Recursos do cliente ID 6 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 6 desconectado
+[2026-09-20 18:23:30] Recursos do cliente ID 8 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 8 desconectado
+[2026-09-20 18:23:30] Recursos do cliente ID 5 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 5 desconectado
+[2026-09-20 18:23:30] Recursos do cliente ID 12 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 12 desconectado
+[2026-09-20 18:23:30] Recursos do cliente ID 4 liberados automaticamente
+[2026-09-20 18:23:30] Recursos do cliente ID 10 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 4 desconectado
+[2026-09-20 18:23:30] Cliente ID 10 desconectado
+[2026-09-20 18:23:30] Recursos do cliente ID 11 liberados automaticamente
+[2026-09-20 18:23:30] Cliente ID 11 desconectado
+[2026-09-20 18:23:31] Recursos do cliente ID 9 liberados automaticamente
+[2026-09-20 18:23:31] Cliente ID 9 desconectado
+[2026-09-20 18:23:34] Cliente ID 15 conectado
+[2026-09-20 18:23:39] Cliente ID 15 -> LOGIN paulo 1234
+[2026-09-20 18:23:39] Cliente ID 15 <- OK AUTHENTICATED
+[2026-09-20 18:23:47] Cliente ID 15 -> RESERVE sala_andreia
+[2026-09-20 18:23:47] Cliente ID 15 <- ERROR RESOURCE_ALREADY_RESERVED
+[2026-09-20 18:23:52] Recursos do cliente ID 14 liberados automaticamente
+[2026-09-20 18:23:52] Cliente ID 14 desconectado
+[2026-09-20 18:24:10] Cliente ID 15 -> RESERVE sala_andreia
+[2026-09-20 18:24:10] Cliente ID 15 <- OK RESOURCE_RESERVED
+[2026-09-20 18:24:18] Recursos do cliente ID 15 liberados automaticamente
+[2026-09-20 18:24:18] Cliente ID 15 desconectado
+[2026-09-20 18:24:26] Cliente ID 16 conectado
+[2026-09-20 18:24:31] Cliente ID 16 -> LOGIN paulo 123
+[2026-09-20 18:24:31] Cliente ID 16 <- ERROR INVALID_CREDENTIALS
+[2026-09-20 18:24:36] Cliente ID 16 -> LOGIN paulo 1234
+[2026-09-20 18:24:36] Cliente ID 16 <- OK AUTHENTICATED
+[2026-09-20 18:24:43] Cliente ID 16 -> RESERVE sal_andreia
+[2026-09-20 18:24:43] Cliente ID 16 <- ERROR RESOURCE_NOT_FOUND
+[2026-09-20 18:24:54] Cliente ID 16 -> RESERVE sala_andreia
+[2026-09-20 18:24:54] Cliente ID 16 <- OK RESOURCE_RESERVED
+[2026-09-20 18:24:59] Recursos do cliente ID 16 liberados automaticamente
+[2026-09-20 18:24:59] Cliente ID 16 desconectado
+[2026-09-20 18:25:05] Cliente ID 17 conectado
+[2026-09-20 18:25:12] Cliente ID 17 -> LOGIN andreia 1234
+[2026-09-20 18:25:12] Cliente ID 17 <- OK AUTHENTICATED
+[2026-09-20 18:25:17] Cliente ID 17 -> LIST
+[2026-09-20 18:25:17] Cliente ID 17 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=200 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200
+[2026-09-20 18:26:08] Cliente ID 17 -> RESERVE sala_andreia
+[2026-09-20 18:26:08] Cliente ID 17 <- OK RESOURCE_RESERVED

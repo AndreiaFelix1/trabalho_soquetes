@@ -10,27 +10,31 @@ PORT = 8081
 USUARIO = "andreia"
 SENHA = "1234"
 
-CLIENTES = [10, 50, 100]
+NUM_CLIENTES = [5, 10, 20, 50, 100]
 
 LOG_FILE = "logs/desempenho_udp.log"
 
 log_lock = threading.Lock()
 
 
-def timestamp():
+def agora():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
 
 
-def log(message):
+def salvar_log(linhas):
     with log_lock:
         with open(LOG_FILE, "a", encoding="utf-8") as f:
-            f.write(f"[{timestamp()}] {message}\n")
+            for linha in linhas:
+                f.write(linha + "\n")
 
 
-def enviar_comando(sock, endereco, client_id, comando):
+def enviar(sock, endereco, client_id, comando, linhas, resultados):
+
+    linhas.append(
+        f"[{agora()}] Cliente ID {client_id} -> {comando}"
+    )
+
     inicio = time.perf_counter()
-
-    log(f"Cliente ID {client_id} -> {comando}")
 
     sock.sendto(
         comando.encode(),
@@ -43,14 +47,21 @@ def enviar_comando(sock, endereco, client_id, comando):
 
     fim = time.perf_counter()
 
-    tempo_ms = (fim - inicio) * 1000
+    tempo = (fim - inicio) * 1000
 
-    log(f"Cliente ID {client_id} <- {resposta}")
+    linhas.append(
+        f"[{agora()}] Cliente ID {client_id} <- {resposta}"
+    )
 
-    return resposta, tempo_ms
+    resultados.append((comando.split()[0], tempo))
+
+    return resposta
 
 
-def cliente_udp(client_id, resultados):
+def cliente(client_id, barreira, resultados_globais):
+
+    linhas = []
+
     try:
 
         sock = socket.socket(
@@ -58,181 +69,184 @@ def cliente_udp(client_id, resultados):
             socket.SOCK_DGRAM
         )
 
-        # Porta local diferente para cada cliente
+        # Porta aleatória para diferenciar os clientes
         sock.bind(("127.0.0.1", 0))
 
         endereco = (HOST, PORT)
 
-        log(f"Cliente ID {client_id} conectado")
+        linhas.append(
+            f"[{agora()}] Cliente ID {client_id} conectado"
+        )
 
-        # LOGIN
-        resposta, _ = enviar_comando(
+        # Autenticação
+        resposta = enviar(
             sock,
             endereco,
             client_id,
-            f"LOGIN {USUARIO} {SENHA}"
+            f"LOGIN {USUARIO} {SENHA}",
+            linhas,
+            []
         )
 
         if not resposta.startswith("OK"):
-            log(
-                f"Cliente ID {client_id} encerrado - "
+
+            linhas.append(
+                f"[{agora()}] Cliente ID {client_id} "
                 f"falha na autenticacao"
             )
+
+            salvar_log(linhas)
             sock.close()
             return
 
-        recurso = f"sala_udp_{client_id}"
+        # Espera os demais clientes
+        barreira.wait()
 
-        tempos = []
+        recurso = f"bench_udp_{client_id}"
+
+        resultados = []
 
         # CREATE
-        resposta, tempo = enviar_comando(
+        enviar(
             sock,
             endereco,
             client_id,
-            f"CREATE {recurso} 100"
+            f"CREATE {recurso} 100",
+            linhas,
+            resultados
         )
-        tempos.append(("CREATE", tempo))
 
         # GET
-        resposta, tempo = enviar_comando(
+        enviar(
             sock,
             endereco,
             client_id,
-            f"GET {recurso}"
+            f"GET {recurso}",
+            linhas,
+            resultados
         )
-        tempos.append(("GET", tempo))
 
         # SET
-        resposta, tempo = enviar_comando(
+        enviar(
             sock,
             endereco,
             client_id,
-            f"SET {recurso} 200"
+            f"SET {recurso} 200",
+            linhas,
+            resultados
         )
-        tempos.append(("SET", tempo))
-
-        # LIST
-        resposta, tempo = enviar_comando(
-            sock,
-            endereco,
-            client_id,
-            "LIST"
-        )
-        tempos.append(("LIST", tempo))
 
         # RESERVE
-        resposta, tempo = enviar_comando(
+        enviar(
             sock,
             endereco,
             client_id,
-            f"RESERVE {recurso}"
+            f"RESERVE {recurso}",
+            linhas,
+            resultados
         )
-        tempos.append(("RESERVE", tempo))
 
         # RELEASE
-        resposta, tempo = enviar_comando(
+        enviar(
             sock,
             endereco,
             client_id,
-            f"RELEASE {recurso}"
+            f"RELEASE {recurso}",
+            linhas,
+            resultados
         )
-        tempos.append(("RELEASE", tempo))
 
-        for comando, tempo in tempos:
-            resultados.append((comando, tempo))
+        resultados_globais.extend(resultados)
 
-        log(f"Cliente ID {client_id} desconectado")
+        linhas.append(
+            f"[{agora()}] Cliente ID {client_id} desconectado"
+        )
 
         sock.close()
 
+        salvar_log(linhas)
+
     except Exception as e:
 
-        log(
-            f"Cliente ID {client_id} ERRO: {e}"
+        linhas.append(
+            f"[{agora()}] Cliente ID {client_id} ERRO: {e}"
         )
 
+        salvar_log(linhas)
 
-def executar_teste(numero_clientes):
+
+def executar(numero_clientes):
 
     resultados = []
 
-    log("")
-    log("=" * 70)
-    log(f"INICIO TESTE UDP - {numero_clientes} CLIENTES")
-    log("=" * 70)
+    salvar_log([
+        "",
+        "=" * 70,
+        f"[{agora()}] INICIO TESTE UDP - {numero_clientes} CLIENTES",
+        "=" * 70
+    ])
+
+    barreira = threading.Barrier(numero_clientes)
 
     threads = []
 
     inicio = time.perf_counter()
 
-    for client_id in range(1, numero_clientes + 1):
+    for i in range(1, numero_clientes + 1):
 
-        thread = threading.Thread(
-            target=cliente_udp,
-            args=(client_id, resultados)
+        t = threading.Thread(
+            target=cliente,
+            args=(i, barreira, resultados)
         )
 
-        threads.append(thread)
-        thread.start()
+        threads.append(t)
+        t.start()
 
-    for thread in threads:
-        thread.join()
+    for t in threads:
+        t.join()
 
     fim = time.perf_counter()
 
     tempo_total = (fim - inicio) * 1000
 
-    log("")
-    log(
-        f"FIM TESTE UDP - {numero_clientes} CLIENTES"
-    )
+    salvar_log([
+        f"[{agora()}] FIM TESTE UDP - {numero_clientes} CLIENTES",
+        f"[{agora()}] Tempo total: {tempo_total:.3f} ms"
+    ])
 
-    log(
-        f"Tempo total do teste: "
-        f"{tempo_total:.3f} ms"
-    )
+    comandos = [
+        "CREATE",
+        "GET",
+        "SET",
+        "RESERVE",
+        "RELEASE"
+    ]
 
-    if resultados:
+    for comando in comandos:
 
-        por_comando = {}
+        tempos = [
+            tempo
+            for cmd, tempo in resultados
+            if cmd == comando
+        ]
 
-        for comando, tempo in resultados:
+        if tempos:
 
-            if comando not in por_comando:
-                por_comando[comando] = []
+            media = sum(tempos) / len(tempos)
+            minimo = min(tempos)
+            maximo = max(tempos)
 
-            por_comando[comando].append(tempo)
+            salvar_log([
+                f"[{agora()}] {comando}: "
+                f"media={media:.3f} ms | "
+                f"min={minimo:.3f} ms | "
+                f"max={maximo:.3f} ms"
+            ])
 
-        log("")
-
-        for comando in [
-            "CREATE",
-            "GET",
-            "SET",
-            "LIST",
-            "RESERVE",
-            "RELEASE"
-        ]:
-
-            tempos = por_comando.get(comando, [])
-
-            if tempos:
-
-                media = sum(tempos) / len(tempos)
-                minimo = min(tempos)
-                maximo = max(tempos)
-
-                log(
-                    f"{comando}: "
-                    f"clientes={len(tempos)} | "
-                    f"media={media:.3f} ms | "
-                    f"min={minimo:.3f} ms | "
-                    f"max={maximo:.3f} ms"
-                )
-
-    log("=" * 70)
-    log("")
+    salvar_log([
+        "=" * 70,
+        ""
+    ])
 
 
 def main():
@@ -242,14 +256,15 @@ def main():
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         f.write("")
 
-    log("BENCHMARK DE DESEMPENHO - UDP")
-    log("")
+    salvar_log([
+        f"[{agora()}] BENCHMARK DE DESEMPENHO - UDP"
+    ])
 
-    for numero_clientes in CLIENTES:
+    for numero_clientes in NUM_CLIENTES:
 
-        executar_teste(numero_clientes)
+        executar(numero_clientes)
 
-        time.sleep(2)
+        time.sleep(1)
 
 
 if __name__ == "__main__":

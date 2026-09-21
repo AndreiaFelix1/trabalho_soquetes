@@ -1,156 +1,2656 @@
-[2026-09-20 21:01:59.955] BENCHMARK DE DESEMPENHO - TCP
-[2026-09-20 21:01:59.977] 
-[2026-09-20 21:01:59.983] 
-[2026-09-20 21:01:59.983] ======================================================================
-[2026-09-20 21:01:59.983] INICIO TESTE TCP - 10 CLIENTES
-[2026-09-20 21:01:59.983] ======================================================================
-[2026-09-20 21:01:59.990] Cliente ID 1 conectado
-[2026-09-20 21:01:59.991] Cliente ID 1 -> LOGIN andreia 1234
-[2026-09-20 21:02:00.000] Cliente ID 3 conectado
-[2026-09-20 21:02:00.008] Cliente ID 3 -> LOGIN andreia 1234
-[2026-09-20 21:02:00.053] Cliente ID 4 conectado
-[2026-09-20 21:02:00.066] Cliente ID 2 conectado
-[2026-09-20 21:02:00.199] Cliente ID 2 -> LOGIN andreia 1234
-[2026-09-20 21:02:00.238] Cliente ID 4 -> LOGIN andreia 1234
-[2026-09-20 21:02:00.366] Cliente ID 1 <- OK AUTHENTICATED
-[2026-09-20 21:02:00.394] Cliente ID 1 -> CREATE sala_tcp_1 100
-[2026-09-20 21:02:00.502] Cliente ID 4 <- OK AUTHENTICATED
-[2026-09-20 21:02:00.672] Cliente ID 5 conectado
-[2026-09-20 21:02:00.692] Cliente ID 5 -> LOGIN andreia 1234
-[2026-09-20 21:02:00.730] Cliente ID 3 <- OK AUTHENTICATED
-[2026-09-20 21:02:00.757] Cliente ID 3 -> CREATE sala_tcp_3 100
-[2026-09-20 21:02:00.803] Cliente ID 7 conectado
-[2026-09-20 21:02:00.995] Cliente ID 8 conectado
-[2026-09-20 21:02:01.005] Cliente ID 8 -> LOGIN andreia 1234
-[2026-09-20 21:02:01.005] Cliente ID 2 <- OK AUTHENTICATED
-[2026-09-20 21:02:01.005] Cliente ID 2 -> CREATE sala_tcp_2 100
-[2026-09-20 21:02:01.013] Cliente ID 10 conectado
-[2026-09-20 21:02:01.036] Cliente ID 1 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:01.049] Cliente ID 1 -> GET sala_tcp_1
-[2026-09-20 21:02:01.063] Cliente ID 5 <- OK AUTHENTICATED
-[2026-09-20 21:02:01.076] Cliente ID 5 -> CREATE sala_tcp_5 100
-[2026-09-20 21:02:01.076] Cliente ID 3 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:01.076] Cliente ID 3 -> GET sala_tcp_3
-[2026-09-20 21:02:01.083] Cliente ID 6 conectado
-[2026-09-20 21:02:01.083] Cliente ID 6 -> LOGIN andreia 1234
-[2026-09-20 21:02:01.233] Cliente ID 9 conectado
-[2026-09-20 21:02:01.255] Cliente ID 9 -> LOGIN andreia 1234
-[2026-09-20 21:02:01.290] Cliente ID 7 -> LOGIN andreia 1234
-[2026-09-20 21:02:01.307] Cliente ID 6 <- OK AUTHENTICATED
-[2026-09-20 21:02:01.383] Cliente ID 10 -> LOGIN andreia 1234
-[2026-09-20 21:02:01.397] Cliente ID 3 <- OK VALUE 100
-[2026-09-20 21:02:01.409] Cliente ID 3 -> SET sala_tcp_3 200
-[2026-09-20 21:02:01.413] Cliente ID 8 <- OK AUTHENTICATED
-[2026-09-20 21:02:01.447] Cliente ID 4 -> CREATE sala_tcp_4 100
-[2026-09-20 21:02:01.492] Cliente ID 5 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:01.505] Cliente ID 1 <- OK VALUE 100
-[2026-09-20 21:02:01.546] Cliente ID 1 -> SET sala_tcp_1 200
-[2026-09-20 21:02:01.587] Cliente ID 5 -> GET sala_tcp_5
-[2026-09-20 21:02:01.593] Cliente ID 3 <- OK VALUE_UPDATED
-[2026-09-20 21:02:01.593] Cliente ID 3 -> LIST
-[2026-09-20 21:02:01.593] Cliente ID 7 <- OK AUTHENTICATED
-[2026-09-20 21:02:01.593] Cliente ID 7 -> CREATE sala_tcp_7 100
-[2026-09-20 21:02:01.601] Cliente ID 2 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:01.604] Cliente ID 2 -> GET sala_tcp_2
-[2026-09-20 21:02:01.633] Cliente ID 6 -> CREATE sala_tcp_6 100
-[2026-09-20 21:02:01.644] Cliente ID 5 <- OK VALUE 100
-[2026-09-20 21:02:01.644] Cliente ID 5 -> SET sala_tcp_5 200
-[2026-09-20 21:02:01.647] Cliente ID 10 <- OK AUTHENTICATED
-[2026-09-20 21:02:01.647] Cliente ID 10 -> CREATE sala_tcp_10 100
-[2026-09-20 21:02:01.737] Cliente ID 8 -> CREATE sala_tcp_8 100
-[2026-09-20 21:02:01.882] Cliente ID 9 <- OK AUTHENTICATED
-[2026-09-20 21:02:01.987] Cliente ID 9 -> CREATE sala_tcp_9 100
-[2026-09-20 21:02:02.039] Cliente ID 3 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=100 sala_tcp_3=200 sala_tcp_2=100 sala_tcp_5=100 sala_tcp_4=100 sala_tcp_7=100
-[2026-09-20 21:02:02.110] Cliente ID 2 <- OK VALUE 100
-[2026-09-20 21:02:02.115] Cliente ID 2 -> SET sala_tcp_2 200
-[2026-09-20 21:02:02.117] Cliente ID 7 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:02.118] Cliente ID 7 -> GET sala_tcp_7
-[2026-09-20 21:02:02.126] Cliente ID 4 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:02.169] Cliente ID 6 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:02.189] Cliente ID 6 -> GET sala_tcp_6
-[2026-09-20 21:02:02.197] Cliente ID 10 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:02.357] Cliente ID 3 -> RESERVE sala_tcp_3
-[2026-09-20 21:02:02.360] Cliente ID 9 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:02.423] Cliente ID 9 -> GET sala_tcp_9
-[2026-09-20 21:02:02.467] Cliente ID 7 <- OK VALUE 100
-[2026-09-20 21:02:02.481] Cliente ID 7 -> SET sala_tcp_7 200
-[2026-09-20 21:02:02.496] Cliente ID 4 -> GET sala_tcp_4
-[2026-09-20 21:02:02.505] Cliente ID 2 <- OK VALUE_UPDATED
-[2026-09-20 21:02:02.506] Cliente ID 2 -> LIST
-[2026-09-20 21:02:02.629] Cliente ID 10 -> GET sala_tcp_10
-[2026-09-20 21:02:02.635] Cliente ID 4 <- OK VALUE 100
-[2026-09-20 21:02:02.640] Cliente ID 4 -> SET sala_tcp_4 200
-[2026-09-20 21:02:02.699] Cliente ID 6 <- OK VALUE 100
-[2026-09-20 21:02:02.739] Cliente ID 6 -> SET sala_tcp_6 200
-[2026-09-20 21:02:02.739] Cliente ID 1 <- OK VALUE_UPDATED
-[2026-09-20 21:02:02.776] Cliente ID 8 <- OK RESOURCE_CREATED
-[2026-09-20 21:02:02.799] Cliente ID 7 <- OK VALUE_UPDATED
-[2026-09-20 21:02:02.855] Cliente ID 3 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:02.884] Cliente ID 5 <- OK VALUE_UPDATED
-[2026-09-20 21:02:02.885] Cliente ID 5 -> LIST
-[2026-09-20 21:02:03.000] Cliente ID 3 -> RELEASE sala_tcp_3
-[2026-09-20 21:02:03.023] Cliente ID 9 <- OK VALUE 100
-[2026-09-20 21:02:03.024] Cliente ID 9 -> SET sala_tcp_9 200
-[2026-09-20 21:02:03.094] Cliente ID 1 -> LIST
-[2026-09-20 21:02:03.108] Cliente ID 7 -> LIST
-[2026-09-20 21:02:03.196] Cliente ID 2 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=100 sala_tcp_7=200 sala_tcp_6=100 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=100
-[2026-09-20 21:02:03.240] Cliente ID 10 <- OK VALUE 100
-[2026-09-20 21:02:03.319] Cliente ID 4 <- OK VALUE_UPDATED
-[2026-09-20 21:02:03.360] Cliente ID 4 -> LIST
-[2026-09-20 21:02:03.367] Cliente ID 8 -> GET sala_tcp_8
-[2026-09-20 21:02:03.378] Cliente ID 1 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
-[2026-09-20 21:02:03.378] Cliente ID 1 -> RESERVE sala_tcp_1
-[2026-09-20 21:02:03.466] Cliente ID 3 <- OK RESOURCE_RELEASED
-[2026-09-20 21:02:03.472] Cliente ID 3 desconectado
-[2026-09-20 21:02:03.533] Cliente ID 7 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
-[2026-09-20 21:02:03.558] Cliente ID 6 <- OK VALUE_UPDATED
-[2026-09-20 21:02:03.558] Cliente ID 6 -> LIST
-[2026-09-20 21:02:03.626] Cliente ID 2 -> RESERVE sala_tcp_2
-[2026-09-20 21:02:03.633] Cliente ID 4 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
-[2026-09-20 21:02:03.633] Cliente ID 4 -> RESERVE sala_tcp_4
-[2026-09-20 21:02:03.634] Cliente ID 1 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:03.634] Cliente ID 1 -> RELEASE sala_tcp_1
-[2026-09-20 21:02:03.639] Cliente ID 9 <- OK VALUE_UPDATED
-[2026-09-20 21:02:03.645] Cliente ID 9 -> LIST
-[2026-09-20 21:02:03.652] Cliente ID 10 -> SET sala_tcp_10 200
-[2026-09-20 21:02:03.850] Cliente ID 7 -> RESERVE sala_tcp_7
-[2026-09-20 21:02:03.905] Cliente ID 8 <- OK VALUE 100
-[2026-09-20 21:02:03.905] Cliente ID 8 -> SET sala_tcp_8 200
-[2026-09-20 21:02:03.958] Cliente ID 5 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=100
-[2026-09-20 21:02:03.963] Cliente ID 5 -> RESERVE sala_tcp_5
-[2026-09-20 21:02:04.016] Cliente ID 1 <- OK RESOURCE_RELEASED
-[2026-09-20 21:02:04.030] Cliente ID 1 desconectado
-[2026-09-20 21:02:04.088] Cliente ID 2 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:04.088] Cliente ID 2 -> RELEASE sala_tcp_2
-[2026-09-20 21:02:04.090] Cliente ID 6 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=100 sala_tcp_8=100 sala_tcp_9=200
-[2026-09-20 21:02:04.115] Cliente ID 6 -> RESERVE sala_tcp_6
-[2026-09-20 21:02:04.135] Cliente ID 8 <- OK VALUE_UPDATED
-[2026-09-20 21:02:04.135] Cliente ID 8 -> LIST
-[2026-09-20 21:02:04.138] Cliente ID 7 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:04.138] Cliente ID 7 -> RELEASE sala_tcp_7
-[2026-09-20 21:02:04.141] Cliente ID 10 <- OK VALUE_UPDATED
-[2026-09-20 21:02:04.142] Cliente ID 10 -> LIST
-[2026-09-20 21:02:04.145] Cliente ID 5 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:04.145] Cliente ID 5 -> RELEASE sala_tcp_5
-[2026-09-20 21:02:04.146] Cliente ID 7 <- OK RESOURCE_RELEASED
-[2026-09-20 21:02:04.155] Cliente ID 9 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=200 sala_tcp_8=100 sala_tcp_9=200
-[2026-09-20 21:02:04.198] Cliente ID 9 -> RESERVE sala_tcp_9
-[2026-09-20 21:02:04.228] Cliente ID 2 <- OK RESOURCE_RELEASED
-[2026-09-20 21:02:04.268] Cliente ID 7 desconectado
-[2026-09-20 21:02:04.316] Cliente ID 2 desconectado
-[2026-09-20 21:02:04.317] Cliente ID 5 <- OK RESOURCE_RELEASED
-[2026-09-20 21:02:04.358] Cliente ID 4 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:04.376] Cliente ID 4 -> RELEASE sala_tcp_4
-[2026-09-20 21:02:04.385] Cliente ID 6 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:04.393] Cliente ID 6 -> RELEASE sala_tcp_6
-[2026-09-20 21:02:04.398] Cliente ID 5 desconectado
-[2026-09-20 21:02:04.426] Cliente ID 10 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=200 sala_tcp_8=200 sala_tcp_9=200
-[2026-09-20 21:02:04.439] Cliente ID 10 -> RESERVE sala_tcp_10
-[2026-09-20 21:02:04.444] Cliente ID 8 <- OK RESOURCES sala1=150 sala2=250 sala3=350 sala4=450 teste=100 sala_udp=999 sala_udp2=700 sala_udp4=400 replica_test=999 sala_replica=999 sala_nova=500 teste_replica=888 teste_falha=3000 sala9=950 sala6=650 sala5=550 sala7=750 sala10=1050 sala8=850 sala1010=101010 sala_andreia=3200 sala_24=48 sala_tcp_1=200 sala_tcp_3=200 sala_tcp_2=200 sala_tcp_5=200 sala_tcp_4=200 sala_tcp_7=200 sala_tcp_6=200 sala_tcp_10=200 sala_tcp_8=200 sala_tcp_9=200
-[2026-09-20 21:02:04.445] Cliente ID 8 -> RESERVE sala_tcp_8
-[2026-09-20 21:02:04.586] Cliente ID 10 <- OK RESOURCE_RESERVED
-[2026-09-20 21:02:04.586] Cliente ID 10 -> RELEASE sala_tcp_10
-[2026-09-20 21:02:04.717] Cliente ID 6 <- OK RESOURCE_RELEASED
-[2026-09-20 21:02:04.723] Cliente ID 6 desconectado
-[2026-09-20 21:02:04.777] Cliente ID 10 <- OK RESOURCE_RELEASED
-[2026-09-20 21:02:04.782] Cliente ID 10 desconectado
+[2026-09-20 22:39:59.378] BENCHMARK DE DESEMPENHO - TCP
+
+======================================================================
+[2026-09-20 22:39:59.378] INICIO TESTE TCP - 5 CLIENTES
+======================================================================
+[2026-09-20 22:39:59.388] Cliente ID 5 conectado
+[2026-09-20 22:39:59.388] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 22:39:59.389] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 22:39:59.389] Cliente ID 5 -> CREATE bench_tcp_5 100
+[2026-09-20 22:39:59.390] Cliente ID 5 <- OK RESOURCE_CREATED
+[2026-09-20 22:39:59.390] Cliente ID 5 -> GET bench_tcp_5
+[2026-09-20 22:39:59.390] Cliente ID 5 <- OK VALUE 100
+[2026-09-20 22:39:59.390] Cliente ID 5 -> SET bench_tcp_5 200
+[2026-09-20 22:39:59.391] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 22:39:59.391] Cliente ID 5 -> RESERVE bench_tcp_5
+[2026-09-20 22:39:59.409] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 22:39:59.409] Cliente ID 5 -> RELEASE bench_tcp_5
+[2026-09-20 22:39:59.412] Cliente ID 5 <- OK RESOURCE_RELEASED
+[2026-09-20 22:39:59.412] Cliente ID 5 desconectado
+[2026-09-20 22:39:59.380] Cliente ID 2 conectado
+[2026-09-20 22:39:59.380] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 22:39:59.388] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 22:39:59.389] Cliente ID 2 -> CREATE bench_tcp_2 100
+[2026-09-20 22:39:59.391] Cliente ID 2 <- OK RESOURCE_CREATED
+[2026-09-20 22:39:59.391] Cliente ID 2 -> GET bench_tcp_2
+[2026-09-20 22:39:59.391] Cliente ID 2 <- OK VALUE 100
+[2026-09-20 22:39:59.391] Cliente ID 2 -> SET bench_tcp_2 200
+[2026-09-20 22:39:59.407] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-09-20 22:39:59.407] Cliente ID 2 -> RESERVE bench_tcp_2
+[2026-09-20 22:39:59.410] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 22:39:59.410] Cliente ID 2 -> RELEASE bench_tcp_2
+[2026-09-20 22:39:59.414] Cliente ID 2 <- OK RESOURCE_RELEASED
+[2026-09-20 22:39:59.414] Cliente ID 2 desconectado
+[2026-09-20 22:39:59.387] Cliente ID 4 conectado
+[2026-09-20 22:39:59.387] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 22:39:59.389] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 22:39:59.389] Cliente ID 4 -> CREATE bench_tcp_4 100
+[2026-09-20 22:39:59.390] Cliente ID 4 <- OK RESOURCE_CREATED
+[2026-09-20 22:39:59.390] Cliente ID 4 -> GET bench_tcp_4
+[2026-09-20 22:39:59.390] Cliente ID 4 <- OK VALUE 100
+[2026-09-20 22:39:59.390] Cliente ID 4 -> SET bench_tcp_4 200
+[2026-09-20 22:39:59.408] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 22:39:59.408] Cliente ID 4 -> RESERVE bench_tcp_4
+[2026-09-20 22:39:59.411] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 22:39:59.411] Cliente ID 4 -> RELEASE bench_tcp_4
+[2026-09-20 22:39:59.415] Cliente ID 4 <- OK RESOURCE_RELEASED
+[2026-09-20 22:39:59.415] Cliente ID 4 desconectado
+[2026-09-20 22:39:59.386] Cliente ID 3 conectado
+[2026-09-20 22:39:59.386] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 22:39:59.388] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 22:39:59.389] Cliente ID 3 -> CREATE bench_tcp_3 100
+[2026-09-20 22:39:59.392] Cliente ID 3 <- OK RESOURCE_CREATED
+[2026-09-20 22:39:59.392] Cliente ID 3 -> GET bench_tcp_3
+[2026-09-20 22:39:59.401] Cliente ID 3 <- OK VALUE 100
+[2026-09-20 22:39:59.401] Cliente ID 3 -> SET bench_tcp_3 200
+[2026-09-20 22:39:59.410] Cliente ID 3 <- OK VALUE_UPDATED
+[2026-09-20 22:39:59.410] Cliente ID 3 -> RESERVE bench_tcp_3
+[2026-09-20 22:39:59.413] Cliente ID 3 <- OK RESOURCE_RESERVED
+[2026-09-20 22:39:59.413] Cliente ID 3 -> RELEASE bench_tcp_3
+[2026-09-20 22:39:59.416] Cliente ID 3 <- OK RESOURCE_RELEASED
+[2026-09-20 22:39:59.416] Cliente ID 3 desconectado
+[2026-09-20 22:39:59.378] Cliente ID 1 conectado
+[2026-09-20 22:39:59.378] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 22:39:59.387] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 22:39:59.389] Cliente ID 1 -> CREATE bench_tcp_1 100
+[2026-09-20 22:39:59.396] Cliente ID 1 <- OK RESOURCE_CREATED
+[2026-09-20 22:39:59.396] Cliente ID 1 -> GET bench_tcp_1
+[2026-09-20 22:39:59.399] Cliente ID 1 <- OK VALUE 100
+[2026-09-20 22:39:59.399] Cliente ID 1 -> SET bench_tcp_1 200
+[2026-09-20 22:39:59.409] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 22:39:59.409] Cliente ID 1 -> RESERVE bench_tcp_1
+[2026-09-20 22:39:59.412] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 22:39:59.412] Cliente ID 1 -> RELEASE bench_tcp_1
+[2026-09-20 22:39:59.416] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-09-20 22:39:59.416] Cliente ID 1 desconectado
+[2026-09-20 22:39:59.417] FIM TESTE TCP - 5 CLIENTES
+[2026-09-20 22:39:59.417] Tempo total: 38.577 ms
+[2026-09-20 22:39:59.417] CREATE: media=2.814 ms | min=0.775 ms | max=7.054 ms
+[2026-09-20 22:39:59.417] GET: media=2.446 ms | min=0.145 ms | max=9.166 ms
+[2026-09-20 22:39:59.417] SET: media=10.675 ms | min=1.206 ms | max=18.025 ms
+[2026-09-20 22:39:59.417] RESERVE: media=6.161 ms | min=2.950 ms | max=17.585 ms
+[2026-09-20 22:39:59.417] RELEASE: media=3.289 ms | min=2.460 ms | max=3.786 ms
+======================================================================
+
+
+======================================================================
+[2026-09-20 22:40:00.468] INICIO TESTE TCP - 10 CLIENTES
+======================================================================
+[2026-09-20 22:40:00.473] Cliente ID 8 conectado
+[2026-09-20 22:40:00.473] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.474] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.475] Cliente ID 8 -> CREATE bench_tcp_8 100
+[2026-09-20 22:40:00.478] Cliente ID 8 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:00.478] Cliente ID 8 -> GET bench_tcp_8
+[2026-09-20 22:40:00.478] Cliente ID 8 <- OK VALUE 100
+[2026-09-20 22:40:00.478] Cliente ID 8 -> SET bench_tcp_8 200
+[2026-09-20 22:40:00.496] Cliente ID 8 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.496] Cliente ID 8 -> RESERVE bench_tcp_8
+[2026-09-20 22:40:00.503] Cliente ID 8 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.503] Cliente ID 8 -> RELEASE bench_tcp_8
+[2026-09-20 22:40:00.503] Cliente ID 8 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.503] Cliente ID 8 desconectado
+[2026-09-20 22:40:00.474] Cliente ID 10 conectado
+[2026-09-20 22:40:00.474] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.474] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.477] Cliente ID 10 -> CREATE bench_tcp_10 100
+[2026-09-20 22:40:00.490] Cliente ID 10 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:00.490] Cliente ID 10 -> GET bench_tcp_10
+[2026-09-20 22:40:00.496] Cliente ID 10 <- OK VALUE 100
+[2026-09-20 22:40:00.496] Cliente ID 10 -> SET bench_tcp_10 200
+[2026-09-20 22:40:00.503] Cliente ID 10 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.503] Cliente ID 10 -> RESERVE bench_tcp_10
+[2026-09-20 22:40:00.504] Cliente ID 10 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.504] Cliente ID 10 -> RELEASE bench_tcp_10
+[2026-09-20 22:40:00.505] Cliente ID 10 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.505] Cliente ID 10 desconectado
+[2026-09-20 22:40:00.472] Cliente ID 6 conectado
+[2026-09-20 22:40:00.472] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.472] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.496] Cliente ID 6 -> CREATE bench_tcp_6 100
+[2026-09-20 22:40:00.508] Cliente ID 6 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:00.508] Cliente ID 6 -> GET bench_tcp_6
+[2026-09-20 22:40:00.508] Cliente ID 6 <- OK VALUE 100
+[2026-09-20 22:40:00.508] Cliente ID 6 -> SET bench_tcp_6 200
+[2026-09-20 22:40:00.509] Cliente ID 6 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.509] Cliente ID 6 -> RESERVE bench_tcp_6
+[2026-09-20 22:40:00.509] Cliente ID 6 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.509] Cliente ID 6 -> RELEASE bench_tcp_6
+[2026-09-20 22:40:00.510] Cliente ID 6 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.510] Cliente ID 6 desconectado
+[2026-09-20 22:40:00.470] Cliente ID 5 conectado
+[2026-09-20 22:40:00.471] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.472] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.475] Cliente ID 5 -> CREATE bench_tcp_5 100
+[2026-09-20 22:40:00.477] Cliente ID 5 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:00.477] Cliente ID 5 -> GET bench_tcp_5
+[2026-09-20 22:40:00.478] Cliente ID 5 <- OK VALUE 200
+[2026-09-20 22:40:00.478] Cliente ID 5 -> SET bench_tcp_5 200
+[2026-09-20 22:40:00.498] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.498] Cliente ID 5 -> RESERVE bench_tcp_5
+[2026-09-20 22:40:00.513] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.513] Cliente ID 5 -> RELEASE bench_tcp_5
+[2026-09-20 22:40:00.522] Cliente ID 5 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.522] Cliente ID 5 desconectado
+[2026-09-20 22:40:00.469] Cliente ID 2 conectado
+[2026-09-20 22:40:00.469] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.470] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.475] Cliente ID 2 -> CREATE bench_tcp_2 100
+[2026-09-20 22:40:00.479] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:00.479] Cliente ID 2 -> GET bench_tcp_2
+[2026-09-20 22:40:00.496] Cliente ID 2 <- OK VALUE 200
+[2026-09-20 22:40:00.496] Cliente ID 2 -> SET bench_tcp_2 200
+[2026-09-20 22:40:00.503] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.503] Cliente ID 2 -> RESERVE bench_tcp_2
+[2026-09-20 22:40:00.506] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.506] Cliente ID 2 -> RELEASE bench_tcp_2
+[2026-09-20 22:40:00.524] Cliente ID 2 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.524] Cliente ID 2 desconectado
+[2026-09-20 22:40:00.470] Cliente ID 3 conectado
+[2026-09-20 22:40:00.470] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.471] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.478] Cliente ID 3 -> CREATE bench_tcp_3 100
+[2026-09-20 22:40:00.481] Cliente ID 3 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:00.481] Cliente ID 3 -> GET bench_tcp_3
+[2026-09-20 22:40:00.494] Cliente ID 3 <- OK VALUE 200
+[2026-09-20 22:40:00.494] Cliente ID 3 -> SET bench_tcp_3 200
+[2026-09-20 22:40:00.498] Cliente ID 3 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.499] Cliente ID 3 -> RESERVE bench_tcp_3
+[2026-09-20 22:40:00.523] Cliente ID 3 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.523] Cliente ID 3 -> RELEASE bench_tcp_3
+[2026-09-20 22:40:00.527] Cliente ID 3 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.527] Cliente ID 3 desconectado
+[2026-09-20 22:40:00.474] Cliente ID 9 conectado
+[2026-09-20 22:40:00.474] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.474] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.478] Cliente ID 9 -> CREATE bench_tcp_9 100
+[2026-09-20 22:40:00.487] Cliente ID 9 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:00.487] Cliente ID 9 -> GET bench_tcp_9
+[2026-09-20 22:40:00.497] Cliente ID 9 <- OK VALUE 100
+[2026-09-20 22:40:00.497] Cliente ID 9 -> SET bench_tcp_9 200
+[2026-09-20 22:40:00.507] Cliente ID 9 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.507] Cliente ID 9 -> RESERVE bench_tcp_9
+[2026-09-20 22:40:00.523] Cliente ID 9 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.523] Cliente ID 9 -> RELEASE bench_tcp_9
+[2026-09-20 22:40:00.530] Cliente ID 9 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.530] Cliente ID 9 desconectado
+[2026-09-20 22:40:00.472] Cliente ID 7 conectado
+[2026-09-20 22:40:00.472] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.473] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.477] Cliente ID 7 -> CREATE bench_tcp_7 100
+[2026-09-20 22:40:00.494] Cliente ID 7 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:00.494] Cliente ID 7 -> GET bench_tcp_7
+[2026-09-20 22:40:00.498] Cliente ID 7 <- OK VALUE 100
+[2026-09-20 22:40:00.498] Cliente ID 7 -> SET bench_tcp_7 200
+[2026-09-20 22:40:00.513] Cliente ID 7 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.513] Cliente ID 7 -> RESERVE bench_tcp_7
+[2026-09-20 22:40:00.524] Cliente ID 7 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.524] Cliente ID 7 -> RELEASE bench_tcp_7
+[2026-09-20 22:40:00.533] Cliente ID 7 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.533] Cliente ID 7 desconectado
+[2026-09-20 22:40:00.469] Cliente ID 1 conectado
+[2026-09-20 22:40:00.469] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.471] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.478] Cliente ID 1 -> CREATE bench_tcp_1 100
+[2026-09-20 22:40:00.491] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:00.491] Cliente ID 1 -> GET bench_tcp_1
+[2026-09-20 22:40:00.497] Cliente ID 1 <- OK VALUE 200
+[2026-09-20 22:40:00.497] Cliente ID 1 -> SET bench_tcp_1 200
+[2026-09-20 22:40:00.521] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.521] Cliente ID 1 -> RESERVE bench_tcp_1
+[2026-09-20 22:40:00.526] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.526] Cliente ID 1 -> RELEASE bench_tcp_1
+[2026-09-20 22:40:00.544] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.544] Cliente ID 1 desconectado
+[2026-09-20 22:40:00.470] Cliente ID 4 conectado
+[2026-09-20 22:40:00.470] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 22:40:00.471] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 22:40:00.476] Cliente ID 4 -> CREATE bench_tcp_4 100
+[2026-09-20 22:40:00.476] Cliente ID 4 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:00.476] Cliente ID 4 -> GET bench_tcp_4
+[2026-09-20 22:40:00.498] Cliente ID 4 <- OK VALUE 200
+[2026-09-20 22:40:00.498] Cliente ID 4 -> SET bench_tcp_4 200
+[2026-09-20 22:40:00.518] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 22:40:00.518] Cliente ID 4 -> RESERVE bench_tcp_4
+[2026-09-20 22:40:00.525] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:00.525] Cliente ID 4 -> RELEASE bench_tcp_4
+[2026-09-20 22:40:00.541] Cliente ID 4 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:00.541] Cliente ID 4 desconectado
+[2026-09-20 22:40:00.560] FIM TESTE TCP - 10 CLIENTES
+[2026-09-20 22:40:00.560] Tempo total: 91.429 ms
+[2026-09-20 22:40:00.562] CREATE: media=7.626 ms | min=0.323 ms | max=17.296 ms
+[2026-09-20 22:40:00.562] GET: media=8.084 ms | min=0.212 ms | max=21.945 ms
+[2026-09-20 22:40:00.562] SET: media=12.426 ms | min=0.621 ms | max=23.845 ms
+[2026-09-20 22:40:00.562] RESERVE: media=8.964 ms | min=0.645 ms | max=24.062 ms
+[2026-09-20 22:40:00.562] RELEASE: media=8.277 ms | min=0.474 ms | max=18.551 ms
+======================================================================
+
+
+======================================================================
+[2026-09-20 22:40:01.925] INICIO TESTE TCP - 20 CLIENTES
+======================================================================
+[2026-09-20 22:40:01.970] Cliente ID 7 conectado
+[2026-09-20 22:40:01.970] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.985] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.008] Cliente ID 7 -> CREATE bench_tcp_7 100
+[2026-09-20 22:40:02.027] Cliente ID 7 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.027] Cliente ID 7 -> GET bench_tcp_7
+[2026-09-20 22:40:02.048] Cliente ID 7 <- OK VALUE 200
+[2026-09-20 22:40:02.048] Cliente ID 7 -> SET bench_tcp_7 200
+[2026-09-20 22:40:02.118] Cliente ID 7 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.119] Cliente ID 7 -> RESERVE bench_tcp_7
+[2026-09-20 22:40:02.194] Cliente ID 7 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.194] Cliente ID 7 -> RELEASE bench_tcp_7
+[2026-09-20 22:40:02.219] Cliente ID 7 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.219] Cliente ID 7 desconectado
+[2026-09-20 22:40:01.986] Cliente ID 13 conectado
+[2026-09-20 22:40:01.986] Cliente ID 13 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.995] Cliente ID 13 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 13 -> CREATE bench_tcp_13 100
+[2026-09-20 22:40:02.029] Cliente ID 13 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.029] Cliente ID 13 -> GET bench_tcp_13
+[2026-09-20 22:40:02.098] Cliente ID 13 <- OK VALUE 100
+[2026-09-20 22:40:02.098] Cliente ID 13 -> SET bench_tcp_13 200
+[2026-09-20 22:40:02.208] Cliente ID 13 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.208] Cliente ID 13 -> RESERVE bench_tcp_13
+[2026-09-20 22:40:02.216] Cliente ID 13 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.218] Cliente ID 13 -> RELEASE bench_tcp_13
+[2026-09-20 22:40:02.220] Cliente ID 13 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.220] Cliente ID 13 desconectado
+[2026-09-20 22:40:01.970] Cliente ID 9 conectado
+[2026-09-20 22:40:01.970] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.984] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 9 -> CREATE bench_tcp_9 100
+[2026-09-20 22:40:02.029] Cliente ID 9 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.029] Cliente ID 9 -> GET bench_tcp_9
+[2026-09-20 22:40:02.071] Cliente ID 9 <- OK VALUE 200
+[2026-09-20 22:40:02.071] Cliente ID 9 -> SET bench_tcp_9 200
+[2026-09-20 22:40:02.198] Cliente ID 9 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.198] Cliente ID 9 -> RESERVE bench_tcp_9
+[2026-09-20 22:40:02.208] Cliente ID 9 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.208] Cliente ID 9 -> RELEASE bench_tcp_9
+[2026-09-20 22:40:02.226] Cliente ID 9 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.226] Cliente ID 9 desconectado
+[2026-09-20 22:40:01.956] Cliente ID 5 conectado
+[2026-09-20 22:40:01.956] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.969] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 5 -> CREATE bench_tcp_5 100
+[2026-09-20 22:40:02.018] Cliente ID 5 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.018] Cliente ID 5 -> GET bench_tcp_5
+[2026-09-20 22:40:02.029] Cliente ID 5 <- OK VALUE 200
+[2026-09-20 22:40:02.029] Cliente ID 5 -> SET bench_tcp_5 200
+[2026-09-20 22:40:02.193] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.193] Cliente ID 5 -> RESERVE bench_tcp_5
+[2026-09-20 22:40:02.205] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.206] Cliente ID 5 -> RELEASE bench_tcp_5
+[2026-09-20 22:40:02.224] Cliente ID 5 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.224] Cliente ID 5 desconectado
+[2026-09-20 22:40:01.951] Cliente ID 4 conectado
+[2026-09-20 22:40:01.952] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.955] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 4 -> CREATE bench_tcp_4 100
+[2026-09-20 22:40:02.028] Cliente ID 4 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.028] Cliente ID 4 -> GET bench_tcp_4
+[2026-09-20 22:40:02.037] Cliente ID 4 <- OK VALUE 200
+[2026-09-20 22:40:02.037] Cliente ID 4 -> SET bench_tcp_4 200
+[2026-09-20 22:40:02.164] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.195] Cliente ID 4 -> RESERVE bench_tcp_4
+[2026-09-20 22:40:02.236] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.236] Cliente ID 4 -> RELEASE bench_tcp_4
+[2026-09-20 22:40:02.238] Cliente ID 4 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.238] Cliente ID 4 desconectado
+[2026-09-20 22:40:02.001] Cliente ID 17 conectado
+[2026-09-20 22:40:02.001] Cliente ID 17 -> LOGIN andreia 1234
+[2026-09-20 22:40:02.002] Cliente ID 17 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.010] Cliente ID 17 -> CREATE bench_tcp_17 100
+[2026-09-20 22:40:02.122] Cliente ID 17 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.122] Cliente ID 17 -> GET bench_tcp_17
+[2026-09-20 22:40:02.134] Cliente ID 17 <- OK VALUE 100
+[2026-09-20 22:40:02.134] Cliente ID 17 -> SET bench_tcp_17 200
+[2026-09-20 22:40:02.154] Cliente ID 17 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.156] Cliente ID 17 -> RESERVE bench_tcp_17
+[2026-09-20 22:40:02.220] Cliente ID 17 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.220] Cliente ID 17 -> RELEASE bench_tcp_17
+[2026-09-20 22:40:02.240] Cliente ID 17 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.240] Cliente ID 17 desconectado
+[2026-09-20 22:40:01.941] Cliente ID 3 conectado
+[2026-09-20 22:40:01.941] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.946] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.028] Cliente ID 3 -> CREATE bench_tcp_3 100
+[2026-09-20 22:40:02.029] Cliente ID 3 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.029] Cliente ID 3 -> GET bench_tcp_3
+[2026-09-20 22:40:02.049] Cliente ID 3 <- OK VALUE 200
+[2026-09-20 22:40:02.049] Cliente ID 3 -> SET bench_tcp_3 200
+[2026-09-20 22:40:02.180] Cliente ID 3 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.180] Cliente ID 3 -> RESERVE bench_tcp_3
+[2026-09-20 22:40:02.223] Cliente ID 3 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.223] Cliente ID 3 -> RELEASE bench_tcp_3
+[2026-09-20 22:40:02.244] Cliente ID 3 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.244] Cliente ID 3 desconectado
+[2026-09-20 22:40:01.998] Cliente ID 14 conectado
+[2026-09-20 22:40:01.998] Cliente ID 14 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.999] Cliente ID 14 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 14 -> CREATE bench_tcp_14 100
+[2026-09-20 22:40:02.028] Cliente ID 14 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.028] Cliente ID 14 -> GET bench_tcp_14
+[2026-09-20 22:40:02.049] Cliente ID 14 <- OK VALUE 100
+[2026-09-20 22:40:02.049] Cliente ID 14 -> SET bench_tcp_14 200
+[2026-09-20 22:40:02.192] Cliente ID 14 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.192] Cliente ID 14 -> RESERVE bench_tcp_14
+[2026-09-20 22:40:02.224] Cliente ID 14 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.224] Cliente ID 14 -> RELEASE bench_tcp_14
+[2026-09-20 22:40:02.245] Cliente ID 14 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.245] Cliente ID 14 desconectado
+[2026-09-20 22:40:01.974] Cliente ID 11 conectado
+[2026-09-20 22:40:01.974] Cliente ID 11 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.986] Cliente ID 11 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 11 -> CREATE bench_tcp_11 100
+[2026-09-20 22:40:02.029] Cliente ID 11 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.029] Cliente ID 11 -> GET bench_tcp_11
+[2026-09-20 22:40:02.030] Cliente ID 11 <- OK VALUE 100
+[2026-09-20 22:40:02.030] Cliente ID 11 -> SET bench_tcp_11 200
+[2026-09-20 22:40:02.176] Cliente ID 11 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.176] Cliente ID 11 -> RESERVE bench_tcp_11
+[2026-09-20 22:40:02.224] Cliente ID 11 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.224] Cliente ID 11 -> RELEASE bench_tcp_11
+[2026-09-20 22:40:02.249] Cliente ID 11 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.249] Cliente ID 11 desconectado
+[2026-09-20 22:40:01.971] Cliente ID 10 conectado
+[2026-09-20 22:40:01.971] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.986] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 10 -> CREATE bench_tcp_10 100
+[2026-09-20 22:40:02.044] Cliente ID 10 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.046] Cliente ID 10 -> GET bench_tcp_10
+[2026-09-20 22:40:02.121] Cliente ID 10 <- OK VALUE 200
+[2026-09-20 22:40:02.121] Cliente ID 10 -> SET bench_tcp_10 200
+[2026-09-20 22:40:02.206] Cliente ID 10 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.206] Cliente ID 10 -> RESERVE bench_tcp_10
+[2026-09-20 22:40:02.225] Cliente ID 10 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.225] Cliente ID 10 -> RELEASE bench_tcp_10
+[2026-09-20 22:40:02.250] Cliente ID 10 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.250] Cliente ID 10 desconectado
+[2026-09-20 22:40:02.007] Cliente ID 20 conectado
+[2026-09-20 22:40:02.007] Cliente ID 20 -> LOGIN andreia 1234
+[2026-09-20 22:40:02.007] Cliente ID 20 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.008] Cliente ID 20 -> CREATE bench_tcp_20 100
+[2026-09-20 22:40:02.076] Cliente ID 20 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.076] Cliente ID 20 -> GET bench_tcp_20
+[2026-09-20 22:40:02.102] Cliente ID 20 <- OK VALUE 100
+[2026-09-20 22:40:02.102] Cliente ID 20 -> SET bench_tcp_20 200
+[2026-09-20 22:40:02.207] Cliente ID 20 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.207] Cliente ID 20 -> RESERVE bench_tcp_20
+[2026-09-20 22:40:02.232] Cliente ID 20 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.232] Cliente ID 20 -> RELEASE bench_tcp_20
+[2026-09-20 22:40:02.252] Cliente ID 20 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.252] Cliente ID 20 desconectado
+[2026-09-20 22:40:01.981] Cliente ID 12 conectado
+[2026-09-20 22:40:01.981] Cliente ID 12 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.999] Cliente ID 12 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.030] Cliente ID 12 -> CREATE bench_tcp_12 100
+[2026-09-20 22:40:02.132] Cliente ID 12 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.132] Cliente ID 12 -> GET bench_tcp_12
+[2026-09-20 22:40:02.147] Cliente ID 12 <- OK VALUE 100
+[2026-09-20 22:40:02.147] Cliente ID 12 -> SET bench_tcp_12 200
+[2026-09-20 22:40:02.219] Cliente ID 12 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.219] Cliente ID 12 -> RESERVE bench_tcp_12
+[2026-09-20 22:40:02.233] Cliente ID 12 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.234] Cliente ID 12 -> RELEASE bench_tcp_12
+[2026-09-20 22:40:02.257] Cliente ID 12 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.257] Cliente ID 12 desconectado
+[2026-09-20 22:40:02.005] Cliente ID 19 conectado
+[2026-09-20 22:40:02.005] Cliente ID 19 -> LOGIN andreia 1234
+[2026-09-20 22:40:02.007] Cliente ID 19 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.049] Cliente ID 19 -> CREATE bench_tcp_19 100
+[2026-09-20 22:40:02.193] Cliente ID 19 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.193] Cliente ID 19 -> GET bench_tcp_19
+[2026-09-20 22:40:02.213] Cliente ID 19 <- OK VALUE 100
+[2026-09-20 22:40:02.213] Cliente ID 19 -> SET bench_tcp_19 200
+[2026-09-20 22:40:02.222] Cliente ID 19 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.222] Cliente ID 19 -> RESERVE bench_tcp_19
+[2026-09-20 22:40:02.242] Cliente ID 19 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.242] Cliente ID 19 -> RELEASE bench_tcp_19
+[2026-09-20 22:40:02.263] Cliente ID 19 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.263] Cliente ID 19 desconectado
+[2026-09-20 22:40:01.929] Cliente ID 2 conectado
+[2026-09-20 22:40:01.929] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.938] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.008] Cliente ID 2 -> CREATE bench_tcp_2 100
+[2026-09-20 22:40:02.030] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.030] Cliente ID 2 -> GET bench_tcp_2
+[2026-09-20 22:40:02.193] Cliente ID 2 <- OK VALUE 200
+[2026-09-20 22:40:02.193] Cliente ID 2 -> SET bench_tcp_2 200
+[2026-09-20 22:40:02.222] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.222] Cliente ID 2 -> RESERVE bench_tcp_2
+[2026-09-20 22:40:02.242] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.242] Cliente ID 2 -> RELEASE bench_tcp_2
+[2026-09-20 22:40:02.264] Cliente ID 2 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.264] Cliente ID 2 desconectado
+[2026-09-20 22:40:01.956] Cliente ID 6 conectado
+[2026-09-20 22:40:01.956] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.961] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.029] Cliente ID 6 -> CREATE bench_tcp_6 100
+[2026-09-20 22:40:02.112] Cliente ID 6 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.112] Cliente ID 6 -> GET bench_tcp_6
+[2026-09-20 22:40:02.195] Cliente ID 6 <- OK VALUE 200
+[2026-09-20 22:40:02.195] Cliente ID 6 -> SET bench_tcp_6 200
+[2026-09-20 22:40:02.225] Cliente ID 6 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.225] Cliente ID 6 -> RESERVE bench_tcp_6
+[2026-09-20 22:40:02.244] Cliente ID 6 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.244] Cliente ID 6 -> RELEASE bench_tcp_6
+[2026-09-20 22:40:02.266] Cliente ID 6 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.266] Cliente ID 6 desconectado
+[2026-09-20 22:40:01.970] Cliente ID 8 conectado
+[2026-09-20 22:40:01.970] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.975] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.030] Cliente ID 8 -> CREATE bench_tcp_8 100
+[2026-09-20 22:40:02.195] Cliente ID 8 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.195] Cliente ID 8 -> GET bench_tcp_8
+[2026-09-20 22:40:02.207] Cliente ID 8 <- OK VALUE 200
+[2026-09-20 22:40:02.207] Cliente ID 8 -> SET bench_tcp_8 200
+[2026-09-20 22:40:02.225] Cliente ID 8 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.225] Cliente ID 8 -> RESERVE bench_tcp_8
+[2026-09-20 22:40:02.245] Cliente ID 8 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.245] Cliente ID 8 -> RELEASE bench_tcp_8
+[2026-09-20 22:40:02.267] Cliente ID 8 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.267] Cliente ID 8 desconectado
+[2026-09-20 22:40:02.002] Cliente ID 16 conectado
+[2026-09-20 22:40:02.002] Cliente ID 16 -> LOGIN andreia 1234
+[2026-09-20 22:40:02.004] Cliente ID 16 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.029] Cliente ID 16 -> CREATE bench_tcp_16 100
+[2026-09-20 22:40:02.194] Cliente ID 16 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.194] Cliente ID 16 -> GET bench_tcp_16
+[2026-09-20 22:40:02.207] Cliente ID 16 <- OK VALUE 100
+[2026-09-20 22:40:02.207] Cliente ID 16 -> SET bench_tcp_16 200
+[2026-09-20 22:40:02.231] Cliente ID 16 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.231] Cliente ID 16 -> RESERVE bench_tcp_16
+[2026-09-20 22:40:02.250] Cliente ID 16 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.250] Cliente ID 16 -> RELEASE bench_tcp_16
+[2026-09-20 22:40:02.270] Cliente ID 16 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.270] Cliente ID 16 desconectado
+[2026-09-20 22:40:01.926] Cliente ID 1 conectado
+[2026-09-20 22:40:01.926] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.929] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.009] Cliente ID 1 -> CREATE bench_tcp_1 100
+[2026-09-20 22:40:02.028] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:02.028] Cliente ID 1 -> GET bench_tcp_1
+[2026-09-20 22:40:02.192] Cliente ID 1 <- OK VALUE 200
+[2026-09-20 22:40:02.192] Cliente ID 1 -> SET bench_tcp_1 200
+[2026-09-20 22:40:02.221] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.221] Cliente ID 1 -> RESERVE bench_tcp_1
+[2026-09-20 22:40:02.258] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.258] Cliente ID 1 -> RELEASE bench_tcp_1
+[2026-09-20 22:40:02.272] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.272] Cliente ID 1 desconectado
+[2026-09-20 22:40:01.998] Cliente ID 15 conectado
+[2026-09-20 22:40:01.998] Cliente ID 15 -> LOGIN andreia 1234
+[2026-09-20 22:40:01.999] Cliente ID 15 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.049] Cliente ID 15 -> CREATE bench_tcp_15 100
+[2026-09-20 22:40:02.206] Cliente ID 15 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.206] Cliente ID 15 -> GET bench_tcp_15
+[2026-09-20 22:40:02.207] Cliente ID 15 <- OK VALUE 100
+[2026-09-20 22:40:02.207] Cliente ID 15 -> SET bench_tcp_15 200
+[2026-09-20 22:40:02.238] Cliente ID 15 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.238] Cliente ID 15 -> RESERVE bench_tcp_15
+[2026-09-20 22:40:02.259] Cliente ID 15 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.259] Cliente ID 15 -> RELEASE bench_tcp_15
+[2026-09-20 22:40:02.273] Cliente ID 15 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.273] Cliente ID 15 desconectado
+[2026-09-20 22:40:02.005] Cliente ID 18 conectado
+[2026-09-20 22:40:02.005] Cliente ID 18 -> LOGIN andreia 1234
+[2026-09-20 22:40:02.007] Cliente ID 18 <- OK AUTHENTICATED
+[2026-09-20 22:40:02.027] Cliente ID 18 -> CREATE bench_tcp_18 100
+[2026-09-20 22:40:02.047] Cliente ID 18 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:02.047] Cliente ID 18 -> GET bench_tcp_18
+[2026-09-20 22:40:02.151] Cliente ID 18 <- OK VALUE 100
+[2026-09-20 22:40:02.151] Cliente ID 18 -> SET bench_tcp_18 200
+[2026-09-20 22:40:02.218] Cliente ID 18 <- OK VALUE_UPDATED
+[2026-09-20 22:40:02.218] Cliente ID 18 -> RESERVE bench_tcp_18
+[2026-09-20 22:40:02.233] Cliente ID 18 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:02.233] Cliente ID 18 -> RELEASE bench_tcp_18
+[2026-09-20 22:40:02.277] Cliente ID 18 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:02.282] Cliente ID 18 desconectado
+[2026-09-20 22:40:02.288] FIM TESTE TCP - 20 CLIENTES
+[2026-09-20 22:40:02.288] Tempo total: 363.133 ms
+[2026-09-20 22:40:02.289] CREATE: media=60.895 ms | min=1.702 ms | max=165.223 ms
+[2026-09-20 22:40:02.289] GET: media=44.004 ms | min=0.841 ms | max=163.569 ms
+[2026-09-20 22:40:02.289] SET: media=76.765 ms | min=8.306 ms | max=164.461 ms
+[2026-09-20 22:40:02.289] RESERVE: media=28.327 ms | min=8.783 ms | max=75.829 ms
+[2026-09-20 22:40:02.289] RELEASE: media=19.710 ms | min=2.234 ms | max=43.552 ms
+======================================================================
+
+
+======================================================================
+[2026-09-20 22:40:03.377] INICIO TESTE TCP - 50 CLIENTES
+======================================================================
+[2026-09-20 22:40:03.391] Cliente ID 19 conectado
+[2026-09-20 22:40:03.391] Cliente ID 19 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.392] Cliente ID 19 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.439] Cliente ID 19 -> CREATE bench_tcp_19 100
+[2026-09-20 22:40:03.439] Cliente ID 19 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.439] Cliente ID 19 -> GET bench_tcp_19
+[2026-09-20 22:40:03.439] Cliente ID 19 <- OK VALUE 200
+[2026-09-20 22:40:03.439] Cliente ID 19 -> SET bench_tcp_19 200
+[2026-09-20 22:40:03.442] Cliente ID 19 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.442] Cliente ID 19 -> RESERVE bench_tcp_19
+[2026-09-20 22:40:03.512] Cliente ID 19 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.512] Cliente ID 19 -> RELEASE bench_tcp_19
+[2026-09-20 22:40:03.586] Cliente ID 19 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.586] Cliente ID 19 desconectado
+[2026-09-20 22:40:03.390] Cliente ID 14 conectado
+[2026-09-20 22:40:03.390] Cliente ID 14 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.392] Cliente ID 14 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.456] Cliente ID 14 -> CREATE bench_tcp_14 100
+[2026-09-20 22:40:03.464] Cliente ID 14 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.464] Cliente ID 14 -> GET bench_tcp_14
+[2026-09-20 22:40:03.464] Cliente ID 14 <- OK VALUE 200
+[2026-09-20 22:40:03.464] Cliente ID 14 -> SET bench_tcp_14 200
+[2026-09-20 22:40:03.573] Cliente ID 14 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.573] Cliente ID 14 -> RESERVE bench_tcp_14
+[2026-09-20 22:40:03.575] Cliente ID 14 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.575] Cliente ID 14 -> RELEASE bench_tcp_14
+[2026-09-20 22:40:03.603] Cliente ID 14 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.603] Cliente ID 14 desconectado
+[2026-09-20 22:40:03.390] Cliente ID 15 conectado
+[2026-09-20 22:40:03.390] Cliente ID 15 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.390] Cliente ID 15 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.538] Cliente ID 15 -> CREATE bench_tcp_15 100
+[2026-09-20 22:40:03.557] Cliente ID 15 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.557] Cliente ID 15 -> GET bench_tcp_15
+[2026-09-20 22:40:03.566] Cliente ID 15 <- OK VALUE 200
+[2026-09-20 22:40:03.566] Cliente ID 15 -> SET bench_tcp_15 200
+[2026-09-20 22:40:03.574] Cliente ID 15 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.574] Cliente ID 15 -> RESERVE bench_tcp_15
+[2026-09-20 22:40:03.576] Cliente ID 15 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.576] Cliente ID 15 -> RELEASE bench_tcp_15
+[2026-09-20 22:40:03.606] Cliente ID 15 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.606] Cliente ID 15 desconectado
+[2026-09-20 22:40:03.383] Cliente ID 6 conectado
+[2026-09-20 22:40:03.383] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.385] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.424] Cliente ID 6 -> CREATE bench_tcp_6 100
+[2026-09-20 22:40:03.527] Cliente ID 6 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.527] Cliente ID 6 -> GET bench_tcp_6
+[2026-09-20 22:40:03.541] Cliente ID 6 <- OK VALUE 200
+[2026-09-20 22:40:03.541] Cliente ID 6 -> SET bench_tcp_6 200
+[2026-09-20 22:40:03.565] Cliente ID 6 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.565] Cliente ID 6 -> RESERVE bench_tcp_6
+[2026-09-20 22:40:03.602] Cliente ID 6 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.602] Cliente ID 6 -> RELEASE bench_tcp_6
+[2026-09-20 22:40:03.623] Cliente ID 6 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.623] Cliente ID 6 desconectado
+[2026-09-20 22:40:03.392] Cliente ID 17 conectado
+[2026-09-20 22:40:03.392] Cliente ID 17 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.392] Cliente ID 17 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.564] Cliente ID 17 -> CREATE bench_tcp_17 100
+[2026-09-20 22:40:03.568] Cliente ID 17 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.568] Cliente ID 17 -> GET bench_tcp_17
+[2026-09-20 22:40:03.572] Cliente ID 17 <- OK VALUE 200
+[2026-09-20 22:40:03.572] Cliente ID 17 -> SET bench_tcp_17 200
+[2026-09-20 22:40:03.585] Cliente ID 17 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.585] Cliente ID 17 -> RESERVE bench_tcp_17
+[2026-09-20 22:40:03.588] Cliente ID 17 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.588] Cliente ID 17 -> RELEASE bench_tcp_17
+[2026-09-20 22:40:03.624] Cliente ID 17 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.624] Cliente ID 17 desconectado
+[2026-09-20 22:40:03.418] Cliente ID 43 conectado
+[2026-09-20 22:40:03.418] Cliente ID 43 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.420] Cliente ID 43 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.433] Cliente ID 43 -> CREATE bench_tcp_43 100
+[2026-09-20 22:40:03.579] Cliente ID 43 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.579] Cliente ID 43 -> GET bench_tcp_43
+[2026-09-20 22:40:03.586] Cliente ID 43 <- OK VALUE 100
+[2026-09-20 22:40:03.586] Cliente ID 43 -> SET bench_tcp_43 200
+[2026-09-20 22:40:03.619] Cliente ID 43 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.619] Cliente ID 43 -> RESERVE bench_tcp_43
+[2026-09-20 22:40:03.620] Cliente ID 43 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.620] Cliente ID 43 -> RELEASE bench_tcp_43
+[2026-09-20 22:40:03.625] Cliente ID 43 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.625] Cliente ID 43 desconectado
+[2026-09-20 22:40:03.422] Cliente ID 49 conectado
+[2026-09-20 22:40:03.422] Cliente ID 49 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.423] Cliente ID 49 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.423] Cliente ID 49 -> CREATE bench_tcp_49 100
+[2026-09-20 22:40:03.441] Cliente ID 49 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.441] Cliente ID 49 -> GET bench_tcp_49
+[2026-09-20 22:40:03.510] Cliente ID 49 <- OK VALUE 100
+[2026-09-20 22:40:03.510] Cliente ID 49 -> SET bench_tcp_49 200
+[2026-09-20 22:40:03.617] Cliente ID 49 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.617] Cliente ID 49 -> RESERVE bench_tcp_49
+[2026-09-20 22:40:03.619] Cliente ID 49 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.619] Cliente ID 49 -> RELEASE bench_tcp_49
+[2026-09-20 22:40:03.626] Cliente ID 49 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.626] Cliente ID 49 desconectado
+[2026-09-20 22:40:03.397] Cliente ID 20 conectado
+[2026-09-20 22:40:03.397] Cliente ID 20 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.398] Cliente ID 20 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.425] Cliente ID 20 -> CREATE bench_tcp_20 100
+[2026-09-20 22:40:03.492] Cliente ID 20 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.492] Cliente ID 20 -> GET bench_tcp_20
+[2026-09-20 22:40:03.528] Cliente ID 20 <- OK VALUE 200
+[2026-09-20 22:40:03.528] Cliente ID 20 -> SET bench_tcp_20 200
+[2026-09-20 22:40:03.590] Cliente ID 20 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.590] Cliente ID 20 -> RESERVE bench_tcp_20
+[2026-09-20 22:40:03.620] Cliente ID 20 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.620] Cliente ID 20 -> RELEASE bench_tcp_20
+[2026-09-20 22:40:03.628] Cliente ID 20 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.628] Cliente ID 20 desconectado
+[2026-09-20 22:40:03.390] Cliente ID 16 conectado
+[2026-09-20 22:40:03.390] Cliente ID 16 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.391] Cliente ID 16 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.431] Cliente ID 16 -> CREATE bench_tcp_16 100
+[2026-09-20 22:40:03.563] Cliente ID 16 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.563] Cliente ID 16 -> GET bench_tcp_16
+[2026-09-20 22:40:03.574] Cliente ID 16 <- OK VALUE 200
+[2026-09-20 22:40:03.574] Cliente ID 16 -> SET bench_tcp_16 200
+[2026-09-20 22:40:03.586] Cliente ID 16 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.586] Cliente ID 16 -> RESERVE bench_tcp_16
+[2026-09-20 22:40:03.620] Cliente ID 16 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.620] Cliente ID 16 -> RELEASE bench_tcp_16
+[2026-09-20 22:40:03.629] Cliente ID 16 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.629] Cliente ID 16 desconectado
+[2026-09-20 22:40:03.400] Cliente ID 25 conectado
+[2026-09-20 22:40:03.400] Cliente ID 25 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.401] Cliente ID 25 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.482] Cliente ID 25 -> CREATE bench_tcp_25 100
+[2026-09-20 22:40:03.585] Cliente ID 25 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.585] Cliente ID 25 -> GET bench_tcp_25
+[2026-09-20 22:40:03.587] Cliente ID 25 <- OK VALUE 100
+[2026-09-20 22:40:03.587] Cliente ID 25 -> SET bench_tcp_25 200
+[2026-09-20 22:40:03.620] Cliente ID 25 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.620] Cliente ID 25 -> RESERVE bench_tcp_25
+[2026-09-20 22:40:03.621] Cliente ID 25 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.621] Cliente ID 25 -> RELEASE bench_tcp_25
+[2026-09-20 22:40:03.630] Cliente ID 25 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.630] Cliente ID 25 desconectado
+[2026-09-20 22:40:03.380] Cliente ID 1 conectado
+[2026-09-20 22:40:03.380] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.380] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.440] Cliente ID 1 -> CREATE bench_tcp_1 100
+[2026-09-20 22:40:03.512] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.512] Cliente ID 1 -> GET bench_tcp_1
+[2026-09-20 22:40:03.529] Cliente ID 1 <- OK VALUE 200
+[2026-09-20 22:40:03.529] Cliente ID 1 -> SET bench_tcp_1 200
+[2026-09-20 22:40:03.593] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.593] Cliente ID 1 -> RESERVE bench_tcp_1
+[2026-09-20 22:40:03.621] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.621] Cliente ID 1 -> RELEASE bench_tcp_1
+[2026-09-20 22:40:03.630] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.630] Cliente ID 1 desconectado
+[2026-09-20 22:40:03.420] Cliente ID 46 conectado
+[2026-09-20 22:40:03.420] Cliente ID 46 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.420] Cliente ID 46 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.440] Cliente ID 46 -> CREATE bench_tcp_46 100
+[2026-09-20 22:40:03.509] Cliente ID 46 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.509] Cliente ID 46 -> GET bench_tcp_46
+[2026-09-20 22:40:03.527] Cliente ID 46 <- OK VALUE 100
+[2026-09-20 22:40:03.527] Cliente ID 46 -> SET bench_tcp_46 200
+[2026-09-20 22:40:03.591] Cliente ID 46 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.591] Cliente ID 46 -> RESERVE bench_tcp_46
+[2026-09-20 22:40:03.621] Cliente ID 46 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.621] Cliente ID 46 -> RELEASE bench_tcp_46
+[2026-09-20 22:40:03.631] Cliente ID 46 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.631] Cliente ID 46 desconectado
+[2026-09-20 22:40:03.400] Cliente ID 26 conectado
+[2026-09-20 22:40:03.400] Cliente ID 26 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.403] Cliente ID 26 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.424] Cliente ID 26 -> CREATE bench_tcp_26 100
+[2026-09-20 22:40:03.461] Cliente ID 26 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.461] Cliente ID 26 -> GET bench_tcp_26
+[2026-09-20 22:40:03.510] Cliente ID 26 <- OK VALUE 100
+[2026-09-20 22:40:03.510] Cliente ID 26 -> SET bench_tcp_26 200
+[2026-09-20 22:40:03.549] Cliente ID 26 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.549] Cliente ID 26 -> RESERVE bench_tcp_26
+[2026-09-20 22:40:03.597] Cliente ID 26 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.597] Cliente ID 26 -> RELEASE bench_tcp_26
+[2026-09-20 22:40:03.634] Cliente ID 26 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.634] Cliente ID 26 desconectado
+[2026-09-20 22:40:03.389] Cliente ID 13 conectado
+[2026-09-20 22:40:03.389] Cliente ID 13 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.392] Cliente ID 13 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.460] Cliente ID 13 -> CREATE bench_tcp_13 100
+[2026-09-20 22:40:03.461] Cliente ID 13 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.462] Cliente ID 13 -> GET bench_tcp_13
+[2026-09-20 22:40:03.462] Cliente ID 13 <- OK VALUE 200
+[2026-09-20 22:40:03.462] Cliente ID 13 -> SET bench_tcp_13 200
+[2026-09-20 22:40:03.573] Cliente ID 13 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.573] Cliente ID 13 -> RESERVE bench_tcp_13
+[2026-09-20 22:40:03.606] Cliente ID 13 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.606] Cliente ID 13 -> RELEASE bench_tcp_13
+[2026-09-20 22:40:03.646] Cliente ID 13 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.646] Cliente ID 13 desconectado
+[2026-09-20 22:40:03.384] Cliente ID 8 conectado
+[2026-09-20 22:40:03.384] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.385] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.558] Cliente ID 8 -> CREATE bench_tcp_8 100
+[2026-09-20 22:40:03.563] Cliente ID 8 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.563] Cliente ID 8 -> GET bench_tcp_8
+[2026-09-20 22:40:03.573] Cliente ID 8 <- OK VALUE 200
+[2026-09-20 22:40:03.573] Cliente ID 8 -> SET bench_tcp_8 200
+[2026-09-20 22:40:03.604] Cliente ID 8 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.604] Cliente ID 8 -> RESERVE bench_tcp_8
+[2026-09-20 22:40:03.643] Cliente ID 8 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.643] Cliente ID 8 -> RELEASE bench_tcp_8
+[2026-09-20 22:40:03.648] Cliente ID 8 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.648] Cliente ID 8 desconectado
+[2026-09-20 22:40:03.387] Cliente ID 12 conectado
+[2026-09-20 22:40:03.387] Cliente ID 12 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.389] Cliente ID 12 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.428] Cliente ID 12 -> CREATE bench_tcp_12 100
+[2026-09-20 22:40:03.442] Cliente ID 12 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.442] Cliente ID 12 -> GET bench_tcp_12
+[2026-09-20 22:40:03.451] Cliente ID 12 <- OK VALUE 200
+[2026-09-20 22:40:03.451] Cliente ID 12 -> SET bench_tcp_12 200
+[2026-09-20 22:40:03.604] Cliente ID 12 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.604] Cliente ID 12 -> RESERVE bench_tcp_12
+[2026-09-20 22:40:03.639] Cliente ID 12 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.639] Cliente ID 12 -> RELEASE bench_tcp_12
+[2026-09-20 22:40:03.649] Cliente ID 12 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.649] Cliente ID 12 desconectado
+[2026-09-20 22:40:03.391] Cliente ID 18 conectado
+[2026-09-20 22:40:03.391] Cliente ID 18 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.392] Cliente ID 18 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.425] Cliente ID 18 -> CREATE bench_tcp_18 100
+[2026-09-20 22:40:03.567] Cliente ID 18 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.567] Cliente ID 18 -> GET bench_tcp_18
+[2026-09-20 22:40:03.568] Cliente ID 18 <- OK VALUE 200
+[2026-09-20 22:40:03.568] Cliente ID 18 -> SET bench_tcp_18 200
+[2026-09-20 22:40:03.603] Cliente ID 18 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.603] Cliente ID 18 -> RESERVE bench_tcp_18
+[2026-09-20 22:40:03.639] Cliente ID 18 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.639] Cliente ID 18 -> RELEASE bench_tcp_18
+[2026-09-20 22:40:03.648] Cliente ID 18 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.648] Cliente ID 18 desconectado
+[2026-09-20 22:40:03.406] Cliente ID 36 conectado
+[2026-09-20 22:40:03.406] Cliente ID 36 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.415] Cliente ID 36 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.432] Cliente ID 36 -> CREATE bench_tcp_36 100
+[2026-09-20 22:40:03.442] Cliente ID 36 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.442] Cliente ID 36 -> GET bench_tcp_36
+[2026-09-20 22:40:03.451] Cliente ID 36 <- OK VALUE 100
+[2026-09-20 22:40:03.451] Cliente ID 36 -> SET bench_tcp_36 200
+[2026-09-20 22:40:03.577] Cliente ID 36 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.577] Cliente ID 36 -> RESERVE bench_tcp_36
+[2026-09-20 22:40:03.610] Cliente ID 36 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.610] Cliente ID 36 -> RELEASE bench_tcp_36
+[2026-09-20 22:40:03.650] Cliente ID 36 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.650] Cliente ID 36 desconectado
+[2026-09-20 22:40:03.383] Cliente ID 5 conectado
+[2026-09-20 22:40:03.383] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.383] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.424] Cliente ID 5 -> CREATE bench_tcp_5 100
+[2026-09-20 22:40:03.424] Cliente ID 5 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.424] Cliente ID 5 -> GET bench_tcp_5
+[2026-09-20 22:40:03.509] Cliente ID 5 <- OK VALUE 200
+[2026-09-20 22:40:03.509] Cliente ID 5 -> SET bench_tcp_5 200
+[2026-09-20 22:40:03.607] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.607] Cliente ID 5 -> RESERVE bench_tcp_5
+[2026-09-20 22:40:03.644] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.644] Cliente ID 5 -> RELEASE bench_tcp_5
+[2026-09-20 22:40:03.651] Cliente ID 5 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.651] Cliente ID 5 desconectado
+[2026-09-20 22:40:03.393] Cliente ID 22 conectado
+[2026-09-20 22:40:03.396] Cliente ID 22 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.398] Cliente ID 22 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.457] Cliente ID 22 -> CREATE bench_tcp_22 100
+[2026-09-20 22:40:03.530] Cliente ID 22 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.530] Cliente ID 22 -> GET bench_tcp_22
+[2026-09-20 22:40:03.562] Cliente ID 22 <- OK VALUE 100
+[2026-09-20 22:40:03.562] Cliente ID 22 -> SET bench_tcp_22 200
+[2026-09-20 22:40:03.599] Cliente ID 22 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.599] Cliente ID 22 -> RESERVE bench_tcp_22
+[2026-09-20 22:40:03.622] Cliente ID 22 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.622] Cliente ID 22 -> RELEASE bench_tcp_22
+[2026-09-20 22:40:03.656] Cliente ID 22 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.656] Cliente ID 22 desconectado
+[2026-09-20 22:40:03.407] Cliente ID 39 conectado
+[2026-09-20 22:40:03.407] Cliente ID 39 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.417] Cliente ID 39 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.481] Cliente ID 39 -> CREATE bench_tcp_39 100
+[2026-09-20 22:40:03.533] Cliente ID 39 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.534] Cliente ID 39 -> GET bench_tcp_39
+[2026-09-20 22:40:03.542] Cliente ID 39 <- OK VALUE 100
+[2026-09-20 22:40:03.542] Cliente ID 39 -> SET bench_tcp_39 200
+[2026-09-20 22:40:03.595] Cliente ID 39 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.595] Cliente ID 39 -> RESERVE bench_tcp_39
+[2026-09-20 22:40:03.622] Cliente ID 39 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.622] Cliente ID 39 -> RELEASE bench_tcp_39
+[2026-09-20 22:40:03.657] Cliente ID 39 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.657] Cliente ID 39 desconectado
+[2026-09-20 22:40:03.383] Cliente ID 4 conectado
+[2026-09-20 22:40:03.383] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.383] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.431] Cliente ID 4 -> CREATE bench_tcp_4 100
+[2026-09-20 22:40:03.567] Cliente ID 4 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.567] Cliente ID 4 -> GET bench_tcp_4
+[2026-09-20 22:40:03.573] Cliente ID 4 <- OK VALUE 200
+[2026-09-20 22:40:03.573] Cliente ID 4 -> SET bench_tcp_4 200
+[2026-09-20 22:40:03.589] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.589] Cliente ID 4 -> RESERVE bench_tcp_4
+[2026-09-20 22:40:03.623] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.623] Cliente ID 4 -> RELEASE bench_tcp_4
+[2026-09-20 22:40:03.658] Cliente ID 4 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.658] Cliente ID 4 desconectado
+[2026-09-20 22:40:03.421] Cliente ID 48 conectado
+[2026-09-20 22:40:03.421] Cliente ID 48 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.423] Cliente ID 48 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.440] Cliente ID 48 -> CREATE bench_tcp_48 100
+[2026-09-20 22:40:03.457] Cliente ID 48 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.457] Cliente ID 48 -> GET bench_tcp_48
+[2026-09-20 22:40:03.548] Cliente ID 48 <- OK VALUE 100
+[2026-09-20 22:40:03.548] Cliente ID 48 -> SET bench_tcp_48 200
+[2026-09-20 22:40:03.600] Cliente ID 48 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.600] Cliente ID 48 -> RESERVE bench_tcp_48
+[2026-09-20 22:40:03.623] Cliente ID 48 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.623] Cliente ID 48 -> RELEASE bench_tcp_48
+[2026-09-20 22:40:03.659] Cliente ID 48 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.659] Cliente ID 48 desconectado
+[2026-09-20 22:40:03.399] Cliente ID 24 conectado
+[2026-09-20 22:40:03.399] Cliente ID 24 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.400] Cliente ID 24 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.432] Cliente ID 24 -> CREATE bench_tcp_24 100
+[2026-09-20 22:40:03.513] Cliente ID 24 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.513] Cliente ID 24 -> GET bench_tcp_24
+[2026-09-20 22:40:03.537] Cliente ID 24 <- OK VALUE 100
+[2026-09-20 22:40:03.537] Cliente ID 24 -> SET bench_tcp_24 200
+[2026-09-20 22:40:03.592] Cliente ID 24 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.592] Cliente ID 24 -> RESERVE bench_tcp_24
+[2026-09-20 22:40:03.627] Cliente ID 24 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.627] Cliente ID 24 -> RELEASE bench_tcp_24
+[2026-09-20 22:40:03.661] Cliente ID 24 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.661] Cliente ID 24 desconectado
+[2026-09-20 22:40:03.385] Cliente ID 9 conectado
+[2026-09-20 22:40:03.385] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.386] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.424] Cliente ID 9 -> CREATE bench_tcp_9 100
+[2026-09-20 22:40:03.425] Cliente ID 9 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.425] Cliente ID 9 -> GET bench_tcp_9
+[2026-09-20 22:40:03.524] Cliente ID 9 <- OK VALUE 200
+[2026-09-20 22:40:03.524] Cliente ID 9 -> SET bench_tcp_9 200
+[2026-09-20 22:40:03.592] Cliente ID 9 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.592] Cliente ID 9 -> RESERVE bench_tcp_9
+[2026-09-20 22:40:03.625] Cliente ID 9 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.625] Cliente ID 9 -> RELEASE bench_tcp_9
+[2026-09-20 22:40:03.663] Cliente ID 9 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.663] Cliente ID 9 desconectado
+[2026-09-20 22:40:03.401] Cliente ID 27 conectado
+[2026-09-20 22:40:03.401] Cliente ID 27 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.402] Cliente ID 27 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.425] Cliente ID 27 -> CREATE bench_tcp_27 100
+[2026-09-20 22:40:03.518] Cliente ID 27 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.518] Cliente ID 27 -> GET bench_tcp_27
+[2026-09-20 22:40:03.538] Cliente ID 27 <- OK VALUE 100
+[2026-09-20 22:40:03.538] Cliente ID 27 -> SET bench_tcp_27 200
+[2026-09-20 22:40:03.593] Cliente ID 27 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.593] Cliente ID 27 -> RESERVE bench_tcp_27
+[2026-09-20 22:40:03.628] Cliente ID 27 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.628] Cliente ID 27 -> RELEASE bench_tcp_27
+[2026-09-20 22:40:03.665] Cliente ID 27 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.665] Cliente ID 27 desconectado
+[2026-09-20 22:40:03.381] Cliente ID 2 conectado
+[2026-09-20 22:40:03.381] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.384] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.424] Cliente ID 2 -> CREATE bench_tcp_2 100
+[2026-09-20 22:40:03.438] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.438] Cliente ID 2 -> GET bench_tcp_2
+[2026-09-20 22:40:03.530] Cliente ID 2 <- OK VALUE 200
+[2026-09-20 22:40:03.530] Cliente ID 2 -> SET bench_tcp_2 200
+[2026-09-20 22:40:03.594] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.594] Cliente ID 2 -> RESERVE bench_tcp_2
+[2026-09-20 22:40:03.629] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.629] Cliente ID 2 -> RELEASE bench_tcp_2
+[2026-09-20 22:40:03.666] Cliente ID 2 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.666] Cliente ID 2 desconectado
+[2026-09-20 22:40:03.383] Cliente ID 3 conectado
+[2026-09-20 22:40:03.383] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.384] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.424] Cliente ID 3 -> CREATE bench_tcp_3 100
+[2026-09-20 22:40:03.512] Cliente ID 3 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.512] Cliente ID 3 -> GET bench_tcp_3
+[2026-09-20 22:40:03.529] Cliente ID 3 <- OK VALUE 200
+[2026-09-20 22:40:03.529] Cliente ID 3 -> SET bench_tcp_3 200
+[2026-09-20 22:40:03.595] Cliente ID 3 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.595] Cliente ID 3 -> RESERVE bench_tcp_3
+[2026-09-20 22:40:03.631] Cliente ID 3 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.631] Cliente ID 3 -> RELEASE bench_tcp_3
+[2026-09-20 22:40:03.668] Cliente ID 3 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.668] Cliente ID 3 desconectado
+[2026-09-20 22:40:03.386] Cliente ID 11 conectado
+[2026-09-20 22:40:03.386] Cliente ID 11 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.387] Cliente ID 11 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.442] Cliente ID 11 -> CREATE bench_tcp_11 100
+[2026-09-20 22:40:03.492] Cliente ID 11 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.492] Cliente ID 11 -> GET bench_tcp_11
+[2026-09-20 22:40:03.534] Cliente ID 11 <- OK VALUE 200
+[2026-09-20 22:40:03.534] Cliente ID 11 -> SET bench_tcp_11 200
+[2026-09-20 22:40:03.596] Cliente ID 11 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.596] Cliente ID 11 -> RESERVE bench_tcp_11
+[2026-09-20 22:40:03.632] Cliente ID 11 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.632] Cliente ID 11 -> RELEASE bench_tcp_11
+[2026-09-20 22:40:03.669] Cliente ID 11 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.669] Cliente ID 11 desconectado
+[2026-09-20 22:40:03.403] Cliente ID 29 conectado
+[2026-09-20 22:40:03.403] Cliente ID 29 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.404] Cliente ID 29 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.435] Cliente ID 29 -> CREATE bench_tcp_29 100
+[2026-09-20 22:40:03.530] Cliente ID 29 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.530] Cliente ID 29 -> GET bench_tcp_29
+[2026-09-20 22:40:03.552] Cliente ID 29 <- OK VALUE 100
+[2026-09-20 22:40:03.552] Cliente ID 29 -> SET bench_tcp_29 200
+[2026-09-20 22:40:03.598] Cliente ID 29 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.598] Cliente ID 29 -> RESERVE bench_tcp_29
+[2026-09-20 22:40:03.635] Cliente ID 29 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.635] Cliente ID 29 -> RELEASE bench_tcp_29
+[2026-09-20 22:40:03.670] Cliente ID 29 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.670] Cliente ID 29 desconectado
+[2026-09-20 22:40:03.419] Cliente ID 44 conectado
+[2026-09-20 22:40:03.419] Cliente ID 44 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.419] Cliente ID 44 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.512] Cliente ID 44 -> CREATE bench_tcp_44 100
+[2026-09-20 22:40:03.585] Cliente ID 44 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.585] Cliente ID 44 -> GET bench_tcp_44
+[2026-09-20 22:40:03.588] Cliente ID 44 <- OK VALUE 100
+[2026-09-20 22:40:03.588] Cliente ID 44 -> SET bench_tcp_44 200
+[2026-09-20 22:40:03.621] Cliente ID 44 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.621] Cliente ID 44 -> RESERVE bench_tcp_44
+[2026-09-20 22:40:03.633] Cliente ID 44 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.633] Cliente ID 44 -> RELEASE bench_tcp_44
+[2026-09-20 22:40:03.670] Cliente ID 44 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.670] Cliente ID 44 desconectado
+[2026-09-20 22:40:03.406] Cliente ID 37 conectado
+[2026-09-20 22:40:03.406] Cliente ID 37 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.408] Cliente ID 37 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.439] Cliente ID 37 -> CREATE bench_tcp_37 100
+[2026-09-20 22:40:03.536] Cliente ID 37 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.536] Cliente ID 37 -> GET bench_tcp_37
+[2026-09-20 22:40:03.552] Cliente ID 37 <- OK VALUE 100
+[2026-09-20 22:40:03.552] Cliente ID 37 -> SET bench_tcp_37 200
+[2026-09-20 22:40:03.601] Cliente ID 37 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.601] Cliente ID 37 -> RESERVE bench_tcp_37
+[2026-09-20 22:40:03.636] Cliente ID 37 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.636] Cliente ID 37 -> RELEASE bench_tcp_37
+[2026-09-20 22:40:03.682] Cliente ID 37 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.682] Cliente ID 37 desconectado
+[2026-09-20 22:40:03.399] Cliente ID 23 conectado
+[2026-09-20 22:40:03.399] Cliente ID 23 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.400] Cliente ID 23 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.442] Cliente ID 23 -> CREATE bench_tcp_23 100
+[2026-09-20 22:40:03.540] Cliente ID 23 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.540] Cliente ID 23 -> GET bench_tcp_23
+[2026-09-20 22:40:03.552] Cliente ID 23 <- OK VALUE 100
+[2026-09-20 22:40:03.552] Cliente ID 23 -> SET bench_tcp_23 200
+[2026-09-20 22:40:03.601] Cliente ID 23 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.601] Cliente ID 23 -> RESERVE bench_tcp_23
+[2026-09-20 22:40:03.637] Cliente ID 23 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.637] Cliente ID 23 -> RELEASE bench_tcp_23
+[2026-09-20 22:40:03.691] Cliente ID 23 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.691] Cliente ID 23 desconectado
+[2026-09-20 22:40:03.404] Cliente ID 33 conectado
+[2026-09-20 22:40:03.404] Cliente ID 33 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.406] Cliente ID 33 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.438] Cliente ID 33 -> CREATE bench_tcp_33 100
+[2026-09-20 22:40:03.552] Cliente ID 33 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.552] Cliente ID 33 -> GET bench_tcp_33
+[2026-09-20 22:40:03.568] Cliente ID 33 <- OK VALUE 100
+[2026-09-20 22:40:03.568] Cliente ID 33 -> SET bench_tcp_33 200
+[2026-09-20 22:40:03.603] Cliente ID 33 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.603] Cliente ID 33 -> RESERVE bench_tcp_33
+[2026-09-20 22:40:03.637] Cliente ID 33 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.637] Cliente ID 33 -> RELEASE bench_tcp_33
+[2026-09-20 22:40:03.691] Cliente ID 33 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.691] Cliente ID 33 desconectado
+[2026-09-20 22:40:03.404] Cliente ID 32 conectado
+[2026-09-20 22:40:03.404] Cliente ID 32 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.405] Cliente ID 32 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.440] Cliente ID 32 -> CREATE bench_tcp_32 100
+[2026-09-20 22:40:03.568] Cliente ID 32 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.568] Cliente ID 32 -> GET bench_tcp_32
+[2026-09-20 22:40:03.575] Cliente ID 32 <- OK VALUE 100
+[2026-09-20 22:40:03.575] Cliente ID 32 -> SET bench_tcp_32 200
+[2026-09-20 22:40:03.608] Cliente ID 32 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.608] Cliente ID 32 -> RESERVE bench_tcp_32
+[2026-09-20 22:40:03.646] Cliente ID 32 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.646] Cliente ID 32 -> RELEASE bench_tcp_32
+[2026-09-20 22:40:03.692] Cliente ID 32 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.692] Cliente ID 32 desconectado
+[2026-09-20 22:40:03.387] Cliente ID 10 conectado
+[2026-09-20 22:40:03.387] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.389] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.424] Cliente ID 10 -> CREATE bench_tcp_10 100
+[2026-09-20 22:40:03.576] Cliente ID 10 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.576] Cliente ID 10 -> GET bench_tcp_10
+[2026-09-20 22:40:03.577] Cliente ID 10 <- OK VALUE 200
+[2026-09-20 22:40:03.577] Cliente ID 10 -> SET bench_tcp_10 200
+[2026-09-20 22:40:03.609] Cliente ID 10 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.609] Cliente ID 10 -> RESERVE bench_tcp_10
+[2026-09-20 22:40:03.650] Cliente ID 10 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.650] Cliente ID 10 -> RELEASE bench_tcp_10
+[2026-09-20 22:40:03.695] Cliente ID 10 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.695] Cliente ID 10 desconectado
+[2026-09-20 22:40:03.385] Cliente ID 7 conectado
+[2026-09-20 22:40:03.386] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.387] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.425] Cliente ID 7 -> CREATE bench_tcp_7 100
+[2026-09-20 22:40:03.553] Cliente ID 7 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:03.553] Cliente ID 7 -> GET bench_tcp_7
+[2026-09-20 22:40:03.574] Cliente ID 7 <- OK VALUE 200
+[2026-09-20 22:40:03.574] Cliente ID 7 -> SET bench_tcp_7 200
+[2026-09-20 22:40:03.608] Cliente ID 7 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.608] Cliente ID 7 -> RESERVE bench_tcp_7
+[2026-09-20 22:40:03.650] Cliente ID 7 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.650] Cliente ID 7 -> RELEASE bench_tcp_7
+[2026-09-20 22:40:03.695] Cliente ID 7 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.695] Cliente ID 7 desconectado
+[2026-09-20 22:40:03.405] Cliente ID 34 conectado
+[2026-09-20 22:40:03.405] Cliente ID 34 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.406] Cliente ID 34 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.469] Cliente ID 34 -> CREATE bench_tcp_34 100
+[2026-09-20 22:40:03.578] Cliente ID 34 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.578] Cliente ID 34 -> GET bench_tcp_34
+[2026-09-20 22:40:03.580] Cliente ID 34 <- OK VALUE 100
+[2026-09-20 22:40:03.580] Cliente ID 34 -> SET bench_tcp_34 200
+[2026-09-20 22:40:03.615] Cliente ID 34 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.615] Cliente ID 34 -> RESERVE bench_tcp_34
+[2026-09-20 22:40:03.653] Cliente ID 34 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.653] Cliente ID 34 -> RELEASE bench_tcp_34
+[2026-09-20 22:40:03.699] Cliente ID 34 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.699] Cliente ID 34 desconectado
+[2026-09-20 22:40:03.417] Cliente ID 42 conectado
+[2026-09-20 22:40:03.417] Cliente ID 42 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.418] Cliente ID 42 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.492] Cliente ID 42 -> CREATE bench_tcp_42 100
+[2026-09-20 22:40:03.578] Cliente ID 42 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.578] Cliente ID 42 -> GET bench_tcp_42
+[2026-09-20 22:40:03.580] Cliente ID 42 <- OK VALUE 100
+[2026-09-20 22:40:03.580] Cliente ID 42 -> SET bench_tcp_42 200
+[2026-09-20 22:40:03.614] Cliente ID 42 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.614] Cliente ID 42 -> RESERVE bench_tcp_42
+[2026-09-20 22:40:03.652] Cliente ID 42 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.652] Cliente ID 42 -> RELEASE bench_tcp_42
+[2026-09-20 22:40:03.699] Cliente ID 42 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.699] Cliente ID 42 desconectado
+[2026-09-20 22:40:03.403] Cliente ID 30 conectado
+[2026-09-20 22:40:03.403] Cliente ID 30 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.404] Cliente ID 30 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.461] Cliente ID 30 -> CREATE bench_tcp_30 100
+[2026-09-20 22:40:03.573] Cliente ID 30 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.574] Cliente ID 30 -> GET bench_tcp_30
+[2026-09-20 22:40:03.584] Cliente ID 30 <- OK VALUE 100
+[2026-09-20 22:40:03.584] Cliente ID 30 -> SET bench_tcp_30 200
+[2026-09-20 22:40:03.616] Cliente ID 30 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.616] Cliente ID 30 -> RESERVE bench_tcp_30
+[2026-09-20 22:40:03.654] Cliente ID 30 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.654] Cliente ID 30 -> RELEASE bench_tcp_30
+[2026-09-20 22:40:03.700] Cliente ID 30 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.700] Cliente ID 30 desconectado
+[2026-09-20 22:40:03.422] Cliente ID 50 conectado
+[2026-09-20 22:40:03.422] Cliente ID 50 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.423] Cliente ID 50 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.461] Cliente ID 50 -> CREATE bench_tcp_50 100
+[2026-09-20 22:40:03.574] Cliente ID 50 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.574] Cliente ID 50 -> GET bench_tcp_50
+[2026-09-20 22:40:03.585] Cliente ID 50 <- OK VALUE 100
+[2026-09-20 22:40:03.585] Cliente ID 50 -> SET bench_tcp_50 200
+[2026-09-20 22:40:03.617] Cliente ID 50 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.617] Cliente ID 50 -> RESERVE bench_tcp_50
+[2026-09-20 22:40:03.654] Cliente ID 50 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.654] Cliente ID 50 -> RELEASE bench_tcp_50
+[2026-09-20 22:40:03.700] Cliente ID 50 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.700] Cliente ID 50 desconectado
+[2026-09-20 22:40:03.403] Cliente ID 31 conectado
+[2026-09-20 22:40:03.403] Cliente ID 31 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.404] Cliente ID 31 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.544] Cliente ID 31 -> CREATE bench_tcp_31 100
+[2026-09-20 22:40:03.596] Cliente ID 31 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.596] Cliente ID 31 -> GET bench_tcp_31
+[2026-09-20 22:40:03.621] Cliente ID 31 <- OK VALUE 100
+[2026-09-20 22:40:03.621] Cliente ID 31 -> SET bench_tcp_31 200
+[2026-09-20 22:40:03.655] Cliente ID 31 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.655] Cliente ID 31 -> RESERVE bench_tcp_31
+[2026-09-20 22:40:03.701] Cliente ID 31 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.701] Cliente ID 31 -> RELEASE bench_tcp_31
+[2026-09-20 22:40:03.708] Cliente ID 31 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.708] Cliente ID 31 desconectado
+[2026-09-20 22:40:03.408] Cliente ID 40 conectado
+[2026-09-20 22:40:03.408] Cliente ID 40 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.418] Cliente ID 40 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.474] Cliente ID 40 -> CREATE bench_tcp_40 100
+[2026-09-20 22:40:03.588] Cliente ID 40 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.588] Cliente ID 40 -> GET bench_tcp_40
+[2026-09-20 22:40:03.618] Cliente ID 40 <- OK VALUE 100
+[2026-09-20 22:40:03.618] Cliente ID 40 -> SET bench_tcp_40 200
+[2026-09-20 22:40:03.624] Cliente ID 40 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.624] Cliente ID 40 -> RESERVE bench_tcp_40
+[2026-09-20 22:40:03.660] Cliente ID 40 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.660] Cliente ID 40 -> RELEASE bench_tcp_40
+[2026-09-20 22:40:03.712] Cliente ID 40 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.712] Cliente ID 40 desconectado
+[2026-09-20 22:40:03.401] Cliente ID 28 conectado
+[2026-09-20 22:40:03.401] Cliente ID 28 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.403] Cliente ID 28 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.522] Cliente ID 28 -> CREATE bench_tcp_28 100
+[2026-09-20 22:40:03.590] Cliente ID 28 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.590] Cliente ID 28 -> GET bench_tcp_28
+[2026-09-20 22:40:03.620] Cliente ID 28 <- OK VALUE 100
+[2026-09-20 22:40:03.620] Cliente ID 28 -> SET bench_tcp_28 200
+[2026-09-20 22:40:03.624] Cliente ID 28 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.624] Cliente ID 28 -> RESERVE bench_tcp_28
+[2026-09-20 22:40:03.662] Cliente ID 28 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.662] Cliente ID 28 -> RELEASE bench_tcp_28
+[2026-09-20 22:40:03.713] Cliente ID 28 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.713] Cliente ID 28 desconectado
+[2026-09-20 22:40:03.415] Cliente ID 38 conectado
+[2026-09-20 22:40:03.415] Cliente ID 38 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.418] Cliente ID 38 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.512] Cliente ID 38 -> CREATE bench_tcp_38 100
+[2026-09-20 22:40:03.588] Cliente ID 38 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.588] Cliente ID 38 -> GET bench_tcp_38
+[2026-09-20 22:40:03.619] Cliente ID 38 <- OK VALUE 100
+[2026-09-20 22:40:03.619] Cliente ID 38 -> SET bench_tcp_38 200
+[2026-09-20 22:40:03.625] Cliente ID 38 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.625] Cliente ID 38 -> RESERVE bench_tcp_38
+[2026-09-20 22:40:03.664] Cliente ID 38 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.664] Cliente ID 38 -> RELEASE bench_tcp_38
+[2026-09-20 22:40:03.714] Cliente ID 38 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.714] Cliente ID 38 desconectado
+[2026-09-20 22:40:03.421] Cliente ID 47 conectado
+[2026-09-20 22:40:03.421] Cliente ID 47 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.423] Cliente ID 47 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.505] Cliente ID 47 -> CREATE bench_tcp_47 100
+[2026-09-20 22:40:03.589] Cliente ID 47 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.589] Cliente ID 47 -> GET bench_tcp_47
+[2026-09-20 22:40:03.619] Cliente ID 47 <- OK VALUE 100
+[2026-09-20 22:40:03.619] Cliente ID 47 -> SET bench_tcp_47 200
+[2026-09-20 22:40:03.625] Cliente ID 47 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.625] Cliente ID 47 -> RESERVE bench_tcp_47
+[2026-09-20 22:40:03.662] Cliente ID 47 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.662] Cliente ID 47 -> RELEASE bench_tcp_47
+[2026-09-20 22:40:03.714] Cliente ID 47 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.714] Cliente ID 47 desconectado
+[2026-09-20 22:40:03.419] Cliente ID 45 conectado
+[2026-09-20 22:40:03.419] Cliente ID 45 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.420] Cliente ID 45 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.518] Cliente ID 45 -> CREATE bench_tcp_45 100
+[2026-09-20 22:40:03.589] Cliente ID 45 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.589] Cliente ID 45 -> GET bench_tcp_45
+[2026-09-20 22:40:03.620] Cliente ID 45 <- OK VALUE 100
+[2026-09-20 22:40:03.620] Cliente ID 45 -> SET bench_tcp_45 200
+[2026-09-20 22:40:03.627] Cliente ID 45 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.627] Cliente ID 45 -> RESERVE bench_tcp_45
+[2026-09-20 22:40:03.666] Cliente ID 45 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.666] Cliente ID 45 -> RELEASE bench_tcp_45
+[2026-09-20 22:40:03.725] Cliente ID 45 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.725] Cliente ID 45 desconectado
+[2026-09-20 22:40:03.398] Cliente ID 21 conectado
+[2026-09-20 22:40:03.398] Cliente ID 21 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.398] Cliente ID 21 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.442] Cliente ID 21 -> CREATE bench_tcp_21 100
+[2026-09-20 22:40:03.518] Cliente ID 21 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.518] Cliente ID 21 -> GET bench_tcp_21
+[2026-09-20 22:40:03.550] Cliente ID 21 <- OK VALUE 100
+[2026-09-20 22:40:03.550] Cliente ID 21 -> SET bench_tcp_21 200
+[2026-09-20 22:40:03.598] Cliente ID 21 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.598] Cliente ID 21 -> RESERVE bench_tcp_21
+[2026-09-20 22:40:03.636] Cliente ID 21 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.636] Cliente ID 21 -> RELEASE bench_tcp_21
+[2026-09-20 22:40:03.730] Cliente ID 21 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.730] Cliente ID 21 desconectado
+[2026-09-20 22:40:03.416] Cliente ID 41 conectado
+[2026-09-20 22:40:03.416] Cliente ID 41 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.418] Cliente ID 41 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.423] Cliente ID 41 -> CREATE bench_tcp_41 100
+[2026-09-20 22:40:03.569] Cliente ID 41 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.569] Cliente ID 41 -> GET bench_tcp_41
+[2026-09-20 22:40:03.575] Cliente ID 41 <- OK VALUE 100
+[2026-09-20 22:40:03.575] Cliente ID 41 -> SET bench_tcp_41 200
+[2026-09-20 22:40:03.605] Cliente ID 41 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.605] Cliente ID 41 -> RESERVE bench_tcp_41
+[2026-09-20 22:40:03.645] Cliente ID 41 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.645] Cliente ID 41 -> RELEASE bench_tcp_41
+[2026-09-20 22:40:03.738] Cliente ID 41 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.738] Cliente ID 41 desconectado
+[2026-09-20 22:40:03.406] Cliente ID 35 conectado
+[2026-09-20 22:40:03.406] Cliente ID 35 -> LOGIN andreia 1234
+[2026-09-20 22:40:03.419] Cliente ID 35 <- OK AUTHENTICATED
+[2026-09-20 22:40:03.439] Cliente ID 35 -> CREATE bench_tcp_35 100
+[2026-09-20 22:40:03.442] Cliente ID 35 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:03.442] Cliente ID 35 -> GET bench_tcp_35
+[2026-09-20 22:40:03.504] Cliente ID 35 <- OK VALUE 100
+[2026-09-20 22:40:03.504] Cliente ID 35 -> SET bench_tcp_35 200
+[2026-09-20 22:40:03.588] Cliente ID 35 <- OK VALUE_UPDATED
+[2026-09-20 22:40:03.588] Cliente ID 35 -> RESERVE bench_tcp_35
+[2026-09-20 22:40:03.622] Cliente ID 35 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:03.622] Cliente ID 35 -> RELEASE bench_tcp_35
+[2026-09-20 22:40:03.748] Cliente ID 35 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:03.748] Cliente ID 35 desconectado
+[2026-09-20 22:40:03.749] FIM TESTE TCP - 50 CLIENTES
+[2026-09-20 22:40:03.749] Tempo total: 370.759 ms
+[2026-09-20 22:40:03.749] CREATE: media=70.849 ms | min=0.122 ms | max=151.566 ms
+[2026-09-20 22:40:03.749] GET: media=23.714 ms | min=0.030 ms | max=99.062 ms
+[2026-09-20 22:40:03.749] SET: media=46.336 ms | min=2.384 ms | max=152.672 ms
+[2026-09-20 22:40:03.749] RESERVE: media=31.767 ms | min=0.880 ms | max=70.070 ms
+[2026-09-20 22:40:03.749] RELEASE: media=37.669 ms | min=4.385 ms | max=126.304 ms
+======================================================================
+
+
+======================================================================
+[2026-09-20 22:40:04.780] INICIO TESTE TCP - 100 CLIENTES
+======================================================================
+[2026-09-20 22:40:04.874] Cliente ID 92 conectado
+[2026-09-20 22:40:04.874] Cliente ID 92 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.876] Cliente ID 92 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.902] Cliente ID 92 -> CREATE bench_tcp_92 100
+[2026-09-20 22:40:04.907] Cliente ID 92 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.907] Cliente ID 92 -> GET bench_tcp_92
+[2026-09-20 22:40:04.931] Cliente ID 92 <- OK VALUE 100
+[2026-09-20 22:40:04.931] Cliente ID 92 -> SET bench_tcp_92 200
+[2026-09-20 22:40:04.936] Cliente ID 92 <- OK VALUE_UPDATED
+[2026-09-20 22:40:04.936] Cliente ID 92 -> RESERVE bench_tcp_92
+[2026-09-20 22:40:04.944] Cliente ID 92 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:04.944] Cliente ID 92 -> RELEASE bench_tcp_92
+[2026-09-20 22:40:05.124] Cliente ID 92 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.124] Cliente ID 92 desconectado
+[2026-09-20 22:40:04.810] Cliente ID 35 conectado
+[2026-09-20 22:40:04.810] Cliente ID 35 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.811] Cliente ID 35 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.889] Cliente ID 35 -> CREATE bench_tcp_35 100
+[2026-09-20 22:40:04.902] Cliente ID 35 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.902] Cliente ID 35 -> GET bench_tcp_35
+[2026-09-20 22:40:04.905] Cliente ID 35 <- OK VALUE 200
+[2026-09-20 22:40:04.905] Cliente ID 35 -> SET bench_tcp_35 200
+[2026-09-20 22:40:04.940] Cliente ID 35 <- OK VALUE_UPDATED
+[2026-09-20 22:40:04.940] Cliente ID 35 -> RESERVE bench_tcp_35
+[2026-09-20 22:40:05.091] Cliente ID 35 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.091] Cliente ID 35 -> RELEASE bench_tcp_35
+[2026-09-20 22:40:05.354] Cliente ID 35 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.354] Cliente ID 35 desconectado
+[2026-09-20 22:40:04.881] Cliente ID 98 conectado
+[2026-09-20 22:40:04.882] Cliente ID 98 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.883] Cliente ID 98 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 98 -> CREATE bench_tcp_98 100
+[2026-09-20 22:40:04.905] Cliente ID 98 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.905] Cliente ID 98 -> GET bench_tcp_98
+[2026-09-20 22:40:04.937] Cliente ID 98 <- OK VALUE 100
+[2026-09-20 22:40:04.937] Cliente ID 98 -> SET bench_tcp_98 200
+[2026-09-20 22:40:04.943] Cliente ID 98 <- OK VALUE_UPDATED
+[2026-09-20 22:40:04.943] Cliente ID 98 -> RESERVE bench_tcp_98
+[2026-09-20 22:40:05.131] Cliente ID 98 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.131] Cliente ID 98 -> RELEASE bench_tcp_98
+[2026-09-20 22:40:05.391] Cliente ID 98 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.391] Cliente ID 98 desconectado
+[2026-09-20 22:40:04.797] Cliente ID 19 conectado
+[2026-09-20 22:40:04.797] Cliente ID 19 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.798] Cliente ID 19 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.932] Cliente ID 19 -> CREATE bench_tcp_19 100
+[2026-09-20 22:40:04.938] Cliente ID 19 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.938] Cliente ID 19 -> GET bench_tcp_19
+[2026-09-20 22:40:05.107] Cliente ID 19 <- OK VALUE 200
+[2026-09-20 22:40:05.107] Cliente ID 19 -> SET bench_tcp_19 200
+[2026-09-20 22:40:05.128] Cliente ID 19 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.128] Cliente ID 19 -> RESERVE bench_tcp_19
+[2026-09-20 22:40:05.381] Cliente ID 19 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.382] Cliente ID 19 -> RELEASE bench_tcp_19
+[2026-09-20 22:40:05.428] Cliente ID 19 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.428] Cliente ID 19 desconectado
+[2026-09-20 22:40:04.822] Cliente ID 48 conectado
+[2026-09-20 22:40:04.822] Cliente ID 48 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.823] Cliente ID 48 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 48 -> CREATE bench_tcp_48 100
+[2026-09-20 22:40:04.947] Cliente ID 48 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.947] Cliente ID 48 -> GET bench_tcp_48
+[2026-09-20 22:40:04.969] Cliente ID 48 <- OK VALUE 200
+[2026-09-20 22:40:04.971] Cliente ID 48 -> SET bench_tcp_48 200
+[2026-09-20 22:40:05.132] Cliente ID 48 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.132] Cliente ID 48 -> RESERVE bench_tcp_48
+[2026-09-20 22:40:05.383] Cliente ID 48 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.384] Cliente ID 48 -> RELEASE bench_tcp_48
+[2026-09-20 22:40:05.428] Cliente ID 48 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.428] Cliente ID 48 desconectado
+[2026-09-20 22:40:04.813] Cliente ID 39 conectado
+[2026-09-20 22:40:04.813] Cliente ID 39 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.814] Cliente ID 39 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.901] Cliente ID 39 -> CREATE bench_tcp_39 100
+[2026-09-20 22:40:04.902] Cliente ID 39 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.902] Cliente ID 39 -> GET bench_tcp_39
+[2026-09-20 22:40:04.933] Cliente ID 39 <- OK VALUE 200
+[2026-09-20 22:40:04.934] Cliente ID 39 -> SET bench_tcp_39 200
+[2026-09-20 22:40:05.038] Cliente ID 39 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.038] Cliente ID 39 -> RESERVE bench_tcp_39
+[2026-09-20 22:40:05.206] Cliente ID 39 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.206] Cliente ID 39 -> RELEASE bench_tcp_39
+[2026-09-20 22:40:05.428] Cliente ID 39 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.428] Cliente ID 39 desconectado
+[2026-09-20 22:40:04.867] Cliente ID 81 conectado
+[2026-09-20 22:40:04.867] Cliente ID 81 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.868] Cliente ID 81 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 81 -> CREATE bench_tcp_81 100
+[2026-09-20 22:40:04.941] Cliente ID 81 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.941] Cliente ID 81 -> GET bench_tcp_81
+[2026-09-20 22:40:04.974] Cliente ID 81 <- OK VALUE 100
+[2026-09-20 22:40:04.974] Cliente ID 81 -> SET bench_tcp_81 200
+[2026-09-20 22:40:04.995] Cliente ID 81 <- OK VALUE_UPDATED
+[2026-09-20 22:40:04.995] Cliente ID 81 -> RESERVE bench_tcp_81
+[2026-09-20 22:40:05.225] Cliente ID 81 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.225] Cliente ID 81 -> RELEASE bench_tcp_81
+[2026-09-20 22:40:05.434] Cliente ID 81 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.434] Cliente ID 81 desconectado
+[2026-09-20 22:40:04.811] Cliente ID 37 conectado
+[2026-09-20 22:40:04.811] Cliente ID 37 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.811] Cliente ID 37 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.889] Cliente ID 37 -> CREATE bench_tcp_37 100
+[2026-09-20 22:40:04.895] Cliente ID 37 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.895] Cliente ID 37 -> GET bench_tcp_37
+[2026-09-20 22:40:04.946] Cliente ID 37 <- OK VALUE 200
+[2026-09-20 22:40:04.946] Cliente ID 37 -> SET bench_tcp_37 200
+[2026-09-20 22:40:04.972] Cliente ID 37 <- OK VALUE_UPDATED
+[2026-09-20 22:40:04.972] Cliente ID 37 -> RESERVE bench_tcp_37
+[2026-09-20 22:40:05.243] Cliente ID 37 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.243] Cliente ID 37 -> RELEASE bench_tcp_37
+[2026-09-20 22:40:05.500] Cliente ID 37 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.500] Cliente ID 37 desconectado
+[2026-09-20 22:40:04.807] Cliente ID 31 conectado
+[2026-09-20 22:40:04.807] Cliente ID 31 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.808] Cliente ID 31 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.887] Cliente ID 31 -> CREATE bench_tcp_31 100
+[2026-09-20 22:40:04.889] Cliente ID 31 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.889] Cliente ID 31 -> GET bench_tcp_31
+[2026-09-20 22:40:04.912] Cliente ID 31 <- OK VALUE 200
+[2026-09-20 22:40:04.912] Cliente ID 31 -> SET bench_tcp_31 200
+[2026-09-20 22:40:05.049] Cliente ID 31 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.049] Cliente ID 31 -> RESERVE bench_tcp_31
+[2026-09-20 22:40:05.383] Cliente ID 31 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.383] Cliente ID 31 -> RELEASE bench_tcp_31
+[2026-09-20 22:40:05.500] Cliente ID 31 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.500] Cliente ID 31 desconectado
+[2026-09-20 22:40:04.805] Cliente ID 30 conectado
+[2026-09-20 22:40:04.805] Cliente ID 30 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.807] Cliente ID 30 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.932] Cliente ID 30 -> CREATE bench_tcp_30 100
+[2026-09-20 22:40:04.937] Cliente ID 30 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.937] Cliente ID 30 -> GET bench_tcp_30
+[2026-09-20 22:40:04.939] Cliente ID 30 <- OK VALUE 200
+[2026-09-20 22:40:04.939] Cliente ID 30 -> SET bench_tcp_30 200
+[2026-09-20 22:40:05.227] Cliente ID 30 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.227] Cliente ID 30 -> RESERVE bench_tcp_30
+[2026-09-20 22:40:05.476] Cliente ID 30 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.476] Cliente ID 30 -> RELEASE bench_tcp_30
+[2026-09-20 22:40:05.508] Cliente ID 30 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.508] Cliente ID 30 desconectado
+[2026-09-20 22:40:04.802] Cliente ID 24 conectado
+[2026-09-20 22:40:04.802] Cliente ID 24 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.803] Cliente ID 24 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.930] Cliente ID 24 -> CREATE bench_tcp_24 100
+[2026-09-20 22:40:04.937] Cliente ID 24 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.937] Cliente ID 24 -> GET bench_tcp_24
+[2026-09-20 22:40:05.229] Cliente ID 24 <- OK VALUE 200
+[2026-09-20 22:40:05.229] Cliente ID 24 -> SET bench_tcp_24 200
+[2026-09-20 22:40:05.465] Cliente ID 24 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.465] Cliente ID 24 -> RESERVE bench_tcp_24
+[2026-09-20 22:40:05.478] Cliente ID 24 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.478] Cliente ID 24 -> RELEASE bench_tcp_24
+[2026-09-20 22:40:05.508] Cliente ID 24 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.508] Cliente ID 24 desconectado
+[2026-09-20 22:40:04.814] Cliente ID 40 conectado
+[2026-09-20 22:40:04.814] Cliente ID 40 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.814] Cliente ID 40 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.907] Cliente ID 40 -> CREATE bench_tcp_40 100
+[2026-09-20 22:40:05.091] Cliente ID 40 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.091] Cliente ID 40 -> GET bench_tcp_40
+[2026-09-20 22:40:05.132] Cliente ID 40 <- OK VALUE 200
+[2026-09-20 22:40:05.132] Cliente ID 40 -> SET bench_tcp_40 200
+[2026-09-20 22:40:05.195] Cliente ID 40 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.195] Cliente ID 40 -> RESERVE bench_tcp_40
+[2026-09-20 22:40:05.479] Cliente ID 40 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.479] Cliente ID 40 -> RELEASE bench_tcp_40
+[2026-09-20 22:40:05.514] Cliente ID 40 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.514] Cliente ID 40 desconectado
+[2026-09-20 22:40:04.866] Cliente ID 82 conectado
+[2026-09-20 22:40:04.866] Cliente ID 82 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.867] Cliente ID 82 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.902] Cliente ID 82 -> CREATE bench_tcp_82 100
+[2026-09-20 22:40:04.926] Cliente ID 82 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.926] Cliente ID 82 -> GET bench_tcp_82
+[2026-09-20 22:40:04.937] Cliente ID 82 <- OK VALUE 100
+[2026-09-20 22:40:04.937] Cliente ID 82 -> SET bench_tcp_82 200
+[2026-09-20 22:40:05.232] Cliente ID 82 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.232] Cliente ID 82 -> RESERVE bench_tcp_82
+[2026-09-20 22:40:05.486] Cliente ID 82 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.486] Cliente ID 82 -> RELEASE bench_tcp_82
+[2026-09-20 22:40:05.514] Cliente ID 82 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.514] Cliente ID 82 desconectado
+[2026-09-20 22:40:04.882] Cliente ID 97 conectado
+[2026-09-20 22:40:04.882] Cliente ID 97 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.883] Cliente ID 97 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 97 -> CREATE bench_tcp_97 100
+[2026-09-20 22:40:05.049] Cliente ID 97 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.049] Cliente ID 97 -> GET bench_tcp_97
+[2026-09-20 22:40:05.104] Cliente ID 97 <- OK VALUE 100
+[2026-09-20 22:40:05.104] Cliente ID 97 -> SET bench_tcp_97 200
+[2026-09-20 22:40:05.386] Cliente ID 97 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.386] Cliente ID 97 -> RESERVE bench_tcp_97
+[2026-09-20 22:40:05.485] Cliente ID 97 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.485] Cliente ID 97 -> RELEASE bench_tcp_97
+[2026-09-20 22:40:05.516] Cliente ID 97 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.516] Cliente ID 97 desconectado
+[2026-09-20 22:40:04.792] Cliente ID 10 conectado
+[2026-09-20 22:40:04.792] Cliente ID 10 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.792] Cliente ID 10 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.902] Cliente ID 10 -> CREATE bench_tcp_10 100
+[2026-09-20 22:40:04.905] Cliente ID 10 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.905] Cliente ID 10 -> GET bench_tcp_10
+[2026-09-20 22:40:04.966] Cliente ID 10 <- OK VALUE 200
+[2026-09-20 22:40:04.966] Cliente ID 10 -> SET bench_tcp_10 200
+[2026-09-20 22:40:05.196] Cliente ID 10 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.196] Cliente ID 10 -> RESERVE bench_tcp_10
+[2026-09-20 22:40:05.491] Cliente ID 10 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.491] Cliente ID 10 -> RELEASE bench_tcp_10
+[2026-09-20 22:40:05.519] Cliente ID 10 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.519] Cliente ID 10 desconectado
+[2026-09-20 22:40:04.806] Cliente ID 29 conectado
+[2026-09-20 22:40:04.806] Cliente ID 29 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.807] Cliente ID 29 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.905] Cliente ID 29 -> CREATE bench_tcp_29 100
+[2026-09-20 22:40:04.972] Cliente ID 29 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.972] Cliente ID 29 -> GET bench_tcp_29
+[2026-09-20 22:40:04.988] Cliente ID 29 <- OK VALUE 200
+[2026-09-20 22:40:04.988] Cliente ID 29 -> SET bench_tcp_29 200
+[2026-09-20 22:40:05.215] Cliente ID 29 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.215] Cliente ID 29 -> RESERVE bench_tcp_29
+[2026-09-20 22:40:05.498] Cliente ID 29 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.498] Cliente ID 29 -> RELEASE bench_tcp_29
+[2026-09-20 22:40:05.524] Cliente ID 29 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.524] Cliente ID 29 desconectado
+[2026-09-20 22:40:04.791] Cliente ID 9 conectado
+[2026-09-20 22:40:04.791] Cliente ID 9 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.791] Cliente ID 9 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.931] Cliente ID 9 -> CREATE bench_tcp_9 100
+[2026-09-20 22:40:04.931] Cliente ID 9 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.931] Cliente ID 9 -> GET bench_tcp_9
+[2026-09-20 22:40:04.943] Cliente ID 9 <- OK VALUE 200
+[2026-09-20 22:40:04.943] Cliente ID 9 -> SET bench_tcp_9 200
+[2026-09-20 22:40:05.049] Cliente ID 9 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.049] Cliente ID 9 -> RESERVE bench_tcp_9
+[2026-09-20 22:40:05.278] Cliente ID 9 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.278] Cliente ID 9 -> RELEASE bench_tcp_9
+[2026-09-20 22:40:05.526] Cliente ID 9 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.526] Cliente ID 9 desconectado
+[2026-09-20 22:40:04.807] Cliente ID 27 conectado
+[2026-09-20 22:40:04.807] Cliente ID 27 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.808] Cliente ID 27 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.888] Cliente ID 27 -> CREATE bench_tcp_27 100
+[2026-09-20 22:40:04.905] Cliente ID 27 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.905] Cliente ID 27 -> GET bench_tcp_27
+[2026-09-20 22:40:04.940] Cliente ID 27 <- OK VALUE 200
+[2026-09-20 22:40:04.940] Cliente ID 27 -> SET bench_tcp_27 200
+[2026-09-20 22:40:05.088] Cliente ID 27 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.089] Cliente ID 27 -> RESERVE bench_tcp_27
+[2026-09-20 22:40:05.299] Cliente ID 27 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.299] Cliente ID 27 -> RELEASE bench_tcp_27
+[2026-09-20 22:40:05.529] Cliente ID 27 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.529] Cliente ID 27 desconectado
+[2026-09-20 22:40:04.803] Cliente ID 25 conectado
+[2026-09-20 22:40:04.803] Cliente ID 25 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.805] Cliente ID 25 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.909] Cliente ID 25 -> CREATE bench_tcp_25 100
+[2026-09-20 22:40:05.022] Cliente ID 25 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.022] Cliente ID 25 -> GET bench_tcp_25
+[2026-09-20 22:40:05.044] Cliente ID 25 <- OK VALUE 200
+[2026-09-20 22:40:05.044] Cliente ID 25 -> SET bench_tcp_25 200
+[2026-09-20 22:40:05.382] Cliente ID 25 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.382] Cliente ID 25 -> RESERVE bench_tcp_25
+[2026-09-20 22:40:05.414] Cliente ID 25 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.414] Cliente ID 25 -> RELEASE bench_tcp_25
+[2026-09-20 22:40:05.541] Cliente ID 25 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.541] Cliente ID 25 desconectado
+[2026-09-20 22:40:04.844] Cliente ID 74 conectado
+[2026-09-20 22:40:04.844] Cliente ID 74 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.854] Cliente ID 74 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 74 -> CREATE bench_tcp_74 100
+[2026-09-20 22:40:05.088] Cliente ID 74 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.088] Cliente ID 74 -> GET bench_tcp_74
+[2026-09-20 22:40:05.138] Cliente ID 74 <- OK VALUE 100
+[2026-09-20 22:40:05.138] Cliente ID 74 -> SET bench_tcp_74 200
+[2026-09-20 22:40:05.385] Cliente ID 74 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.385] Cliente ID 74 -> RESERVE bench_tcp_74
+[2026-09-20 22:40:05.410] Cliente ID 74 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.410] Cliente ID 74 -> RELEASE bench_tcp_74
+[2026-09-20 22:40:05.542] Cliente ID 74 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.542] Cliente ID 74 desconectado
+[2026-09-20 22:40:04.874] Cliente ID 91 conectado
+[2026-09-20 22:40:04.874] Cliente ID 91 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.874] Cliente ID 91 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.902] Cliente ID 91 -> CREATE bench_tcp_91 100
+[2026-09-20 22:40:04.924] Cliente ID 91 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.924] Cliente ID 91 -> GET bench_tcp_91
+[2026-09-20 22:40:04.939] Cliente ID 91 <- OK VALUE 100
+[2026-09-20 22:40:04.939] Cliente ID 91 -> SET bench_tcp_91 200
+[2026-09-20 22:40:04.968] Cliente ID 91 <- OK VALUE_UPDATED
+[2026-09-20 22:40:04.968] Cliente ID 91 -> RESERVE bench_tcp_91
+[2026-09-20 22:40:05.385] Cliente ID 91 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.385] Cliente ID 91 -> RELEASE bench_tcp_91
+[2026-09-20 22:40:05.548] Cliente ID 91 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.548] Cliente ID 91 desconectado
+[2026-09-20 22:40:04.883] Cliente ID 100 conectado
+[2026-09-20 22:40:04.883] Cliente ID 100 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.883] Cliente ID 100 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 100 -> CREATE bench_tcp_100 100
+[2026-09-20 22:40:05.036] Cliente ID 100 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.036] Cliente ID 100 -> GET bench_tcp_100
+[2026-09-20 22:40:05.049] Cliente ID 100 <- OK VALUE 100
+[2026-09-20 22:40:05.049] Cliente ID 100 -> SET bench_tcp_100 200
+[2026-09-20 22:40:05.341] Cliente ID 100 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.342] Cliente ID 100 -> RESERVE bench_tcp_100
+[2026-09-20 22:40:05.533] Cliente ID 100 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.534] Cliente ID 100 -> RELEASE bench_tcp_100
+[2026-09-20 22:40:05.551] Cliente ID 100 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.551] Cliente ID 100 desconectado
+[2026-09-20 22:40:04.806] Cliente ID 28 conectado
+[2026-09-20 22:40:04.806] Cliente ID 28 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.807] Cliente ID 28 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.888] Cliente ID 28 -> CREATE bench_tcp_28 100
+[2026-09-20 22:40:04.912] Cliente ID 28 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.912] Cliente ID 28 -> GET bench_tcp_28
+[2026-09-20 22:40:04.945] Cliente ID 28 <- OK VALUE 200
+[2026-09-20 22:40:04.946] Cliente ID 28 -> SET bench_tcp_28 200
+[2026-09-20 22:40:05.106] Cliente ID 28 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.106] Cliente ID 28 -> RESERVE bench_tcp_28
+[2026-09-20 22:40:05.390] Cliente ID 28 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.390] Cliente ID 28 -> RELEASE bench_tcp_28
+[2026-09-20 22:40:05.553] Cliente ID 28 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.553] Cliente ID 28 desconectado
+[2026-09-20 22:40:04.813] Cliente ID 42 conectado
+[2026-09-20 22:40:04.813] Cliente ID 42 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.814] Cliente ID 42 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.907] Cliente ID 42 -> CREATE bench_tcp_42 100
+[2026-09-20 22:40:04.946] Cliente ID 42 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.946] Cliente ID 42 -> GET bench_tcp_42
+[2026-09-20 22:40:04.957] Cliente ID 42 <- OK VALUE 200
+[2026-09-20 22:40:04.957] Cliente ID 42 -> SET bench_tcp_42 200
+[2026-09-20 22:40:05.359] Cliente ID 42 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.359] Cliente ID 42 -> RESERVE bench_tcp_42
+[2026-09-20 22:40:05.539] Cliente ID 42 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.539] Cliente ID 42 -> RELEASE bench_tcp_42
+[2026-09-20 22:40:05.560] Cliente ID 42 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.561] Cliente ID 42 desconectado
+[2026-09-20 22:40:04.868] Cliente ID 84 conectado
+[2026-09-20 22:40:04.868] Cliente ID 84 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.870] Cliente ID 84 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 84 -> CREATE bench_tcp_84 100
+[2026-09-20 22:40:04.968] Cliente ID 84 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.968] Cliente ID 84 -> GET bench_tcp_84
+[2026-09-20 22:40:05.027] Cliente ID 84 <- OK VALUE 100
+[2026-09-20 22:40:05.027] Cliente ID 84 -> SET bench_tcp_84 200
+[2026-09-20 22:40:05.141] Cliente ID 84 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.141] Cliente ID 84 -> RESERVE bench_tcp_84
+[2026-09-20 22:40:05.409] Cliente ID 84 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.409] Cliente ID 84 -> RELEASE bench_tcp_84
+[2026-09-20 22:40:05.564] Cliente ID 84 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.564] Cliente ID 84 desconectado
+[2026-09-20 22:40:04.874] Cliente ID 93 conectado
+[2026-09-20 22:40:04.874] Cliente ID 93 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.875] Cliente ID 93 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.900] Cliente ID 93 -> CREATE bench_tcp_93 100
+[2026-09-20 22:40:04.940] Cliente ID 93 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.940] Cliente ID 93 -> GET bench_tcp_93
+[2026-09-20 22:40:04.943] Cliente ID 93 <- OK VALUE 100
+[2026-09-20 22:40:04.943] Cliente ID 93 -> SET bench_tcp_93 200
+[2026-09-20 22:40:05.385] Cliente ID 93 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.385] Cliente ID 93 -> RESERVE bench_tcp_93
+[2026-09-20 22:40:05.536] Cliente ID 93 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.536] Cliente ID 93 -> RELEASE bench_tcp_93
+[2026-09-20 22:40:05.564] Cliente ID 93 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.564] Cliente ID 93 desconectado
+[2026-09-20 22:40:04.841] Cliente ID 68 conectado
+[2026-09-20 22:40:04.841] Cliente ID 68 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.841] Cliente ID 68 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.901] Cliente ID 68 -> CREATE bench_tcp_68 100
+[2026-09-20 22:40:04.973] Cliente ID 68 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.973] Cliente ID 68 -> GET bench_tcp_68
+[2026-09-20 22:40:05.023] Cliente ID 68 <- OK VALUE 100
+[2026-09-20 22:40:05.023] Cliente ID 68 -> SET bench_tcp_68 200
+[2026-09-20 22:40:05.231] Cliente ID 68 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.231] Cliente ID 68 -> RESERVE bench_tcp_68
+[2026-09-20 22:40:05.540] Cliente ID 68 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.540] Cliente ID 68 -> RELEASE bench_tcp_68
+[2026-09-20 22:40:05.567] Cliente ID 68 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.567] Cliente ID 68 desconectado
+[2026-09-20 22:40:04.827] Cliente ID 54 conectado
+[2026-09-20 22:40:04.827] Cliente ID 54 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.828] Cliente ID 54 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.901] Cliente ID 54 -> CREATE bench_tcp_54 100
+[2026-09-20 22:40:04.972] Cliente ID 54 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.972] Cliente ID 54 -> GET bench_tcp_54
+[2026-09-20 22:40:05.156] Cliente ID 54 <- OK VALUE 100
+[2026-09-20 22:40:05.156] Cliente ID 54 -> SET bench_tcp_54 200
+[2026-09-20 22:40:05.393] Cliente ID 54 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.393] Cliente ID 54 -> RESERVE bench_tcp_54
+[2026-09-20 22:40:05.540] Cliente ID 54 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.540] Cliente ID 54 -> RELEASE bench_tcp_54
+[2026-09-20 22:40:05.583] Cliente ID 54 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.583] Cliente ID 54 desconectado
+[2026-09-20 22:40:04.789] Cliente ID 4 conectado
+[2026-09-20 22:40:04.789] Cliente ID 4 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.789] Cliente ID 4 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.903] Cliente ID 4 -> CREATE bench_tcp_4 100
+[2026-09-20 22:40:04.911] Cliente ID 4 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.912] Cliente ID 4 -> GET bench_tcp_4
+[2026-09-20 22:40:04.936] Cliente ID 4 <- OK VALUE 200
+[2026-09-20 22:40:04.936] Cliente ID 4 -> SET bench_tcp_4 200
+[2026-09-20 22:40:05.124] Cliente ID 4 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.124] Cliente ID 4 -> RESERVE bench_tcp_4
+[2026-09-20 22:40:05.422] Cliente ID 4 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.422] Cliente ID 4 -> RELEASE bench_tcp_4
+[2026-09-20 22:40:05.590] Cliente ID 4 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.590] Cliente ID 4 desconectado
+[2026-09-20 22:40:04.839] Cliente ID 66 conectado
+[2026-09-20 22:40:04.839] Cliente ID 66 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.839] Cliente ID 66 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.944] Cliente ID 66 -> CREATE bench_tcp_66 100
+[2026-09-20 22:40:05.032] Cliente ID 66 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.032] Cliente ID 66 -> GET bench_tcp_66
+[2026-09-20 22:40:05.050] Cliente ID 66 <- OK VALUE 100
+[2026-09-20 22:40:05.050] Cliente ID 66 -> SET bench_tcp_66 200
+[2026-09-20 22:40:05.224] Cliente ID 66 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.224] Cliente ID 66 -> RESERVE bench_tcp_66
+[2026-09-20 22:40:05.426] Cliente ID 66 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.426] Cliente ID 66 -> RELEASE bench_tcp_66
+[2026-09-20 22:40:05.593] Cliente ID 66 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.593] Cliente ID 66 desconectado
+[2026-09-20 22:40:04.869] Cliente ID 85 conectado
+[2026-09-20 22:40:04.869] Cliente ID 85 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.870] Cliente ID 85 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.902] Cliente ID 85 -> CREATE bench_tcp_85 100
+[2026-09-20 22:40:04.940] Cliente ID 85 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.940] Cliente ID 85 -> GET bench_tcp_85
+[2026-09-20 22:40:05.106] Cliente ID 85 <- OK VALUE 100
+[2026-09-20 22:40:05.106] Cliente ID 85 -> SET bench_tcp_85 200
+[2026-09-20 22:40:05.382] Cliente ID 85 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.382] Cliente ID 85 -> RESERVE bench_tcp_85
+[2026-09-20 22:40:05.425] Cliente ID 85 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.425] Cliente ID 85 -> RELEASE bench_tcp_85
+[2026-09-20 22:40:05.595] Cliente ID 85 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.595] Cliente ID 85 desconectado
+[2026-09-20 22:40:04.815] Cliente ID 44 conectado
+[2026-09-20 22:40:04.815] Cliente ID 44 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.815] Cliente ID 44 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.902] Cliente ID 44 -> CREATE bench_tcp_44 100
+[2026-09-20 22:40:05.091] Cliente ID 44 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.091] Cliente ID 44 -> GET bench_tcp_44
+[2026-09-20 22:40:05.092] Cliente ID 44 <- OK VALUE 200
+[2026-09-20 22:40:05.092] Cliente ID 44 -> SET bench_tcp_44 200
+[2026-09-20 22:40:05.383] Cliente ID 44 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.383] Cliente ID 44 -> RESERVE bench_tcp_44
+[2026-09-20 22:40:05.426] Cliente ID 44 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.426] Cliente ID 44 -> RELEASE bench_tcp_44
+[2026-09-20 22:40:05.602] Cliente ID 44 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.602] Cliente ID 44 desconectado
+[2026-09-20 22:40:04.798] Cliente ID 20 conectado
+[2026-09-20 22:40:04.798] Cliente ID 20 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.799] Cliente ID 20 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.887] Cliente ID 20 -> CREATE bench_tcp_20 100
+[2026-09-20 22:40:04.907] Cliente ID 20 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.907] Cliente ID 20 -> GET bench_tcp_20
+[2026-09-20 22:40:05.040] Cliente ID 20 <- OK VALUE 200
+[2026-09-20 22:40:05.040] Cliente ID 20 -> SET bench_tcp_20 200
+[2026-09-20 22:40:05.196] Cliente ID 20 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.198] Cliente ID 20 -> RESERVE bench_tcp_20
+[2026-09-20 22:40:05.427] Cliente ID 20 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.427] Cliente ID 20 -> RELEASE bench_tcp_20
+[2026-09-20 22:40:05.608] Cliente ID 20 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.608] Cliente ID 20 desconectado
+[2026-09-20 22:40:04.881] Cliente ID 99 conectado
+[2026-09-20 22:40:04.881] Cliente ID 99 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.883] Cliente ID 99 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 99 -> CREATE bench_tcp_99 100
+[2026-09-20 22:40:04.887] Cliente ID 99 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.887] Cliente ID 99 -> GET bench_tcp_99
+[2026-09-20 22:40:04.889] Cliente ID 99 <- OK VALUE 100
+[2026-09-20 22:40:04.889] Cliente ID 99 -> SET bench_tcp_99 200
+[2026-09-20 22:40:05.225] Cliente ID 99 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.225] Cliente ID 99 -> RESERVE bench_tcp_99
+[2026-09-20 22:40:05.430] Cliente ID 99 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.430] Cliente ID 99 -> RELEASE bench_tcp_99
+[2026-09-20 22:40:05.625] Cliente ID 99 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.625] Cliente ID 99 desconectado
+[2026-09-20 22:40:04.807] Cliente ID 26 conectado
+[2026-09-20 22:40:04.807] Cliente ID 26 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.808] Cliente ID 26 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.905] Cliente ID 26 -> CREATE bench_tcp_26 100
+[2026-09-20 22:40:04.935] Cliente ID 26 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.935] Cliente ID 26 -> GET bench_tcp_26
+[2026-09-20 22:40:04.944] Cliente ID 26 <- OK VALUE 200
+[2026-09-20 22:40:04.944] Cliente ID 26 -> SET bench_tcp_26 200
+[2026-09-20 22:40:05.224] Cliente ID 26 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.224] Cliente ID 26 -> RESERVE bench_tcp_26
+[2026-09-20 22:40:05.429] Cliente ID 26 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.429] Cliente ID 26 -> RELEASE bench_tcp_26
+[2026-09-20 22:40:05.625] Cliente ID 26 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.625] Cliente ID 26 desconectado
+[2026-09-20 22:40:04.837] Cliente ID 63 conectado
+[2026-09-20 22:40:04.837] Cliente ID 63 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.838] Cliente ID 63 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.925] Cliente ID 63 -> CREATE bench_tcp_63 100
+[2026-09-20 22:40:04.927] Cliente ID 63 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.927] Cliente ID 63 -> GET bench_tcp_63
+[2026-09-20 22:40:05.095] Cliente ID 63 <- OK VALUE 100
+[2026-09-20 22:40:05.095] Cliente ID 63 -> SET bench_tcp_63 200
+[2026-09-20 22:40:05.383] Cliente ID 63 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.383] Cliente ID 63 -> RESERVE bench_tcp_63
+[2026-09-20 22:40:05.430] Cliente ID 63 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.430] Cliente ID 63 -> RELEASE bench_tcp_63
+[2026-09-20 22:40:05.632] Cliente ID 63 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.632] Cliente ID 63 desconectado
+[2026-09-20 22:40:04.793] Cliente ID 12 conectado
+[2026-09-20 22:40:04.794] Cliente ID 12 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.794] Cliente ID 12 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.913] Cliente ID 12 -> CREATE bench_tcp_12 100
+[2026-09-20 22:40:04.960] Cliente ID 12 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.960] Cliente ID 12 -> GET bench_tcp_12
+[2026-09-20 22:40:05.095] Cliente ID 12 <- OK VALUE 200
+[2026-09-20 22:40:05.095] Cliente ID 12 -> SET bench_tcp_12 200
+[2026-09-20 22:40:05.108] Cliente ID 12 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.108] Cliente ID 12 -> RESERVE bench_tcp_12
+[2026-09-20 22:40:05.430] Cliente ID 12 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.430] Cliente ID 12 -> RELEASE bench_tcp_12
+[2026-09-20 22:40:05.633] Cliente ID 12 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.633] Cliente ID 12 desconectado
+[2026-09-20 22:40:04.836] Cliente ID 62 conectado
+[2026-09-20 22:40:04.836] Cliente ID 62 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.837] Cliente ID 62 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.914] Cliente ID 62 -> CREATE bench_tcp_62 100
+[2026-09-20 22:40:05.128] Cliente ID 62 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.128] Cliente ID 62 -> GET bench_tcp_62
+[2026-09-20 22:40:05.225] Cliente ID 62 <- OK VALUE 100
+[2026-09-20 22:40:05.225] Cliente ID 62 -> SET bench_tcp_62 200
+[2026-09-20 22:40:05.429] Cliente ID 62 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.429] Cliente ID 62 -> RESERVE bench_tcp_62
+[2026-09-20 22:40:05.625] Cliente ID 62 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.625] Cliente ID 62 -> RELEASE bench_tcp_62
+[2026-09-20 22:40:05.634] Cliente ID 62 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.634] Cliente ID 62 desconectado
+[2026-09-20 22:40:04.871] Cliente ID 88 conectado
+[2026-09-20 22:40:04.871] Cliente ID 88 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.873] Cliente ID 88 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.901] Cliente ID 88 -> CREATE bench_tcp_88 100
+[2026-09-20 22:40:04.968] Cliente ID 88 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.968] Cliente ID 88 -> GET bench_tcp_88
+[2026-09-20 22:40:05.037] Cliente ID 88 <- OK VALUE 100
+[2026-09-20 22:40:05.037] Cliente ID 88 -> SET bench_tcp_88 200
+[2026-09-20 22:40:05.383] Cliente ID 88 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.383] Cliente ID 88 -> RESERVE bench_tcp_88
+[2026-09-20 22:40:05.433] Cliente ID 88 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.433] Cliente ID 88 -> RELEASE bench_tcp_88
+[2026-09-20 22:40:05.636] Cliente ID 88 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.636] Cliente ID 88 desconectado
+[2026-09-20 22:40:04.795] Cliente ID 16 conectado
+[2026-09-20 22:40:04.795] Cliente ID 16 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.797] Cliente ID 16 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.962] Cliente ID 16 -> CREATE bench_tcp_16 100
+[2026-09-20 22:40:04.986] Cliente ID 16 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.986] Cliente ID 16 -> GET bench_tcp_16
+[2026-09-20 22:40:05.068] Cliente ID 16 <- OK VALUE 200
+[2026-09-20 22:40:05.069] Cliente ID 16 -> SET bench_tcp_16 200
+[2026-09-20 22:40:05.383] Cliente ID 16 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.383] Cliente ID 16 -> RESERVE bench_tcp_16
+[2026-09-20 22:40:05.433] Cliente ID 16 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.433] Cliente ID 16 -> RELEASE bench_tcp_16
+[2026-09-20 22:40:05.636] Cliente ID 16 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.636] Cliente ID 16 desconectado
+[2026-09-20 22:40:04.808] Cliente ID 33 conectado
+[2026-09-20 22:40:04.808] Cliente ID 33 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.810] Cliente ID 33 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.889] Cliente ID 33 -> CREATE bench_tcp_33 100
+[2026-09-20 22:40:04.909] Cliente ID 33 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.909] Cliente ID 33 -> GET bench_tcp_33
+[2026-09-20 22:40:05.046] Cliente ID 33 <- OK VALUE 200
+[2026-09-20 22:40:05.046] Cliente ID 33 -> SET bench_tcp_33 200
+[2026-09-20 22:40:05.383] Cliente ID 33 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.383] Cliente ID 33 -> RESERVE bench_tcp_33
+[2026-09-20 22:40:05.434] Cliente ID 33 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.434] Cliente ID 33 -> RELEASE bench_tcp_33
+[2026-09-20 22:40:05.652] Cliente ID 33 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.652] Cliente ID 33 desconectado
+[2026-09-20 22:40:04.821] Cliente ID 47 conectado
+[2026-09-20 22:40:04.821] Cliente ID 47 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.822] Cliente ID 47 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.931] Cliente ID 47 -> CREATE bench_tcp_47 100
+[2026-09-20 22:40:04.943] Cliente ID 47 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.943] Cliente ID 47 -> GET bench_tcp_47
+[2026-09-20 22:40:05.028] Cliente ID 47 <- OK VALUE 200
+[2026-09-20 22:40:05.028] Cliente ID 47 -> SET bench_tcp_47 200
+[2026-09-20 22:40:05.225] Cliente ID 47 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.225] Cliente ID 47 -> RESERVE bench_tcp_47
+[2026-09-20 22:40:05.434] Cliente ID 47 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.434] Cliente ID 47 -> RELEASE bench_tcp_47
+[2026-09-20 22:40:05.669] Cliente ID 47 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.669] Cliente ID 47 desconectado
+[2026-09-20 22:40:04.876] Cliente ID 95 conectado
+[2026-09-20 22:40:04.876] Cliente ID 95 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.877] Cliente ID 95 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.107] Cliente ID 95 -> CREATE bench_tcp_95 100
+[2026-09-20 22:40:05.107] Cliente ID 95 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.107] Cliente ID 95 -> GET bench_tcp_95
+[2026-09-20 22:40:05.108] Cliente ID 95 <- OK VALUE 100
+[2026-09-20 22:40:05.108] Cliente ID 95 -> SET bench_tcp_95 200
+[2026-09-20 22:40:05.385] Cliente ID 95 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.385] Cliente ID 95 -> RESERVE bench_tcp_95
+[2026-09-20 22:40:05.462] Cliente ID 95 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.462] Cliente ID 95 -> RELEASE bench_tcp_95
+[2026-09-20 22:40:05.672] Cliente ID 95 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.672] Cliente ID 95 desconectado
+[2026-09-20 22:40:04.791] Cliente ID 8 conectado
+[2026-09-20 22:40:04.791] Cliente ID 8 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.792] Cliente ID 8 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 8 -> CREATE bench_tcp_8 100
+[2026-09-20 22:40:04.968] Cliente ID 8 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.968] Cliente ID 8 -> GET bench_tcp_8
+[2026-09-20 22:40:04.968] Cliente ID 8 <- OK VALUE 200
+[2026-09-20 22:40:04.968] Cliente ID 8 -> SET bench_tcp_8 200
+[2026-09-20 22:40:05.229] Cliente ID 8 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.229] Cliente ID 8 -> RESERVE bench_tcp_8
+[2026-09-20 22:40:05.465] Cliente ID 8 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.465] Cliente ID 8 -> RELEASE bench_tcp_8
+[2026-09-20 22:40:05.675] Cliente ID 8 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.675] Cliente ID 8 desconectado
+[2026-09-20 22:40:04.796] Cliente ID 17 conectado
+[2026-09-20 22:40:04.796] Cliente ID 17 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.798] Cliente ID 17 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.887] Cliente ID 17 -> CREATE bench_tcp_17 100
+[2026-09-20 22:40:04.939] Cliente ID 17 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.939] Cliente ID 17 -> GET bench_tcp_17
+[2026-09-20 22:40:05.228] Cliente ID 17 <- OK VALUE 200
+[2026-09-20 22:40:05.228] Cliente ID 17 -> SET bench_tcp_17 200
+[2026-09-20 22:40:05.463] Cliente ID 17 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.463] Cliente ID 17 -> RESERVE bench_tcp_17
+[2026-09-20 22:40:05.677] Cliente ID 17 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.677] Cliente ID 17 -> RELEASE bench_tcp_17
+[2026-09-20 22:40:05.680] Cliente ID 17 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.680] Cliente ID 17 desconectado
+[2026-09-20 22:40:04.838] Cliente ID 64 conectado
+[2026-09-20 22:40:04.838] Cliente ID 64 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.839] Cliente ID 64 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 64 -> CREATE bench_tcp_64 100
+[2026-09-20 22:40:05.009] Cliente ID 64 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.009] Cliente ID 64 -> GET bench_tcp_64
+[2026-09-20 22:40:05.045] Cliente ID 64 <- OK VALUE 100
+[2026-09-20 22:40:05.045] Cliente ID 64 -> SET bench_tcp_64 200
+[2026-09-20 22:40:05.228] Cliente ID 64 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.228] Cliente ID 64 -> RESERVE bench_tcp_64
+[2026-09-20 22:40:05.462] Cliente ID 64 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.462] Cliente ID 64 -> RELEASE bench_tcp_64
+[2026-09-20 22:40:05.683] Cliente ID 64 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.683] Cliente ID 64 desconectado
+[2026-09-20 22:40:04.811] Cliente ID 38 conectado
+[2026-09-20 22:40:04.811] Cliente ID 38 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.812] Cliente ID 38 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.930] Cliente ID 38 -> CREATE bench_tcp_38 100
+[2026-09-20 22:40:04.930] Cliente ID 38 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.930] Cliente ID 38 -> GET bench_tcp_38
+[2026-09-20 22:40:04.966] Cliente ID 38 <- OK VALUE 200
+[2026-09-20 22:40:04.966] Cliente ID 38 -> SET bench_tcp_38 200
+[2026-09-20 22:40:05.226] Cliente ID 38 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.226] Cliente ID 38 -> RESERVE bench_tcp_38
+[2026-09-20 22:40:05.501] Cliente ID 38 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.501] Cliente ID 38 -> RELEASE bench_tcp_38
+[2026-09-20 22:40:05.695] Cliente ID 38 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.695] Cliente ID 38 desconectado
+[2026-09-20 22:40:04.807] Cliente ID 32 conectado
+[2026-09-20 22:40:04.807] Cliente ID 32 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.807] Cliente ID 32 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.905] Cliente ID 32 -> CREATE bench_tcp_32 100
+[2026-09-20 22:40:04.937] Cliente ID 32 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.937] Cliente ID 32 -> GET bench_tcp_32
+[2026-09-20 22:40:04.958] Cliente ID 32 <- OK VALUE 200
+[2026-09-20 22:40:04.959] Cliente ID 32 -> SET bench_tcp_32 200
+[2026-09-20 22:40:05.231] Cliente ID 32 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.231] Cliente ID 32 -> RESERVE bench_tcp_32
+[2026-09-20 22:40:05.501] Cliente ID 32 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.501] Cliente ID 32 -> RELEASE bench_tcp_32
+[2026-09-20 22:40:05.683] Cliente ID 32 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.683] Cliente ID 32 desconectado
+[2026-09-20 22:40:04.820] Cliente ID 45 conectado
+[2026-09-20 22:40:04.821] Cliente ID 45 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.821] Cliente ID 45 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.940] Cliente ID 45 -> CREATE bench_tcp_45 100
+[2026-09-20 22:40:04.972] Cliente ID 45 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.972] Cliente ID 45 -> GET bench_tcp_45
+[2026-09-20 22:40:05.026] Cliente ID 45 <- OK VALUE 200
+[2026-09-20 22:40:05.026] Cliente ID 45 -> SET bench_tcp_45 200
+[2026-09-20 22:40:05.264] Cliente ID 45 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.264] Cliente ID 45 -> RESERVE bench_tcp_45
+[2026-09-20 22:40:05.502] Cliente ID 45 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.502] Cliente ID 45 -> RELEASE bench_tcp_45
+[2026-09-20 22:40:05.719] Cliente ID 45 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.719] Cliente ID 45 desconectado
+[2026-09-20 22:40:04.810] Cliente ID 36 conectado
+[2026-09-20 22:40:04.810] Cliente ID 36 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.812] Cliente ID 36 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.906] Cliente ID 36 -> CREATE bench_tcp_36 100
+[2026-09-20 22:40:04.908] Cliente ID 36 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.908] Cliente ID 36 -> GET bench_tcp_36
+[2026-09-20 22:40:05.091] Cliente ID 36 <- OK VALUE 200
+[2026-09-20 22:40:05.091] Cliente ID 36 -> SET bench_tcp_36 200
+[2026-09-20 22:40:05.259] Cliente ID 36 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.259] Cliente ID 36 -> RESERVE bench_tcp_36
+[2026-09-20 22:40:05.501] Cliente ID 36 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.501] Cliente ID 36 -> RELEASE bench_tcp_36
+[2026-09-20 22:40:05.720] Cliente ID 36 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.720] Cliente ID 36 desconectado
+[2026-09-20 22:40:04.844] Cliente ID 70 conectado
+[2026-09-20 22:40:04.844] Cliente ID 70 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.845] Cliente ID 70 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.930] Cliente ID 70 -> CREATE bench_tcp_70 100
+[2026-09-20 22:40:04.942] Cliente ID 70 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.942] Cliente ID 70 -> GET bench_tcp_70
+[2026-09-20 22:40:04.943] Cliente ID 70 <- OK VALUE 100
+[2026-09-20 22:40:04.943] Cliente ID 70 -> SET bench_tcp_70 200
+[2026-09-20 22:40:05.232] Cliente ID 70 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.232] Cliente ID 70 -> RESERVE bench_tcp_70
+[2026-09-20 22:40:05.503] Cliente ID 70 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.503] Cliente ID 70 -> RELEASE bench_tcp_70
+[2026-09-20 22:40:05.721] Cliente ID 70 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.721] Cliente ID 70 desconectado
+[2026-09-20 22:40:04.833] Cliente ID 59 conectado
+[2026-09-20 22:40:04.833] Cliente ID 59 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.835] Cliente ID 59 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.909] Cliente ID 59 -> CREATE bench_tcp_59 100
+[2026-09-20 22:40:04.939] Cliente ID 59 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.939] Cliente ID 59 -> GET bench_tcp_59
+[2026-09-20 22:40:05.049] Cliente ID 59 <- OK VALUE 100
+[2026-09-20 22:40:05.049] Cliente ID 59 -> SET bench_tcp_59 200
+[2026-09-20 22:40:05.278] Cliente ID 59 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.278] Cliente ID 59 -> RESERVE bench_tcp_59
+[2026-09-20 22:40:05.675] Cliente ID 59 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.675] Cliente ID 59 -> RELEASE bench_tcp_59
+[2026-09-20 22:40:05.733] Cliente ID 59 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.733] Cliente ID 59 desconectado
+[2026-09-20 22:40:04.802] Cliente ID 23 conectado
+[2026-09-20 22:40:04.802] Cliente ID 23 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.804] Cliente ID 23 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.940] Cliente ID 23 -> CREATE bench_tcp_23 100
+[2026-09-20 22:40:04.994] Cliente ID 23 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.994] Cliente ID 23 -> GET bench_tcp_23
+[2026-09-20 22:40:05.086] Cliente ID 23 <- OK VALUE 200
+[2026-09-20 22:40:05.086] Cliente ID 23 -> SET bench_tcp_23 200
+[2026-09-20 22:40:05.252] Cliente ID 23 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.252] Cliente ID 23 -> RESERVE bench_tcp_23
+[2026-09-20 22:40:05.515] Cliente ID 23 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.515] Cliente ID 23 -> RELEASE bench_tcp_23
+[2026-09-20 22:40:05.736] Cliente ID 23 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.736] Cliente ID 23 desconectado
+[2026-09-20 22:40:04.841] Cliente ID 69 conectado
+[2026-09-20 22:40:04.841] Cliente ID 69 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.842] Cliente ID 69 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.925] Cliente ID 69 -> CREATE bench_tcp_69 100
+[2026-09-20 22:40:04.926] Cliente ID 69 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.926] Cliente ID 69 -> GET bench_tcp_69
+[2026-09-20 22:40:04.962] Cliente ID 69 <- OK VALUE 100
+[2026-09-20 22:40:04.962] Cliente ID 69 -> SET bench_tcp_69 200
+[2026-09-20 22:40:05.258] Cliente ID 69 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.258] Cliente ID 69 -> RESERVE bench_tcp_69
+[2026-09-20 22:40:05.518] Cliente ID 69 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.518] Cliente ID 69 -> RELEASE bench_tcp_69
+[2026-09-20 22:40:05.739] Cliente ID 69 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.739] Cliente ID 69 desconectado
+[2026-09-20 22:40:04.845] Cliente ID 77 conectado
+[2026-09-20 22:40:04.845] Cliente ID 77 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.845] Cliente ID 77 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.929] Cliente ID 77 -> CREATE bench_tcp_77 100
+[2026-09-20 22:40:05.083] Cliente ID 77 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.083] Cliente ID 77 -> GET bench_tcp_77
+[2026-09-20 22:40:05.382] Cliente ID 77 <- OK VALUE 100
+[2026-09-20 22:40:05.382] Cliente ID 77 -> SET bench_tcp_77 200
+[2026-09-20 22:40:05.491] Cliente ID 77 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.491] Cliente ID 77 -> RESERVE bench_tcp_77
+[2026-09-20 22:40:05.519] Cliente ID 77 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.519] Cliente ID 77 -> RELEASE bench_tcp_77
+[2026-09-20 22:40:05.745] Cliente ID 77 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.745] Cliente ID 77 desconectado
+[2026-09-20 22:40:04.843] Cliente ID 76 conectado
+[2026-09-20 22:40:04.843] Cliente ID 76 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.845] Cliente ID 76 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.936] Cliente ID 76 -> CREATE bench_tcp_76 100
+[2026-09-20 22:40:04.942] Cliente ID 76 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.942] Cliente ID 76 -> GET bench_tcp_76
+[2026-09-20 22:40:04.986] Cliente ID 76 <- OK VALUE 100
+[2026-09-20 22:40:04.986] Cliente ID 76 -> SET bench_tcp_76 200
+[2026-09-20 22:40:05.259] Cliente ID 76 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.259] Cliente ID 76 -> RESERVE bench_tcp_76
+[2026-09-20 22:40:05.519] Cliente ID 76 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.519] Cliente ID 76 -> RELEASE bench_tcp_76
+[2026-09-20 22:40:05.765] Cliente ID 76 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.765] Cliente ID 76 desconectado
+[2026-09-20 22:40:04.847] Cliente ID 80 conectado
+[2026-09-20 22:40:04.848] Cliente ID 80 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.867] Cliente ID 80 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 80 -> CREATE bench_tcp_80 100
+[2026-09-20 22:40:05.011] Cliente ID 80 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.011] Cliente ID 80 -> GET bench_tcp_80
+[2026-09-20 22:40:05.083] Cliente ID 80 <- OK VALUE 100
+[2026-09-20 22:40:05.083] Cliente ID 80 -> SET bench_tcp_80 200
+[2026-09-20 22:40:05.260] Cliente ID 80 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.260] Cliente ID 80 -> RESERVE bench_tcp_80
+[2026-09-20 22:40:05.522] Cliente ID 80 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.522] Cliente ID 80 -> RELEASE bench_tcp_80
+[2026-09-20 22:40:05.767] Cliente ID 80 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.767] Cliente ID 80 desconectado
+[2026-09-20 22:40:04.789] Cliente ID 5 conectado
+[2026-09-20 22:40:04.789] Cliente ID 5 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.789] Cliente ID 5 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.934] Cliente ID 5 -> CREATE bench_tcp_5 100
+[2026-09-20 22:40:04.966] Cliente ID 5 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.966] Cliente ID 5 -> GET bench_tcp_5
+[2026-09-20 22:40:05.065] Cliente ID 5 <- OK VALUE 200
+[2026-09-20 22:40:05.065] Cliente ID 5 -> SET bench_tcp_5 200
+[2026-09-20 22:40:05.264] Cliente ID 5 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.264] Cliente ID 5 -> RESERVE bench_tcp_5
+[2026-09-20 22:40:05.524] Cliente ID 5 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.524] Cliente ID 5 -> RELEASE bench_tcp_5
+[2026-09-20 22:40:05.770] Cliente ID 5 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.770] Cliente ID 5 desconectado
+[2026-09-20 22:40:04.789] Cliente ID 1 conectado
+[2026-09-20 22:40:04.789] Cliente ID 1 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.790] Cliente ID 1 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.259] Cliente ID 1 -> CREATE bench_tcp_1 100
+[2026-09-20 22:40:05.498] Cliente ID 1 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.498] Cliente ID 1 -> GET bench_tcp_1
+[2026-09-20 22:40:05.498] Cliente ID 1 <- OK VALUE 200
+[2026-09-20 22:40:05.498] Cliente ID 1 -> SET bench_tcp_1 200
+[2026-09-20 22:40:05.520] Cliente ID 1 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.520] Cliente ID 1 -> RESERVE bench_tcp_1
+[2026-09-20 22:40:05.768] Cliente ID 1 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.768] Cliente ID 1 -> RELEASE bench_tcp_1
+[2026-09-20 22:40:05.773] Cliente ID 1 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.777] Cliente ID 1 desconectado
+[2026-09-20 22:40:04.873] Cliente ID 87 conectado
+[2026-09-20 22:40:04.873] Cliente ID 87 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.874] Cliente ID 87 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.937] Cliente ID 87 -> CREATE bench_tcp_87 100
+[2026-09-20 22:40:04.944] Cliente ID 87 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.944] Cliente ID 87 -> GET bench_tcp_87
+[2026-09-20 22:40:04.972] Cliente ID 87 <- OK VALUE 100
+[2026-09-20 22:40:04.972] Cliente ID 87 -> SET bench_tcp_87 200
+[2026-09-20 22:40:05.066] Cliente ID 87 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.066] Cliente ID 87 -> RESERVE bench_tcp_87
+[2026-09-20 22:40:05.328] Cliente ID 87 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.328] Cliente ID 87 -> RELEASE bench_tcp_87
+[2026-09-20 22:40:05.810] Cliente ID 87 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.811] Cliente ID 87 desconectado
+[2026-09-20 22:40:04.840] Cliente ID 67 conectado
+[2026-09-20 22:40:04.840] Cliente ID 67 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.840] Cliente ID 67 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.092] Cliente ID 67 -> CREATE bench_tcp_67 100
+[2026-09-20 22:40:05.265] Cliente ID 67 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.265] Cliente ID 67 -> GET bench_tcp_67
+[2026-09-20 22:40:05.499] Cliente ID 67 <- OK VALUE 100
+[2026-09-20 22:40:05.500] Cliente ID 67 -> SET bench_tcp_67 200
+[2026-09-20 22:40:05.525] Cliente ID 67 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.525] Cliente ID 67 -> RESERVE bench_tcp_67
+[2026-09-20 22:40:05.527] Cliente ID 67 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.527] Cliente ID 67 -> RELEASE bench_tcp_67
+[2026-09-20 22:40:05.831] Cliente ID 67 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.831] Cliente ID 67 desconectado
+[2026-09-20 22:40:04.850] Cliente ID 79 conectado
+[2026-09-20 22:40:04.850] Cliente ID 79 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.856] Cliente ID 79 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 79 -> CREATE bench_tcp_79 100
+[2026-09-20 22:40:05.092] Cliente ID 79 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.092] Cliente ID 79 -> GET bench_tcp_79
+[2026-09-20 22:40:05.092] Cliente ID 79 <- OK VALUE 100
+[2026-09-20 22:40:05.092] Cliente ID 79 -> SET bench_tcp_79 200
+[2026-09-20 22:40:05.330] Cliente ID 79 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.330] Cliente ID 79 -> RESERVE bench_tcp_79
+[2026-09-20 22:40:05.531] Cliente ID 79 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.531] Cliente ID 79 -> RELEASE bench_tcp_79
+[2026-09-20 22:40:05.835] Cliente ID 79 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.835] Cliente ID 79 desconectado
+[2026-09-20 22:40:04.836] Cliente ID 61 conectado
+[2026-09-20 22:40:04.836] Cliente ID 61 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.836] Cliente ID 61 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.976] Cliente ID 61 -> CREATE bench_tcp_61 100
+[2026-09-20 22:40:05.232] Cliente ID 61 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.232] Cliente ID 61 -> GET bench_tcp_61
+[2026-09-20 22:40:05.468] Cliente ID 61 <- OK VALUE 100
+[2026-09-20 22:40:05.468] Cliente ID 61 -> SET bench_tcp_61 200
+[2026-09-20 22:40:05.525] Cliente ID 61 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.525] Cliente ID 61 -> RESERVE bench_tcp_61
+[2026-09-20 22:40:05.529] Cliente ID 61 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.529] Cliente ID 61 -> RELEASE bench_tcp_61
+[2026-09-20 22:40:05.838] Cliente ID 61 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.838] Cliente ID 61 desconectado
+[2026-09-20 22:40:04.815] Cliente ID 43 conectado
+[2026-09-20 22:40:04.815] Cliente ID 43 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.819] Cliente ID 43 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.901] Cliente ID 43 -> CREATE bench_tcp_43 100
+[2026-09-20 22:40:04.913] Cliente ID 43 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.913] Cliente ID 43 -> GET bench_tcp_43
+[2026-09-20 22:40:04.932] Cliente ID 43 <- OK VALUE 200
+[2026-09-20 22:40:04.932] Cliente ID 43 -> SET bench_tcp_43 200
+[2026-09-20 22:40:04.947] Cliente ID 43 <- OK VALUE_UPDATED
+[2026-09-20 22:40:04.947] Cliente ID 43 -> RESERVE bench_tcp_43
+[2026-09-20 22:40:05.423] Cliente ID 43 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.423] Cliente ID 43 -> RELEASE bench_tcp_43
+[2026-09-20 22:40:05.841] Cliente ID 43 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.842] Cliente ID 43 desconectado
+[2026-09-20 22:40:04.791] Cliente ID 6 conectado
+[2026-09-20 22:40:04.791] Cliente ID 6 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.792] Cliente ID 6 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.888] Cliente ID 6 -> CREATE bench_tcp_6 100
+[2026-09-20 22:40:04.942] Cliente ID 6 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.942] Cliente ID 6 -> GET bench_tcp_6
+[2026-09-20 22:40:05.094] Cliente ID 6 <- OK VALUE 200
+[2026-09-20 22:40:05.094] Cliente ID 6 -> SET bench_tcp_6 200
+[2026-09-20 22:40:05.385] Cliente ID 6 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.385] Cliente ID 6 -> RESERVE bench_tcp_6
+[2026-09-20 22:40:05.547] Cliente ID 6 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.547] Cliente ID 6 -> RELEASE bench_tcp_6
+[2026-09-20 22:40:05.842] Cliente ID 6 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.842] Cliente ID 6 desconectado
+[2026-09-20 22:40:04.823] Cliente ID 50 conectado
+[2026-09-20 22:40:04.823] Cliente ID 50 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.825] Cliente ID 50 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.974] Cliente ID 50 -> CREATE bench_tcp_50 100
+[2026-09-20 22:40:05.060] Cliente ID 50 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.060] Cliente ID 50 -> GET bench_tcp_50
+[2026-09-20 22:40:05.090] Cliente ID 50 <- OK VALUE 200
+[2026-09-20 22:40:05.090] Cliente ID 50 -> SET bench_tcp_50 200
+[2026-09-20 22:40:05.392] Cliente ID 50 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.392] Cliente ID 50 -> RESERVE bench_tcp_50
+[2026-09-20 22:40:05.552] Cliente ID 50 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.552] Cliente ID 50 -> RELEASE bench_tcp_50
+[2026-09-20 22:40:05.846] Cliente ID 50 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.847] Cliente ID 50 desconectado
+[2026-09-20 22:40:04.796] Cliente ID 15 conectado
+[2026-09-20 22:40:04.796] Cliente ID 15 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.797] Cliente ID 15 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.887] Cliente ID 15 -> CREATE bench_tcp_15 100
+[2026-09-20 22:40:04.904] Cliente ID 15 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.904] Cliente ID 15 -> GET bench_tcp_15
+[2026-09-20 22:40:05.138] Cliente ID 15 <- OK VALUE 200
+[2026-09-20 22:40:05.138] Cliente ID 15 -> SET bench_tcp_15 200
+[2026-09-20 22:40:05.392] Cliente ID 15 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.392] Cliente ID 15 -> RESERVE bench_tcp_15
+[2026-09-20 22:40:05.554] Cliente ID 15 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.554] Cliente ID 15 -> RELEASE bench_tcp_15
+[2026-09-20 22:40:05.849] Cliente ID 15 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.849] Cliente ID 15 desconectado
+[2026-09-20 22:40:04.803] Cliente ID 22 conectado
+[2026-09-20 22:40:04.803] Cliente ID 22 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.804] Cliente ID 22 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.887] Cliente ID 22 -> CREATE bench_tcp_22 100
+[2026-09-20 22:40:04.940] Cliente ID 22 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.940] Cliente ID 22 -> GET bench_tcp_22
+[2026-09-20 22:40:05.082] Cliente ID 22 <- OK VALUE 200
+[2026-09-20 22:40:05.082] Cliente ID 22 -> SET bench_tcp_22 200
+[2026-09-20 22:40:05.392] Cliente ID 22 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.392] Cliente ID 22 -> RESERVE bench_tcp_22
+[2026-09-20 22:40:05.555] Cliente ID 22 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.555] Cliente ID 22 -> RELEASE bench_tcp_22
+[2026-09-20 22:40:05.849] Cliente ID 22 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.849] Cliente ID 22 desconectado
+[2026-09-20 22:40:04.868] Cliente ID 83 conectado
+[2026-09-20 22:40:04.868] Cliente ID 83 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.869] Cliente ID 83 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.932] Cliente ID 83 -> CREATE bench_tcp_83 100
+[2026-09-20 22:40:05.040] Cliente ID 83 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.040] Cliente ID 83 -> GET bench_tcp_83
+[2026-09-20 22:40:05.382] Cliente ID 83 <- OK VALUE 100
+[2026-09-20 22:40:05.382] Cliente ID 83 -> SET bench_tcp_83 200
+[2026-09-20 22:40:05.393] Cliente ID 83 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.393] Cliente ID 83 -> RESERVE bench_tcp_83
+[2026-09-20 22:40:05.556] Cliente ID 83 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.556] Cliente ID 83 -> RELEASE bench_tcp_83
+[2026-09-20 22:40:05.850] Cliente ID 83 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.850] Cliente ID 83 desconectado
+[2026-09-20 22:40:04.813] Cliente ID 41 conectado
+[2026-09-20 22:40:04.813] Cliente ID 41 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.814] Cliente ID 41 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.905] Cliente ID 41 -> CREATE bench_tcp_41 100
+[2026-09-20 22:40:05.390] Cliente ID 41 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.390] Cliente ID 41 -> GET bench_tcp_41
+[2026-09-20 22:40:05.533] Cliente ID 41 <- OK VALUE 200
+[2026-09-20 22:40:05.533] Cliente ID 41 -> SET bench_tcp_41 200
+[2026-09-20 22:40:05.539] Cliente ID 41 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.539] Cliente ID 41 -> RESERVE bench_tcp_41
+[2026-09-20 22:40:05.560] Cliente ID 41 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.560] Cliente ID 41 -> RELEASE bench_tcp_41
+[2026-09-20 22:40:05.854] Cliente ID 41 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.854] Cliente ID 41 desconectado
+[2026-09-20 22:40:04.846] Cliente ID 78 conectado
+[2026-09-20 22:40:04.847] Cliente ID 78 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.868] Cliente ID 78 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 78 -> CREATE bench_tcp_78 100
+[2026-09-20 22:40:05.051] Cliente ID 78 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.051] Cliente ID 78 -> GET bench_tcp_78
+[2026-09-20 22:40:05.125] Cliente ID 78 <- OK VALUE 100
+[2026-09-20 22:40:05.125] Cliente ID 78 -> SET bench_tcp_78 200
+[2026-09-20 22:40:05.410] Cliente ID 78 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.410] Cliente ID 78 -> RESERVE bench_tcp_78
+[2026-09-20 22:40:05.561] Cliente ID 78 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.561] Cliente ID 78 -> RELEASE bench_tcp_78
+[2026-09-20 22:40:05.856] Cliente ID 78 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.856] Cliente ID 78 desconectado
+[2026-09-20 22:40:04.834] Cliente ID 57 conectado
+[2026-09-20 22:40:04.834] Cliente ID 57 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.838] Cliente ID 57 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.939] Cliente ID 57 -> CREATE bench_tcp_57 100
+[2026-09-20 22:40:04.963] Cliente ID 57 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:04.963] Cliente ID 57 -> GET bench_tcp_57
+[2026-09-20 22:40:05.124] Cliente ID 57 <- OK VALUE 100
+[2026-09-20 22:40:05.124] Cliente ID 57 -> SET bench_tcp_57 200
+[2026-09-20 22:40:05.407] Cliente ID 57 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.407] Cliente ID 57 -> RESERVE bench_tcp_57
+[2026-09-20 22:40:05.562] Cliente ID 57 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.562] Cliente ID 57 -> RELEASE bench_tcp_57
+[2026-09-20 22:40:05.857] Cliente ID 57 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.857] Cliente ID 57 desconectado
+[2026-09-20 22:40:04.843] Cliente ID 73 conectado
+[2026-09-20 22:40:04.843] Cliente ID 73 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.844] Cliente ID 73 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.081] Cliente ID 73 -> CREATE bench_tcp_73 100
+[2026-09-20 22:40:05.382] Cliente ID 73 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.382] Cliente ID 73 -> GET bench_tcp_73
+[2026-09-20 22:40:05.393] Cliente ID 73 <- OK VALUE 100
+[2026-09-20 22:40:05.393] Cliente ID 73 -> SET bench_tcp_73 200
+[2026-09-20 22:40:05.539] Cliente ID 73 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.539] Cliente ID 73 -> RESERVE bench_tcp_73
+[2026-09-20 22:40:05.565] Cliente ID 73 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.565] Cliente ID 73 -> RELEASE bench_tcp_73
+[2026-09-20 22:40:05.871] Cliente ID 73 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.872] Cliente ID 73 desconectado
+[2026-09-20 22:40:04.874] Cliente ID 90 conectado
+[2026-09-20 22:40:04.874] Cliente ID 90 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.875] Cliente ID 90 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.229] Cliente ID 90 -> CREATE bench_tcp_90 100
+[2026-09-20 22:40:05.540] Cliente ID 90 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.540] Cliente ID 90 -> GET bench_tcp_90
+[2026-09-20 22:40:05.540] Cliente ID 90 <- OK VALUE 100
+[2026-09-20 22:40:05.540] Cliente ID 90 -> SET bench_tcp_90 200
+[2026-09-20 22:40:05.566] Cliente ID 90 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.566] Cliente ID 90 -> RESERVE bench_tcp_90
+[2026-09-20 22:40:05.875] Cliente ID 90 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.875] Cliente ID 90 -> RELEASE bench_tcp_90
+[2026-09-20 22:40:05.876] Cliente ID 90 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.876] Cliente ID 90 desconectado
+[2026-09-20 22:40:04.787] Cliente ID 3 conectado
+[2026-09-20 22:40:04.787] Cliente ID 3 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.788] Cliente ID 3 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.888] Cliente ID 3 -> CREATE bench_tcp_3 100
+[2026-09-20 22:40:05.062] Cliente ID 3 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.064] Cliente ID 3 -> GET bench_tcp_3
+[2026-09-20 22:40:05.131] Cliente ID 3 <- OK VALUE 200
+[2026-09-20 22:40:05.131] Cliente ID 3 -> SET bench_tcp_3 200
+[2026-09-20 22:40:05.425] Cliente ID 3 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.425] Cliente ID 3 -> RESERVE bench_tcp_3
+[2026-09-20 22:40:05.594] Cliente ID 3 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.594] Cliente ID 3 -> RELEASE bench_tcp_3
+[2026-09-20 22:40:05.881] Cliente ID 3 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.881] Cliente ID 3 desconectado
+[2026-09-20 22:40:04.825] Cliente ID 49 conectado
+[2026-09-20 22:40:04.825] Cliente ID 49 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.826] Cliente ID 49 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.206] Cliente ID 49 -> CREATE bench_tcp_49 100
+[2026-09-20 22:40:05.383] Cliente ID 49 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.383] Cliente ID 49 -> GET bench_tcp_49
+[2026-09-20 22:40:05.407] Cliente ID 49 <- OK VALUE 200
+[2026-09-20 22:40:05.407] Cliente ID 49 -> SET bench_tcp_49 200
+[2026-09-20 22:40:05.592] Cliente ID 49 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.592] Cliente ID 49 -> RESERVE bench_tcp_49
+[2026-09-20 22:40:05.595] Cliente ID 49 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.595] Cliente ID 49 -> RELEASE bench_tcp_49
+[2026-09-20 22:40:05.882] Cliente ID 49 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.882] Cliente ID 49 desconectado
+[2026-09-20 22:40:04.876] Cliente ID 94 conectado
+[2026-09-20 22:40:04.876] Cliente ID 94 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.877] Cliente ID 94 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 94 -> CREATE bench_tcp_94 100
+[2026-09-20 22:40:05.083] Cliente ID 94 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.083] Cliente ID 94 -> GET bench_tcp_94
+[2026-09-20 22:40:05.110] Cliente ID 94 <- OK VALUE 100
+[2026-09-20 22:40:05.110] Cliente ID 94 -> SET bench_tcp_94 200
+[2026-09-20 22:40:05.429] Cliente ID 94 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.429] Cliente ID 94 -> RESERVE bench_tcp_94
+[2026-09-20 22:40:05.626] Cliente ID 94 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.626] Cliente ID 94 -> RELEASE bench_tcp_94
+[2026-09-20 22:40:05.886] Cliente ID 94 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.886] Cliente ID 94 desconectado
+[2026-09-20 22:40:04.791] Cliente ID 7 conectado
+[2026-09-20 22:40:04.791] Cliente ID 7 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.792] Cliente ID 7 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 7 -> CREATE bench_tcp_7 100
+[2026-09-20 22:40:04.968] Cliente ID 7 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.968] Cliente ID 7 -> GET bench_tcp_7
+[2026-09-20 22:40:05.037] Cliente ID 7 <- OK VALUE 200
+[2026-09-20 22:40:05.037] Cliente ID 7 -> SET bench_tcp_7 200
+[2026-09-20 22:40:05.225] Cliente ID 7 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.225] Cliente ID 7 -> RESERVE bench_tcp_7
+[2026-09-20 22:40:05.432] Cliente ID 7 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.432] Cliente ID 7 -> RELEASE bench_tcp_7
+[2026-09-20 22:40:05.887] Cliente ID 7 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.887] Cliente ID 7 desconectado
+[2026-09-20 22:40:04.795] Cliente ID 13 conectado
+[2026-09-20 22:40:04.795] Cliente ID 13 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.796] Cliente ID 13 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.886] Cliente ID 13 -> CREATE bench_tcp_13 100
+[2026-09-20 22:40:04.930] Cliente ID 13 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.930] Cliente ID 13 -> GET bench_tcp_13
+[2026-09-20 22:40:05.224] Cliente ID 13 <- OK VALUE 200
+[2026-09-20 22:40:05.224] Cliente ID 13 -> SET bench_tcp_13 200
+[2026-09-20 22:40:05.462] Cliente ID 13 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.462] Cliente ID 13 -> RESERVE bench_tcp_13
+[2026-09-20 22:40:05.671] Cliente ID 13 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.671] Cliente ID 13 -> RELEASE bench_tcp_13
+[2026-09-20 22:40:05.893] Cliente ID 13 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.893] Cliente ID 13 desconectado
+[2026-09-20 22:40:04.827] Cliente ID 53 conectado
+[2026-09-20 22:40:04.827] Cliente ID 53 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.827] Cliente ID 53 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.959] Cliente ID 53 -> CREATE bench_tcp_53 100
+[2026-09-20 22:40:05.111] Cliente ID 53 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.111] Cliente ID 53 -> GET bench_tcp_53
+[2026-09-20 22:40:05.138] Cliente ID 53 <- OK VALUE 100
+[2026-09-20 22:40:05.138] Cliente ID 53 -> SET bench_tcp_53 200
+[2026-09-20 22:40:05.462] Cliente ID 53 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.462] Cliente ID 53 -> RESERVE bench_tcp_53
+[2026-09-20 22:40:05.674] Cliente ID 53 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.674] Cliente ID 53 -> RELEASE bench_tcp_53
+[2026-09-20 22:40:05.894] Cliente ID 53 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.894] Cliente ID 53 desconectado
+[2026-09-20 22:40:04.809] Cliente ID 34 conectado
+[2026-09-20 22:40:04.809] Cliente ID 34 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.810] Cliente ID 34 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.931] Cliente ID 34 -> CREATE bench_tcp_34 100
+[2026-09-20 22:40:04.959] Cliente ID 34 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.959] Cliente ID 34 -> GET bench_tcp_34
+[2026-09-20 22:40:05.225] Cliente ID 34 <- OK VALUE 200
+[2026-09-20 22:40:05.225] Cliente ID 34 -> SET bench_tcp_34 200
+[2026-09-20 22:40:05.504] Cliente ID 34 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.504] Cliente ID 34 -> RESERVE bench_tcp_34
+[2026-09-20 22:40:05.724] Cliente ID 34 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.724] Cliente ID 34 -> RELEASE bench_tcp_34
+[2026-09-20 22:40:05.921] Cliente ID 34 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.921] Cliente ID 34 desconectado
+[2026-09-20 22:40:04.796] Cliente ID 18 conectado
+[2026-09-20 22:40:04.796] Cliente ID 18 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.797] Cliente ID 18 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.904] Cliente ID 18 -> CREATE bench_tcp_18 100
+[2026-09-20 22:40:05.232] Cliente ID 18 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.232] Cliente ID 18 -> GET bench_tcp_18
+[2026-09-20 22:40:05.471] Cliente ID 18 <- OK VALUE 200
+[2026-09-20 22:40:05.472] Cliente ID 18 -> SET bench_tcp_18 200
+[2026-09-20 22:40:05.503] Cliente ID 18 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.504] Cliente ID 18 -> RESERVE bench_tcp_18
+[2026-09-20 22:40:05.723] Cliente ID 18 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.723] Cliente ID 18 -> RELEASE bench_tcp_18
+[2026-09-20 22:40:05.923] Cliente ID 18 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.923] Cliente ID 18 desconectado
+[2026-09-20 22:40:04.793] Cliente ID 11 conectado
+[2026-09-20 22:40:04.793] Cliente ID 11 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.794] Cliente ID 11 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.927] Cliente ID 11 -> CREATE bench_tcp_11 100
+[2026-09-20 22:40:04.978] Cliente ID 11 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:04.978] Cliente ID 11 -> GET bench_tcp_11
+[2026-09-20 22:40:05.252] Cliente ID 11 <- OK VALUE 200
+[2026-09-20 22:40:05.252] Cliente ID 11 -> SET bench_tcp_11 200
+[2026-09-20 22:40:05.517] Cliente ID 11 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.517] Cliente ID 11 -> RESERVE bench_tcp_11
+[2026-09-20 22:40:05.738] Cliente ID 11 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.738] Cliente ID 11 -> RELEASE bench_tcp_11
+[2026-09-20 22:40:05.925] Cliente ID 11 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.925] Cliente ID 11 desconectado
+[2026-09-20 22:40:04.824] Cliente ID 52 conectado
+[2026-09-20 22:40:04.824] Cliente ID 52 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.825] Cliente ID 52 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.251] Cliente ID 52 -> CREATE bench_tcp_52 100
+[2026-09-20 22:40:05.498] Cliente ID 52 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.498] Cliente ID 52 -> GET bench_tcp_52
+[2026-09-20 22:40:05.499] Cliente ID 52 <- OK VALUE 100
+[2026-09-20 22:40:05.499] Cliente ID 52 -> SET bench_tcp_52 200
+[2026-09-20 22:40:05.524] Cliente ID 52 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.524] Cliente ID 52 -> RESERVE bench_tcp_52
+[2026-09-20 22:40:05.805] Cliente ID 52 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.805] Cliente ID 52 -> RELEASE bench_tcp_52
+[2026-09-20 22:40:05.932] Cliente ID 52 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.932] Cliente ID 52 desconectado
+[2026-09-20 22:40:04.842] Cliente ID 71 conectado
+[2026-09-20 22:40:04.842] Cliente ID 71 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.845] Cliente ID 71 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.943] Cliente ID 71 -> CREATE bench_tcp_71 100
+[2026-09-20 22:40:05.320] Cliente ID 71 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.320] Cliente ID 71 -> GET bench_tcp_71
+[2026-09-20 22:40:05.527] Cliente ID 71 <- OK VALUE 100
+[2026-09-20 22:40:05.527] Cliente ID 71 -> SET bench_tcp_71 200
+[2026-09-20 22:40:05.831] Cliente ID 71 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.831] Cliente ID 71 -> RESERVE bench_tcp_71
+[2026-09-20 22:40:05.833] Cliente ID 71 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.833] Cliente ID 71 -> RELEASE bench_tcp_71
+[2026-09-20 22:40:05.948] Cliente ID 71 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.948] Cliente ID 71 desconectado
+[2026-09-20 22:40:04.794] Cliente ID 14 conectado
+[2026-09-20 22:40:04.794] Cliente ID 14 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.795] Cliente ID 14 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.898] Cliente ID 14 -> CREATE bench_tcp_14 100
+[2026-09-20 22:40:05.095] Cliente ID 14 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.095] Cliente ID 14 -> GET bench_tcp_14
+[2026-09-20 22:40:05.324] Cliente ID 14 <- OK VALUE 200
+[2026-09-20 22:40:05.324] Cliente ID 14 -> SET bench_tcp_14 200
+[2026-09-20 22:40:05.529] Cliente ID 14 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.529] Cliente ID 14 -> RESERVE bench_tcp_14
+[2026-09-20 22:40:05.834] Cliente ID 14 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.834] Cliente ID 14 -> RELEASE bench_tcp_14
+[2026-09-20 22:40:05.949] Cliente ID 14 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.949] Cliente ID 14 desconectado
+[2026-09-20 22:40:04.844] Cliente ID 75 conectado
+[2026-09-20 22:40:04.844] Cliente ID 75 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.845] Cliente ID 75 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.968] Cliente ID 75 -> CREATE bench_tcp_75 100
+[2026-09-20 22:40:05.229] Cliente ID 75 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.229] Cliente ID 75 -> GET bench_tcp_75
+[2026-09-20 22:40:05.392] Cliente ID 75 <- OK VALUE 100
+[2026-09-20 22:40:05.392] Cliente ID 75 -> SET bench_tcp_75 200
+[2026-09-20 22:40:05.549] Cliente ID 75 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.550] Cliente ID 75 -> RESERVE bench_tcp_75
+[2026-09-20 22:40:05.843] Cliente ID 75 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.843] Cliente ID 75 -> RELEASE bench_tcp_75
+[2026-09-20 22:40:05.952] Cliente ID 75 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.952] Cliente ID 75 desconectado
+[2026-09-20 22:40:04.820] Cliente ID 46 conectado
+[2026-09-20 22:40:04.820] Cliente ID 46 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.821] Cliente ID 46 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.906] Cliente ID 46 -> CREATE bench_tcp_46 100
+[2026-09-20 22:40:05.224] Cliente ID 46 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.224] Cliente ID 46 -> GET bench_tcp_46
+[2026-09-20 22:40:05.393] Cliente ID 46 <- OK VALUE 200
+[2026-09-20 22:40:05.393] Cliente ID 46 -> SET bench_tcp_46 200
+[2026-09-20 22:40:05.558] Cliente ID 46 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.558] Cliente ID 46 -> RESERVE bench_tcp_46
+[2026-09-20 22:40:05.852] Cliente ID 46 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.852] Cliente ID 46 -> RELEASE bench_tcp_46
+[2026-09-20 22:40:05.956] Cliente ID 46 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.956] Cliente ID 46 desconectado
+[2026-09-20 22:40:04.786] Cliente ID 2 conectado
+[2026-09-20 22:40:04.786] Cliente ID 2 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.789] Cliente ID 2 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.904] Cliente ID 2 -> CREATE bench_tcp_2 100
+[2026-09-20 22:40:05.225] Cliente ID 2 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.225] Cliente ID 2 -> GET bench_tcp_2
+[2026-09-20 22:40:05.393] Cliente ID 2 <- OK VALUE 200
+[2026-09-20 22:40:05.393] Cliente ID 2 -> SET bench_tcp_2 200
+[2026-09-20 22:40:05.557] Cliente ID 2 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.557] Cliente ID 2 -> RESERVE bench_tcp_2
+[2026-09-20 22:40:05.851] Cliente ID 2 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.851] Cliente ID 2 -> RELEASE bench_tcp_2
+[2026-09-20 22:40:05.956] Cliente ID 2 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.956] Cliente ID 2 desconectado
+[2026-09-20 22:40:04.825] Cliente ID 51 conectado
+[2026-09-20 22:40:04.825] Cliente ID 51 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.827] Cliente ID 51 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.049] Cliente ID 51 -> CREATE bench_tcp_51 100
+[2026-09-20 22:40:05.386] Cliente ID 51 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.386] Cliente ID 51 -> GET bench_tcp_51
+[2026-09-20 22:40:05.535] Cliente ID 51 <- OK VALUE 100
+[2026-09-20 22:40:05.535] Cliente ID 51 -> SET bench_tcp_51 200
+[2026-09-20 22:40:05.559] Cliente ID 51 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.559] Cliente ID 51 -> RESERVE bench_tcp_51
+[2026-09-20 22:40:05.852] Cliente ID 51 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.852] Cliente ID 51 -> RELEASE bench_tcp_51
+[2026-09-20 22:40:05.956] Cliente ID 51 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.956] Cliente ID 51 desconectado
+[2026-09-20 22:40:04.798] Cliente ID 21 conectado
+[2026-09-20 22:40:04.799] Cliente ID 21 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.803] Cliente ID 21 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.224] Cliente ID 21 -> CREATE bench_tcp_21 100
+[2026-09-20 22:40:05.392] Cliente ID 21 <- ERROR RESOURCE_ALREADY_EXISTS
+[2026-09-20 22:40:05.392] Cliente ID 21 -> GET bench_tcp_21
+[2026-09-20 22:40:05.534] Cliente ID 21 <- OK VALUE 200
+[2026-09-20 22:40:05.534] Cliente ID 21 -> SET bench_tcp_21 200
+[2026-09-20 22:40:05.559] Cliente ID 21 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.559] Cliente ID 21 -> RESERVE bench_tcp_21
+[2026-09-20 22:40:05.853] Cliente ID 21 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.853] Cliente ID 21 -> RELEASE bench_tcp_21
+[2026-09-20 22:40:05.956] Cliente ID 21 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.956] Cliente ID 21 desconectado
+[2026-09-20 22:40:04.827] Cliente ID 55 conectado
+[2026-09-20 22:40:04.827] Cliente ID 55 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.827] Cliente ID 55 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.969] Cliente ID 55 -> CREATE bench_tcp_55 100
+[2026-09-20 22:40:05.162] Cliente ID 55 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.162] Cliente ID 55 -> GET bench_tcp_55
+[2026-09-20 22:40:05.426] Cliente ID 55 <- OK VALUE 100
+[2026-09-20 22:40:05.426] Cliente ID 55 -> SET bench_tcp_55 200
+[2026-09-20 22:40:05.593] Cliente ID 55 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.593] Cliente ID 55 -> RESERVE bench_tcp_55
+[2026-09-20 22:40:05.880] Cliente ID 55 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.880] Cliente ID 55 -> RELEASE bench_tcp_55
+[2026-09-20 22:40:05.998] Cliente ID 55 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:05.998] Cliente ID 55 desconectado
+[2026-09-20 22:40:04.835] Cliente ID 60 conectado
+[2026-09-20 22:40:04.835] Cliente ID 60 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.836] Cliente ID 60 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.227] Cliente ID 60 -> CREATE bench_tcp_60 100
+[2026-09-20 22:40:05.454] Cliente ID 60 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.454] Cliente ID 60 -> GET bench_tcp_60
+[2026-09-20 22:40:05.649] Cliente ID 60 <- OK VALUE 100
+[2026-09-20 22:40:05.649] Cliente ID 60 -> SET bench_tcp_60 200
+[2026-09-20 22:40:05.673] Cliente ID 60 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.673] Cliente ID 60 -> RESERVE bench_tcp_60
+[2026-09-20 22:40:05.893] Cliente ID 60 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.893] Cliente ID 60 -> RELEASE bench_tcp_60
+[2026-09-20 22:40:06.005] Cliente ID 60 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.005] Cliente ID 60 desconectado
+[2026-09-20 22:40:04.842] Cliente ID 72 conectado
+[2026-09-20 22:40:04.842] Cliente ID 72 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.845] Cliente ID 72 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.383] Cliente ID 72 -> CREATE bench_tcp_72 100
+[2026-09-20 22:40:05.438] Cliente ID 72 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.438] Cliente ID 72 -> GET bench_tcp_72
+[2026-09-20 22:40:05.643] Cliente ID 72 <- OK VALUE 100
+[2026-09-20 22:40:05.643] Cliente ID 72 -> SET bench_tcp_72 200
+[2026-09-20 22:40:05.670] Cliente ID 72 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.670] Cliente ID 72 -> RESERVE bench_tcp_72
+[2026-09-20 22:40:05.905] Cliente ID 72 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.906] Cliente ID 72 -> RELEASE bench_tcp_72
+[2026-09-20 22:40:06.007] Cliente ID 72 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.007] Cliente ID 72 desconectado
+[2026-09-20 22:40:04.877] Cliente ID 96 conectado
+[2026-09-20 22:40:04.877] Cliente ID 96 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.880] Cliente ID 96 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.199] Cliente ID 96 -> CREATE bench_tcp_96 100
+[2026-09-20 22:40:05.425] Cliente ID 96 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.425] Cliente ID 96 -> GET bench_tcp_96
+[2026-09-20 22:40:05.541] Cliente ID 96 <- OK VALUE 100
+[2026-09-20 22:40:05.541] Cliente ID 96 -> SET bench_tcp_96 200
+[2026-09-20 22:40:05.837] Cliente ID 96 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.837] Cliente ID 96 -> RESERVE bench_tcp_96
+[2026-09-20 22:40:05.951] Cliente ID 96 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.951] Cliente ID 96 -> RELEASE bench_tcp_96
+[2026-09-20 22:40:06.017] Cliente ID 96 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.017] Cliente ID 96 desconectado
+[2026-09-20 22:40:04.872] Cliente ID 86 conectado
+[2026-09-20 22:40:04.872] Cliente ID 86 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.874] Cliente ID 86 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.940] Cliente ID 86 -> CREATE bench_tcp_86 100
+[2026-09-20 22:40:05.131] Cliente ID 86 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.131] Cliente ID 86 -> GET bench_tcp_86
+[2026-09-20 22:40:05.385] Cliente ID 86 <- OK VALUE 100
+[2026-09-20 22:40:05.385] Cliente ID 86 -> SET bench_tcp_86 200
+[2026-09-20 22:40:05.550] Cliente ID 86 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.550] Cliente ID 86 -> RESERVE bench_tcp_86
+[2026-09-20 22:40:05.951] Cliente ID 86 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:05.951] Cliente ID 86 -> RELEASE bench_tcp_86
+[2026-09-20 22:40:06.018] Cliente ID 86 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.018] Cliente ID 86 desconectado
+[2026-09-20 22:40:04.828] Cliente ID 56 conectado
+[2026-09-20 22:40:04.828] Cliente ID 56 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.834] Cliente ID 56 <- OK AUTHENTICATED
+[2026-09-20 22:40:05.128] Cliente ID 56 -> CREATE bench_tcp_56 100
+[2026-09-20 22:40:05.211] Cliente ID 56 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.211] Cliente ID 56 -> GET bench_tcp_56
+[2026-09-20 22:40:05.430] Cliente ID 56 <- OK VALUE 100
+[2026-09-20 22:40:05.430] Cliente ID 56 -> SET bench_tcp_56 200
+[2026-09-20 22:40:05.885] Cliente ID 56 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.885] Cliente ID 56 -> RESERVE bench_tcp_56
+[2026-09-20 22:40:06.000] Cliente ID 56 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:06.000] Cliente ID 56 -> RELEASE bench_tcp_56
+[2026-09-20 22:40:06.022] Cliente ID 56 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.022] Cliente ID 56 desconectado
+[2026-09-20 22:40:04.872] Cliente ID 89 conectado
+[2026-09-20 22:40:04.872] Cliente ID 89 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.873] Cliente ID 89 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.968] Cliente ID 89 -> CREATE bench_tcp_89 100
+[2026-09-20 22:40:05.258] Cliente ID 89 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.258] Cliente ID 89 -> GET bench_tcp_89
+[2026-09-20 22:40:05.492] Cliente ID 89 <- OK VALUE 100
+[2026-09-20 22:40:05.492] Cliente ID 89 -> SET bench_tcp_89 200
+[2026-09-20 22:40:05.520] Cliente ID 89 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.520] Cliente ID 89 -> RESERVE bench_tcp_89
+[2026-09-20 22:40:06.012] Cliente ID 89 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:06.012] Cliente ID 89 -> RELEASE bench_tcp_89
+[2026-09-20 22:40:06.028] Cliente ID 89 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.028] Cliente ID 89 desconectado
+[2026-09-20 22:40:04.839] Cliente ID 65 conectado
+[2026-09-20 22:40:04.839] Cliente ID 65 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.840] Cliente ID 65 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.937] Cliente ID 65 -> CREATE bench_tcp_65 100
+[2026-09-20 22:40:05.303] Cliente ID 65 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.303] Cliente ID 65 -> GET bench_tcp_65
+[2026-09-20 22:40:05.527] Cliente ID 65 <- OK VALUE 100
+[2026-09-20 22:40:05.527] Cliente ID 65 -> SET bench_tcp_65 200
+[2026-09-20 22:40:05.929] Cliente ID 65 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.929] Cliente ID 65 -> RESERVE bench_tcp_65
+[2026-09-20 22:40:06.014] Cliente ID 65 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:06.014] Cliente ID 65 -> RELEASE bench_tcp_65
+[2026-09-20 22:40:06.029] Cliente ID 65 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.029] Cliente ID 65 desconectado
+[2026-09-20 22:40:04.833] Cliente ID 58 conectado
+[2026-09-20 22:40:04.833] Cliente ID 58 -> LOGIN andreia 1234
+[2026-09-20 22:40:04.836] Cliente ID 58 <- OK AUTHENTICATED
+[2026-09-20 22:40:04.966] Cliente ID 58 -> CREATE bench_tcp_58 100
+[2026-09-20 22:40:05.319] Cliente ID 58 <- OK RESOURCE_CREATED
+[2026-09-20 22:40:05.319] Cliente ID 58 -> GET bench_tcp_58
+[2026-09-20 22:40:05.527] Cliente ID 58 <- OK VALUE 100
+[2026-09-20 22:40:05.527] Cliente ID 58 -> SET bench_tcp_58 200
+[2026-09-20 22:40:05.832] Cliente ID 58 <- OK VALUE_UPDATED
+[2026-09-20 22:40:05.833] Cliente ID 58 -> RESERVE bench_tcp_58
+[2026-09-20 22:40:06.014] Cliente ID 58 <- OK RESOURCE_RESERVED
+[2026-09-20 22:40:06.014] Cliente ID 58 -> RELEASE bench_tcp_58
+[2026-09-20 22:40:06.030] Cliente ID 58 <- OK RESOURCE_RELEASED
+[2026-09-20 22:40:06.030] Cliente ID 58 desconectado
+[2026-09-20 22:40:06.031] FIM TESTE TCP - 100 CLIENTES
+[2026-09-20 22:40:06.031] Tempo total: 1248.838 ms
+[2026-09-20 22:40:06.032] CREATE: media=105.068 ms | min=0.631 ms | max=485.303 ms
+[2026-09-20 22:40:06.032] GET: media=100.838 ms | min=0.046 ms | max=341.390 ms
+[2026-09-20 22:40:06.032] SET: media=193.181 ms | min=5.776 ms | max=454.633 ms
+[2026-09-20 22:40:06.032] RESERVE: media=202.076 ms | min=1.823 ms | max=492.699 ms
+[2026-09-20 22:40:06.032] RELEASE: media=170.341 ms | min=0.394 ms | max=481.808 ms
+======================================================================
+

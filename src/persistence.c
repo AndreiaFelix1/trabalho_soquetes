@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "persistence.h"
 
-#define DATA_FILE "resources.dat"
+#define DATA_FILE "data/resources.dat"
 
 int save_resources(
     Resource resources[],

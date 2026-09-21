@@ -45,10 +45,10 @@ O **Servidor UDP** funciona de forma independente do servidor principal TCP. Cli
 
 ```text
                          ┌──────────────────────────┐
-                         │         CLIENTES         │
+                         │         CLIENTES          │
                          │                          │
-                         │  Clientes TCP            │
-                         │  Clientes UDP            │
+                         │  Clientes TCP             │
+                         │  Clientes UDP             │
                          └────────────┬─────────────┘
                                       │
                        ┌──────────────┴──────────────┐
@@ -64,22 +64,22 @@ O **Servidor UDP** funciona de forma independente do servidor principal TCP. Cli
           │ • Processamento         │     │ • Estado dos recursos   │
           │ • Concorrência          │     │ • Persistência          │
           │ • Estado dos recursos   │     │ • Monitoramento         │
-          │ • Persistência          │     └────────────┬────────────┘ 
-          │ • Monitoramento         |                  |
-          └────────────┬────────────┘                  │
+          │ • Persistência          │     └────────────┬────────────┘
+          │ • Monitoramento         │                  |
+          └────────────┬────────────┘                  | 
+                       |                               |
                        │                               │
                   Replicação                           │
                        │                               │
+                       ▼                               │
+          ┌─────────────────────────┐                  │
+          │    SERVIDOR RÉPLICA     │                  │
+          │                         │                  │
+          │ • Estado replicado      │                  │
+          │ • Persistência          │                  │
+          └────────────┬────────────┘                  │
+                       │                               │
                        ▼                               ▼
-          ┌─────────────────────────┐     ┌─────────────────────────┐
-          │    SERVIDOR RÉPLICA     │     │   RECURSOS / ESTADO     │
-          │                         │     │       PERSISTIDO        │
-          │ • Estado replicado      │     └─────────────────────────┘
-          │ • Persistência          │
-          └────────────┬────────────┘
-                       │
-                       ▼
-          ┌─────────────────────────┐
-          │   RECURSOS / ESTADO     │
-          │       PERSISTIDO        │
-          └─────────────────────────┘
+              ┌──────────────────────────────────────────┐
+              │        ESTADO / RECURSOS PERSISTIDOS     │
+              └──────────────────────────────────────────┘
